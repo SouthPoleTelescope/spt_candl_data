@@ -1,0 +1,149 @@
+likelihood:
+  candl_like:
+    additional_args: {}
+    clear_internal_priors: true
+    data_set_file: !!python/name:spt_candl_data.SPT3G_D1_TnE ''
+    external: !!python/name:candl.interface.CandlCobayaLikelihood ''
+    variant: "lite"
+    feedback: true
+    wrapper: null
+    
+output: chains/ttteee_lite
+
+params:
+  Tcal:
+    latex: T_{\rm cal}
+    prior:
+      max: 1.2
+      min: 0.8
+    ref: 1.0
+  Ecal:
+    latex: E_{\rm cal}
+    prior:
+      max: 1.2
+      min: 0.8
+    ref: 1.0
+  A:
+    derived: 'lambda As: 1e9*As'
+    latex: 10^9 A_\mathrm{s}
+  As:
+    latex: A_\mathrm{s}
+    value: 'lambda logA: 1e-10*np.exp(logA)'
+  DHBBN:
+    derived: 'lambda DH: 10**5*DH'
+    latex: 10^5 \mathrm{D}/\mathrm{H}
+  YHe:
+    latex: Y_\mathrm{P}
+  Y_p:
+    latex: Y_P^\mathrm{BBN}
+  age:
+    latex: '{\rm{Age}}/\mathrm{Gyr}'
+  clamp:
+    derived: 'lambda As, tau: 1e9*As*np.exp(-2*tau)'
+    latex: 10^9 A_\mathrm{s} e^{-2\tau}
+  cosmomc_theta:
+    derived: true
+    value: 'lambda theta_MC_100: 1.e-2*theta_MC_100'
+  logA:
+    drop: true
+    latex: \log(10^{10} A_\mathrm{s})
+    prior:
+      max: 5.0
+      min: 1.0
+    ref: 3.0563293664848805
+  H0:
+    latex: H_0
+  ns:
+    latex: n_\mathrm{s}
+    prior:
+      max: 2.0
+      min: 0.2
+    ref: 0.948760147539579
+  ombh2:
+    latex: \Omega_\mathrm{b} h^2
+    prior:
+      max: 0.1
+      min: 0.0
+    ref: 0.022205552241797096
+  omch2:
+    latex: \Omega_\mathrm{c} h^2
+    prior:
+      max: 0.99
+      min: 0.0
+    ref: 0.12215852992670449
+  omega_de:
+    latex: \Omega_\Lambda
+  omegam:
+    latex: \Omega_\mathrm{m}
+  omegamh2:
+    derived: 'lambda omegam, H0: omegam*(H0/100)**2'
+    latex: \Omega_\mathrm{m} h^2
+  rdrag:
+    latex: r_\mathrm{drag}
+  s8h5:
+    derived: 'lambda sigma8, H0: sigma8*(H0*1e-2)**(-0.5)'
+    latex: \sigma_8/h^{0.5}
+  s8omegamp25:
+    derived: 'lambda sigma8, omegam: sigma8*omegam**0.25'
+    latex: \sigma_8 \Omega_\mathrm{m}^{0.25}
+  s8omegamp5:
+    derived: 'lambda sigma8, omegam: sigma8*omegam**0.5'
+    latex: \sigma_8 \Omega_\mathrm{m}^{0.5}
+  sigma8:
+    latex: \sigma_8
+  tau:
+    latex: \tau_\mathrm{reio}
+    prior:
+      dist: norm
+      loc: 0.051
+      scale: 0.006
+    proposal: 0.003
+    ref: 0.051
+  theta_MC_100:
+    latex: 100\theta_\mathrm{MC}
+    prior:
+      max: 10
+      min: 0.5
+    proposal: 0.0004
+    ref: 1.0406702861604324
+    renames: theta
+  zrei:
+    latex: z_\mathrm{re}
+
+prior:
+  gaussian_Tcal: 'lambda Tcal: stats.norm.logpdf(Tcal, loc=1.0,
+    scale=0.0036)'
+
+resume: true
+
+sampler:
+  mcmc:
+    Rminus1_cl_stop: 0.2
+    Rminus1_stop: 0.03
+    covmat: input_ttteee.covmat
+    drag: true
+    learn_proposal_Rminus1_max: 30
+    learn_proposal_Rminus1_max_early: 100
+    output_every: 1
+    oversample_power: 0.4
+    proposal_scale: 1.9
+
+theory:
+  camb:
+    extra_args:
+      AccuracyBoost: 1
+      bbn_predictor: PArthENoPE_880.2_standard.dat
+      halofit_version: mead2020
+      lAccuracyBoost: 1
+      lSampleBoost: 1
+      lens_margin: 1250
+      lens_potential_accuracy: 4
+      lmax: 6000
+      mnu: 0.06
+      nnu: 3.044
+      num_massive_neutrinos: 1
+      theta_H0_range:
+      - 40
+      - 100
+
+timing: true

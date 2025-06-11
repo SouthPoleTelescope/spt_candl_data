@@ -1,0 +1,9 @@
+data_set_file: "spt_candl_data.SPT3G_D1_TnE_lite"
+test_spectrum: "SPT3G_D1_TnE_test_spec.txt"
+lensing: False
+param_values: {
+    'Tcal': 1.001,
+    'Ecal': 0.999,
+    'tau': 0.054,
+}
+test_logl: -83.20924274

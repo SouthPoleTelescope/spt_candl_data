@@ -1,0 +1,17 @@
+# Effective frequencies for different types of sources
+cirrus:
+  90: 9.59515E+01
+  150: 1.49993E+02
+  220: 2.22745E+02
+polarised_galactic_dust:
+  90: 9.59631E+01
+  150: 1.50012E+02
+  220: 2.22773E+02
+CIB:
+  90: 9.596E+01
+  150: 1.50E+02
+  220:  2.2276E+02
+tSZ:
+  90: 9.56933E+01
+  150: 1.48849E+02
+  220: 2.20150E+02

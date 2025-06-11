@@ -1,0 +1,120 @@
+name: "SPT-3G D1 TnE"
+likelihood_form: "gaussian"
+
+# FEEDBACK
+feedback: True
+
+# KEY FILES
+band_power_file: "../SPT3G_D1_TnE_bdp.txt"
+covariance_file: "../SPT3G_D1_TnE_cov.dat"
+window_functions_folder: "../windows/"
+effective_frequencies: "../effective_frequencies.yaml"
+data_selection: ['EE only', '90x150 only']
+
+# DATA INFORMATION
+spectra_info:
+ - TT 90x90: 52
+ - TE 90x90: 72
+ - EE 90x90: 72
+ - TT 90x150: 52
+ - TE 90x150: 72
+ - TE 150x90: 72
+ - EE 90x150: 72
+ - TT 90x220: 52
+ - TE 90x220: 72
+ - TE 220x90: 72 
+ - EE 90x220: 72
+ - TT 150x150: 52
+ - TE 150x150: 72
+ - EE 150x150: 72
+ - TT 150x220: 52
+ - TE 150x220: 72
+ - TE 220x150: 72
+ - EE 150x220: 72
+ - TT 220x220: 52
+ - TE 220x220: 72
+ - EE 220x220: 72
+
+# DATA MODEL
+data_model:
+  - Module: "common.SuperSampleLensing"
+    kappa_param: "Kappa"
+  - Module: "common.AberrationCorrection"
+    aberration_coefficient: -0.0004826
+    descriptor: "Aberration"
+  - Module: "common.GalacticDust"
+    descriptor: "EE Polarised Galactic Dust"
+    amp_param: "EE_PolGalDust_Amp"
+    alpha_param: "EE_PolGalDust_Alpha"
+    beta_param: "EE_PolGalDust_Beta"
+    effective_frequencies: "polarised_galactic_dust"
+    affected_specs: ["EE 90x150"]
+    ell_ref: 80
+    nu_ref: 150
+    T_GALDUST: 19.6
+  - Module: "spt_candl_data.transformations.t2p_leakage.LeakageFromData"
+    data_file: "t2p_lmax4000.yaml"
+    sigmas:
+      "90": 0.000274
+      "150": 0.000192
+    param_dict:
+      "90":
+        2: "T2P2_90"
+      "150":
+        2: "T2P2_150"
+  - Module: "spt_candl_data.transformations.beams.ModesPolarizedBeamRC3"
+    modes_params: ["beta_1", "beta_2", "beta_3", "beta_4", "beta_5", "beta_6", "beta_7", "beta_8", "beta_9"]
+    beam_eigenmodes: "../beams_templates/cov_eigenmodes_300_4100.npz" 
+    pol_params: ['beta_pol_90', 'beta_pol_150']
+    beam_main_temperature: "/../beams_templates/B_ell_300_4100_main_rc4.npz"
+  - Module: "common.CalibrationAuto"
+    descriptor: "EE Calibration (External)"
+    spec_param_dict:
+      EE 90x150: ["Tcal_ext150", "Tcal_ext150", "Ecal_ext150", "Ecal_ext150"]
+  - Module: "common.CalibrationAuto"
+    descriptor: "EE Calibration (Relative)"
+    spec_param_dict:
+      EE 90x150: ["Tcal_rel90", "Ecal_rel90"]
+  
+      
+###
+
+# GAUSSIAN PRIORS
+
+priors:
+  - par_names: "tau"
+    central_value: 0.054
+    prior_std: 0.0074
+  - par_names: 'EE_PolGalDust_Amp'
+    central_value: 0.05
+    prior_std: 0.022
+  - par_names: 'EE_PolGalDust_Alpha'
+    central_value: -2.42
+    prior_std: 0.04
+  - par_names: 'EE_PolGalDust_Beta'
+    central_value: 1.51
+    prior_std: 0.04
+  - par_names: 'Kappa'
+    central_value: 0.0
+    prior_std: 0.00045
+  - par_names: "Tcal_ext150"
+    central_value: 1.0
+    prior_std: 0.00360
+  - par_names: "Tcal_rel90"
+    central_value: 1.0
+    prior_std: 0.0023903975
+  - par_names: "Ecal_ext150"
+    central_value: 1.0
+    prior_std: 0.00949
+  - par_names: "Ecal_rel90"
+    central_value: 1.0
+    prior_std: 0.002204314
+  - par_names: ["beta_1", "beta_2", "beta_3", "beta_4", "beta_5", "beta_6", "beta_7", "beta_8", "beta_9"]
+    central_value: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    prior_covariance: "../beams_templates/beam_modes_prior_covariance.txt"
+  - par_names: "T2P2_90"
+    central_value: -0.006490
+    prior_std: 0.001054
+  - par_names: "T2P2_150"
+    central_value: -0.011941
+    prior_std: 0.002103

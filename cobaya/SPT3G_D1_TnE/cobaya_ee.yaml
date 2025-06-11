@@ -1,0 +1,317 @@
+likelihood:
+  candl_like:
+    additional_args: {}
+    clear_internal_priors: true
+    data_set_file: !!python/name:spt_candl_data.SPT3G_D1_TnE ''
+    variant: 'EE_only'
+    external: !!python/name:candl.interface.CandlCobayaLikelihood ''
+    feedback: true
+    wrapper: null
+
+output: chains/ee
+
+params:
+  EE_PolGalDust_Alpha:
+    latex: \alpha_{\rm PolGalDust}^{\rm EE }
+    prior:
+      max: -1.0
+      min: -5.0
+    ref: -2.4157724807682617
+  EE_PolGalDust_Amp:
+    latex: A_{\rm PolGalDust}^{\rm EE }
+    prior:
+      max: 10.0
+      min: 0.0
+    ref: 0.05842751079175609
+  EE_PolGalDust_Beta:
+    latex: \beta_{\rm PolGalDust}^{\rm EE }
+    prior:
+      max: 2.0
+      min: 1.0
+    ref: 1.506942737438015
+  Ecal_ext150:
+    latex: E_{\rm cal}^{\rm ext}
+    prior:
+      max: 1.2
+      min: 0.8
+    ref: 1.0000421770749552
+  Ecal_rel220:
+    latex: E_{\rm cal}^{\rm rel;220}
+    prior:
+      max: 1.2
+      min: 0.8
+    ref: 1.00454156830462
+  Ecal_rel90:
+    latex: E_{\rm cal}^{\rm rel;90}
+    prior:
+      max: 1.2
+      min: 0.8
+    ref: 0.9988169677798414
+  H0:
+    latex: H_0
+  Kappa:
+    latex: \kappa
+    prior:
+      max: 0.05
+      min: -0.05
+    ref: -5.724040665270605e-07
+  T2P2_150:
+    latex: \epsilon^2_{\rm T2P;150}
+    prior:
+      max: 1.0
+      min: -1.0
+    ref: -0.012242126526712709
+  T2P2_220:
+    latex: \epsilon^2_{\rm T2P;220}
+    prior:
+      max: 1.0
+      min: -1.0
+    ref: -0.022674771076175115
+  T2P2_90:
+    latex: \epsilon^2_{\rm T2P;90}
+    prior:
+      max: 1.0
+      min: -1.0
+    ref: -0.006417131070716212
+  Tcal_ext150:
+    latex: T_{\rm cal}^{\rm ext}
+    prior:
+      max: 1.2
+      min: 0.8
+    proposal: 5.0e-05
+    ref: 1.000000317214044
+  Tcal_rel220:
+    latex: T_{\rm cal}^{\rm rel;220}
+    prior:
+      max: 1.2
+      min: 0.8
+    proposal: 5.0e-05
+    ref: 0.999902986207752
+  Tcal_rel90:
+    latex: T_{\rm cal}^{\rm rel;90}
+    prior:
+      max: 1.2
+      min: 0.8
+    proposal: 5.0e-05
+    ref: 1.0000012291472185
+  beta_1:
+    latex: \beta_1
+    prior:
+      max: 5.0
+      min: -5.0
+    ref: 0.01466454981093433
+  beta_2:
+    latex: \beta_2
+    prior:
+      max: 5.0
+      min: -5.0
+    ref: 0.003948124380058457
+  beta_3:
+    latex: \beta_3
+    prior:
+      max: 5.0
+      min: -5.0
+    ref: 0.026070404697898158
+  beta_4:
+    latex: \beta_4
+    prior:
+      max: 5.0
+      min: -5.0
+    ref: 0.011521168884583693
+  beta_5:
+    latex: \beta_5
+    prior:
+      max: 5.0
+      min: -5.0
+    ref: 0.009615964158101785
+  beta_6:
+    latex: \beta_6
+    prior:
+      max: 5.0
+      min: -5.0
+    ref: -0.07650251676440036
+  beta_7:
+    latex: \beta_7
+    prior:
+      max: 5.0
+      min: -5.0
+    ref: 0.15134308065268803
+  beta_8:
+    latex: \beta_8
+    prior:
+      max: 5.0
+      min: -5.0
+    ref: -0.046109944947685465
+  beta_9:
+    latex: \beta_9
+    prior:
+      max: 5.0
+      min: -5.0
+    ref: 0.005012763796190853
+  beta_pol_150:
+    latex: \beta_{\rm pol;150}
+    prior:
+      max: 1.0
+      min: 0.0
+    ref: 0.3201887541403512
+  beta_pol_220:
+    latex: \beta_{\rm pol;220}
+    prior:
+      max: 1.0
+      min: 0.0
+    ref: 0.40719756667323564
+  beta_pol_90:
+    latex: \beta_{\rm pol;90}
+    prior:
+      max: 1.0
+      min: 0.0
+    ref: 0.2588563652941511
+
+  A:
+    derived: 'lambda As: 1e9*As'
+    latex: 10^9 A_\mathrm{s}
+  As:
+    latex: A_\mathrm{s}
+    value: 'lambda logA: 1e-10*np.exp(logA)'
+  DHBBN:
+    derived: 'lambda DH: 10**5*DH'
+    latex: 10^5 \mathrm{D}/\mathrm{H}
+  YHe:
+    latex: Y_\mathrm{P}
+  Y_p:
+    latex: Y_P^\mathrm{BBN}
+  age:
+    latex: '{\rm{Age}}/\mathrm{Gyr}'
+  clamp:
+    derived: 'lambda As, tau: 1e9*As*np.exp(-2*tau)'
+    latex: 10^9 A_\mathrm{s} e^{-2\tau}
+  cosmomc_theta:
+    derived: true
+    value: 'lambda theta_MC_100: 1.e-2*theta_MC_100'
+  logA:
+    drop: true
+    latex: \log(10^{10} A_\mathrm{s})
+    prior:
+      max: 5.0
+      min: 1.0
+    ref: 3.0234494496489703
+  ns:
+    latex: n_\mathrm{s}
+    prior:
+      max: 2.0
+      min: 0.2
+    ref: 0.9461927470715118
+  ombh2:
+    latex: \Omega_\mathrm{b} h^2
+    prior:
+      max: 0.1
+      min: 0.0
+    ref: 0.021728158395443762
+  omch2:
+    latex: \Omega_\mathrm{c} h^2
+    prior:
+      max: 0.99
+      min: 0.0
+    ref: 0.11978867510898697
+  omega_de:
+    latex: \Omega_\Lambda
+  omegam:
+    latex: \Omega_\mathrm{m}
+  omegamh2:
+    derived: 'lambda omegam, H0: omegam*(H0/100)**2'
+    latex: \Omega_\mathrm{m} h^2
+  rdrag:
+    latex: r_\mathrm{drag}
+  s8h5:
+    derived: 'lambda sigma8, H0: sigma8*(H0*1e-2)**(-0.5)'
+    latex: \sigma_8/h^{0.5}
+  s8omegamp25:
+    derived: 'lambda sigma8, omegam: sigma8*omegam**0.25'
+    latex: \sigma_8 \Omega_\mathrm{m}^{0.25}
+  s8omegamp5:
+    derived: 'lambda sigma8, omegam: sigma8*omegam**0.5'
+    latex: \sigma_8 \Omega_\mathrm{m}^{0.5}
+  sigma8:
+    latex: \sigma_8
+  tau:
+    latex: \tau_\mathrm{reio}
+    prior:
+      dist: norm
+      loc: 0.051
+      scale: 0.006
+    proposal: 0.003
+    ref: 0.05430842
+  theta_MC_100:
+    latex: 100\theta_\mathrm{MC}
+    prior:
+      max: 10
+      min: 0.5
+    proposal: 0.0004
+    ref: 1.0394894608444545
+    renames: theta
+  zrei:
+    latex: z_\mathrm{re}
+prior:
+  gaussian_EE_PolGalDust_Alpha: 'lambda EE_PolGalDust_Alpha: stats.norm.logpdf(EE_PolGalDust_Alpha,
+    loc=-2.42, scale=0.04)'
+  gaussian_EE_PolGalDust_Amp: 'lambda EE_PolGalDust_Amp: stats.norm.logpdf(EE_PolGalDust_Amp,
+    loc=0.05, scale=0.022)'
+  gaussian_EE_PolGalDust_Beta: 'lambda EE_PolGalDust_Beta: stats.norm.logpdf(EE_PolGalDust_Beta,
+    loc=1.51, scale=0.04)'
+  gaussian_Ecal_ext150: 'lambda Ecal_ext150: stats.norm.logpdf(Ecal_ext150, loc=1.0,
+    scale=0.00949)'
+  gaussian_Kappa: 'lambda Kappa: stats.norm.logpdf(Kappa, loc=0.0, scale=0.00045)'
+  gaussian_T2P2_150: 'lambda T2P2_150: stats.norm.logpdf(T2P2_150, loc=-0.011941,
+    scale=0.002103)'
+  gaussian_T2P2_220: 'lambda T2P2_220: stats.norm.logpdf(T2P2_220, loc=-0.022684,
+    scale=0.006641)'
+  gaussian_T2P2_90: 'lambda T2P2_90: stats.norm.logpdf(T2P2_90, loc=-0.00649, scale=0.001054)'
+  gaussian_Tcal_ext150: 'lambda Tcal_ext150: stats.norm.logpdf(Tcal_ext150, loc=1.0,
+    scale=0.0036)'
+  gaussian_Tcal_rel220: 'lambda Tcal_rel220: stats.norm.logpdf(Tcal_rel220, loc=1.0,
+    scale=0.0100548496)'
+  gaussian_Tcal_rel90: 'lambda Tcal_rel90: stats.norm.logpdf(Tcal_rel90, loc=1.0,
+    scale=0.0023903975)'
+  gaussian_beta_1: 'lambda beta_1: stats.norm.logpdf(beta_1, loc=0.0, scale=1.0)'
+  gaussian_beta_2: 'lambda beta_2: stats.norm.logpdf(beta_2, loc=0.0, scale=1.0)'
+  gaussian_beta_3: 'lambda beta_3: stats.norm.logpdf(beta_3, loc=0.0, scale=1.0)'
+  gaussian_beta_4: 'lambda beta_4: stats.norm.logpdf(beta_4, loc=0.0, scale=1.0)'
+  gaussian_beta_5: 'lambda beta_5: stats.norm.logpdf(beta_5, loc=0.0, scale=1.0)'
+  gaussian_beta_6: 'lambda beta_6: stats.norm.logpdf(beta_6, loc=0.0, scale=1.0)'
+  gaussian_beta_7: 'lambda beta_7: stats.norm.logpdf(beta_7, loc=0.0, scale=1.0)'
+  gaussian_beta_8: 'lambda beta_8: stats.norm.logpdf(beta_8, loc=0.0, scale=1.0)'
+  gaussian_beta_9: 'lambda beta_9: stats.norm.logpdf(beta_9, loc=0.0, scale=1.0)'
+
+resume: true
+
+sampler:
+  mcmc:
+    Rminus1_cl_stop: 0.2
+    Rminus1_stop: 0.03
+    covmat: input_ee.covmat
+    drag: true
+    learn_proposal_Rminus1_max: 100
+    learn_proposal_Rminus1_max_early: 100
+    output_every: 1
+    oversample_power: 0.4
+    proposal_scale: 1.9
+
+theory:
+  camb:
+    extra_args:
+      AccuracyBoost: 1
+      bbn_predictor: PArthENoPE_880.2_standard.dat
+      halofit_version: mead2020
+      lAccuracyBoost: 1
+      lSampleBoost: 1
+      lens_margin: 1250
+      lens_potential_accuracy: 4
+      lmax: 6000
+      mnu: 0.06
+      nnu: 3.044
+      num_massive_neutrinos: 1
+      theta_H0_range:
+      - 40
+      - 100
+      
+timing: true

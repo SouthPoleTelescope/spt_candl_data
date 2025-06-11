@@ -1,0 +1,33 @@
+name: "Template likelihood for T2P leakage from data"
+likelihood_form: "gaussian"
+
+# FEEDBACK
+feedback: True
+
+# KEY FILES
+band_power_file: "SPT3G_D1_TnE_bdp_lmax4000.txt"
+window_functions_folder: "windows_lmax4000/"
+
+# DATA INFORMATION
+spectra_info:
+ - TT 90x90: 72
+ - TE 90x90: 72
+ - EE 90x90: 72
+ - TT 90x150: 72
+ - TE 90x150: 72
+ - TE 150x90: 72
+ - EE 90x150: 72
+ - TT 90x220: 72
+ - TE 90x220: 72
+ - TE 220x90: 72 
+ - EE 90x220: 72
+ - TT 150x150: 72
+ - TE 150x150: 72
+ - EE 150x150: 72
+ - TT 150x220: 72
+ - TE 150x220: 72
+ - TE 220x150: 72
+ - EE 150x220: 72
+ - TT 220x220: 72
+ - TE 220x220: 72
+ - EE 220x220: 72

@@ -1,0 +1,122 @@
+name: "SPT-3G D1 TnE"
+likelihood_form: "gaussian"
+
+# FEEDBACK
+feedback: True
+
+# KEY FILES
+band_power_file: "../SPT3G_D1_TnE_bdp.txt"
+covariance_file: "../SPT3G_D1_TnE_cov.dat"
+window_functions_folder: "../windows/"
+effective_frequencies: "../effective_frequencies.yaml"
+data_selection: ['TT only', '90x90 only']
+
+# DATA INFORMATION
+spectra_info:
+ - TT 90x90: 52
+ - TE 90x90: 72
+ - EE 90x90: 72
+ - TT 90x150: 52
+ - TE 90x150: 72
+ - TE 150x90: 72
+ - EE 90x150: 72
+ - TT 90x220: 52
+ - TE 90x220: 72
+ - TE 220x90: 72 
+ - EE 90x220: 72
+ - TT 150x150: 52
+ - TE 150x150: 72
+ - EE 150x150: 72
+ - TT 150x220: 52
+ - TE 150x220: 72
+ - TE 220x150: 72
+ - EE 150x220: 72
+ - TT 220x220: 52
+ - TE 220x220: 72
+ - EE 220x220: 72
+
+# DATA MODEL
+data_model:
+  - Module: "common.SuperSampleLensing"
+    descriptor: "Super-Sample Lensing"
+    kappa_param: "Kappa"
+  - Module: "common.AberrationCorrection"
+    aberration_coefficient: -0.0004826
+    descriptor: "Aberration"
+  - Module: "common.PoissonPower"
+    descriptor: "TT Poisson"
+    spec_param_dict:
+      TT 90x90: "TT_Poisson_90x90"
+    ell_ref: 3000
+  - Module: "common.tSZTemplateForeground"
+    descriptor: "tSZ"
+    template_file: "../../foreground_templates/dl_tsz_from_agora.txt"
+    amp_param: "TT_tSZ_Amp"
+    effective_frequencies: "tSZ"
+    affected_specs: ["TT 90x90"]
+    ell_ref: 3000
+    nu_ref: 143
+  - Module: "common.kSZTemplateForeground"
+    descriptor: "kSZ"
+    template_file: "../../foreground_templates/dl_ksz_from_agora.txt"
+    amp_param: "TT_kSZ_Amp"
+    affected_specs: ["TT 90x90" ]
+    ell_ref: 3000
+  - Module: "common.GalacticDust"
+    descriptor: "Cirrus"
+    amp_param: "TT_GalCirrus_Amp"
+    alpha_param: "TT_GalCirrus_Alpha"
+    beta_param: "TT_GalCirrus_Beta"
+    effective_frequencies: "cirrus"
+    affected_specs: ["TT 90x90"]
+    ell_ref: 80
+    nu_ref: 150
+    T_GALDUST: 19.6
+  - Module: "spt_candl_data.transformations.beams.BeamModes"
+    modes_params: ["beta_1", "beta_2", "beta_3", "beta_4", "beta_5", "beta_6", "beta_7", "beta_8", "beta_9"]
+    beam_eigenmodes: "../beams_templates/cov_eigenmodes_300_4100.npz" 
+  - Module: "common.CalibrationAuto"
+    descriptor: "TT Calibration (External)"
+    spec_param_dict:
+      TT 90x90: ["Tcal_ext150", "Tcal_ext150"]
+  - Module: "common.CalibrationAuto"
+    descriptor: "TT Calibration (Relative)"
+    spec_param_dict:
+      TT 90x90: ["Tcal_rel90", "Tcal_rel90"]
+  
+      
+###
+
+# GAUSSIAN PRIORS
+
+priors:
+  - par_names: "tau"
+    central_value: 0.054
+    prior_std: 0.0074
+  - par_names: 'TT_GalCirrus_Amp'
+    central_value: 1.88
+    prior_std: 0.96
+  - par_names: 'TT_GalCirrus_Alpha'
+    central_value: -2.53
+    prior_std: 0.05
+  - par_names: 'TT_GalCirrus_Beta'
+    central_value: 1.48
+    prior_std: 0.02
+  - par_names: 'TT_tSZ_Amp'
+    central_value: 3.2279
+    prior_std: 2.3764
+  - par_names: 'TT_kSZ_Amp'
+    central_value: 3.7287
+    prior_std: 4.644
+  - par_names: 'Kappa'
+    central_value: 0.0
+    prior_std: 0.00045
+  - par_names: "Tcal_ext150"
+    central_value: 1.0
+    prior_std: 0.00360
+  - par_names: "Tcal_rel90"
+    central_value: 1.0
+    prior_std: 0.0023903975
+  - par_names: ["beta_1", "beta_2", "beta_3", "beta_4", "beta_5", "beta_6", "beta_7", "beta_8", "beta_9"]
+    central_value: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    prior_covariance: "../beams_templates/beam_modes_prior_covariance.txt"

@@ -1,0 +1,46 @@
+name: "SPT-3G D1 TnE - Main field (lite)"
+likelihood_form: "gaussian"
+
+# FEEDBACK
+feedback: True
+
+# KEY FILES
+band_power_file: "SPT3G_D1_TnE_lite_bdp.txt"
+covariance_file: "SPT3G_D1_TnE_lite_cov.txt"
+window_functions_folder: "windows/"
+
+# DATA INFORMATION
+spectra_info:
+ - TT lxl: 52
+ - TE lxl: 72
+ - EE lxl: 72
+
+# DATA MODEL
+data_model:
+  - Module: "common.AberrationCorrection"
+    aberration_coefficient: -0.0004826
+    descriptor: "Aberration"
+  - Module: "common.CalibrationAuto"
+    descriptor: "TT Calibration (External)"
+    spec_param_dict:
+      TT lxl: ["Tcal", "Tcal"]
+  - Module: "common.CalibrationAuto"
+    descriptor: "TE Calibration (External)"
+    spec_param_dict:
+      TE lxl: ["Tcal", "Tcal", "Ecal"]
+  - Module: "common.CalibrationAuto"
+    descriptor: "EE Calibration (External)"
+    spec_param_dict:
+      EE lxl: ["Tcal", "Tcal", "Ecal", "Ecal"]
+
+###
+
+# GAUSSIAN PRIORS
+
+priors:
+  - par_names: "tau"
+    central_value: 0.051
+    prior_std: 0.006
+  - par_names: "Tcal"
+    central_value: 1.0
+    prior_std: 0.00360

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["flit_core>=3.4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "spt_candl_data"
+
+readme = "README.rst"
+
+dynamic = ["version", "description"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+requires-python = ">=3.9"

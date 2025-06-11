@@ -1,0 +1,6 @@
+SPT3G_D1_TnE_lite_candl.data_set_file = "spt_candl_data.SPT3G_D1_TnE"
+SPT3G_D1_TnE_lite_candl.variant = "lite"
+SPT3G_D1_TnE_lite_candl.lensing = False
+SPT3G_D1_TnE_lite_candl.feedback = True
+SPT3G_D1_TnE_lite_candl.data_selection = ...
+SPT3G_D1_TnE_lite_candl.clear_internal_priors = False
