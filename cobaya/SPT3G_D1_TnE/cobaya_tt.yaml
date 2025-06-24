@@ -5,7 +5,7 @@ likelihood:
     additional_args: {}
     clear_internal_priors: true
     data_set_file: !!python/name:spt_candl_data.SPT3G_D1_TnE ''
-    variant: 'TT_only'
+    variant: 'TT'
     external: !!python/name:candl.interface.CandlCobayaLikelihood ''
     feedback: true
     wrapper: null

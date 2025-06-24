@@ -28,79 +28,73 @@ SPT3G_D1_TEEE = f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TEEE.yaml"
 SPT3G_D1_TTTE = f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TTTE.yaml"
 
 # Individual frequencies
-SPT3G_D1_TnE_90x90_only = (
+SPT3G_D1_TnE_90x90 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TnE_90x90.yaml"
 )
-SPT3G_D1_TnE_90x150_only = (
+SPT3G_D1_TnE_90x150 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TnE_90x150.yaml"
 )
-SPT3G_D1_TnE_90x220_only = (
+SPT3G_D1_TnE_90x220 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TnE_90x220.yaml"
 )
-SPT3G_D1_TnE_150x150_only = (
+SPT3G_D1_TnE_150x150 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TnE_150x150.yaml"
 )
-SPT3G_D1_TnE_150x220_only = (
+SPT3G_D1_TnE_150x220 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TnE_150x220.yaml"
 )
-SPT3G_D1_TnE_220x220_only = (
+SPT3G_D1_TnE_220x220 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TnE_220x220.yaml"
 )
 
-SPT3G_D1_TT_90x90_only = (
-    f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TT_90x90.yaml"
-)
-SPT3G_D1_TT_90x150_only = (
+SPT3G_D1_TT_90x90 = f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TT_90x90.yaml"
+SPT3G_D1_TT_90x150 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TT_90x150.yaml"
 )
-SPT3G_D1_TT_90x220_only = (
+SPT3G_D1_TT_90x220 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TT_90x220.yaml"
 )
-SPT3G_D1_TT_150x150_only = (
+SPT3G_D1_TT_150x150 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TT_150x150.yaml"
 )
-SPT3G_D1_TT_150x220_only = (
+SPT3G_D1_TT_150x220 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TT_150x220.yaml"
 )
-SPT3G_D1_TT_220x220_only = (
+SPT3G_D1_TT_220x220 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TT_220x220.yaml"
 )
 
-SPT3G_D1_TE_90x90_only = (
-    f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TE_90x90.yaml"
-)
-SPT3G_D1_TE_90x150_only = (
+SPT3G_D1_TE_90x90 = f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TE_90x90.yaml"
+SPT3G_D1_TE_90x150 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TE_90x150.yaml"
 )
-SPT3G_D1_TE_90x220_only = (
+SPT3G_D1_TE_90x220 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TE_90x220.yaml"
 )
-SPT3G_D1_TE_150x150_only = (
+SPT3G_D1_TE_150x150 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TE_150x150.yaml"
 )
-SPT3G_D1_TE_150x220_only = (
+SPT3G_D1_TE_150x220 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TE_150x220.yaml"
 )
-SPT3G_D1_TE_220x220_only = (
+SPT3G_D1_TE_220x220 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_TE_220x220.yaml"
 )
 
-SPT3G_D1_EE_90x90_only = (
-    f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_EE_90x90.yaml"
-)
-SPT3G_D1_EE_90x150_only = (
+SPT3G_D1_EE_90x90 = f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_EE_90x90.yaml"
+SPT3G_D1_EE_90x150 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_EE_90x150.yaml"
 )
-SPT3G_D1_EE_90x220_only = (
+SPT3G_D1_EE_90x220 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_EE_90x220.yaml"
 )
-SPT3G_D1_EE_150x150_only = (
+SPT3G_D1_EE_150x150 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_EE_150x150.yaml"
 )
-SPT3G_D1_EE_150x220_only = (
+SPT3G_D1_EE_150x220 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_EE_150x220.yaml"
 )
-SPT3G_D1_EE_220x220_only = (
+SPT3G_D1_EE_220x220 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_EE_220x220.yaml"
 )
 
@@ -115,35 +109,35 @@ shortcuts = {
         "index": "SPT3G_D1_TnE",
         "multifreq": "SPT3G_D1_TnE_multifreq",
         "lite": "SPT3G_D1_TnE_lite",
-        "TT_only": "SPT3G_D1_TT",
-        "TE_only": "SPT3G_D1_TE",
-        "EE_only": "SPT3G_D1_EE",
-        "TEEE_only": "SPT3G_D1_TEEE",
-        "TTTE_only": "SPT3G_D1_TTTE",
-        "90x90_only": "SPT3G_D1_TnE_90x90_only",
-        "90x150_only": "SPT3G_D1_TnE_90x150_only",
-        "90x220_only": "SPT3G_D1_TnE_90x220_only",
-        "150x150_only": "SPT3G_D1_TnE_150x150_only",
-        "150x220_only": "SPT3G_D1_TnE_150x220_only",
-        "220x220_only": "SPT3G_D1_TnE_220x220_only",
-        "TT_90x90_only": "SPT3G_D1_TT_90x90_only",
-        "TT_90x150_only": "SPT3G_D1_TT_90x150_only",
-        "TT_90x220_only": "SPT3G_D1_TT_90x220_only",
-        "TT_150x150_only": "SPT3G_D1_TT_150x150_only",
-        "TT_150x220_only": "SPT3G_D1_TT_150x220_only",
-        "TT_220x220_only": "SPT3G_D1_TT_220x220_only",
-        "TE_90x90_only": "SPT3G_D1_TE_90x90_only",
-        "TE_90x150_only": "SPT3G_D1_TE_90x150_only",
-        "TE_90x220_only": "SPT3G_D1_TE_90x220_only",
-        "TE_150x150_only": "SPT3G_D1_TE_150x150_only",
-        "TE_150x220_only": "SPT3G_D1_TE_150x220_only",
-        "TE_220x220_only": "SPT3G_D1_TE_220x220_only",
-        "EE_90x90_only": "SPT3G_D1_EE_90x90_only",
-        "EE_90x150_only": "SPT3G_D1_EE_90x150_only",
-        "EE_90x220_only": "SPT3G_D1_EE_90x220_only",
-        "EE_150x150_only": "SPT3G_D1_EE_150x150_only",
-        "EE_150x220_only": "SPT3G_D1_EE_150x220_only",
-        "EE_220x220_only": "SPT3G_D1_EE_220x220_only",
+        "TT": "SPT3G_D1_TT",
+        "TE": "SPT3G_D1_TE",
+        "EE": "SPT3G_D1_EE",
+        "TEEE": "SPT3G_D1_TEEE",
+        "TTTE": "SPT3G_D1_TTTE",
+        "90x90": "SPT3G_D1_TnE_90x90",
+        "90x150": "SPT3G_D1_TnE_90x150",
+        "90x220": "SPT3G_D1_TnE_90x220",
+        "150x150": "SPT3G_D1_TnE_150x150",
+        "150x220": "SPT3G_D1_TnE_150x220",
+        "220x220": "SPT3G_D1_TnE_220x220",
+        "TT_90x90": "SPT3G_D1_TT_90x90",
+        "TT_90x150": "SPT3G_D1_TT_90x150",
+        "TT_90x220": "SPT3G_D1_TT_90x220",
+        "TT_150x150": "SPT3G_D1_TT_150x150",
+        "TT_150x220": "SPT3G_D1_TT_150x220",
+        "TT_220x220": "SPT3G_D1_TT_220x220",
+        "TE_90x90": "SPT3G_D1_TE_90x90",
+        "TE_90x150": "SPT3G_D1_TE_90x150",
+        "TE_90x220": "SPT3G_D1_TE_90x220",
+        "TE_150x150": "SPT3G_D1_TE_150x150",
+        "TE_150x220": "SPT3G_D1_TE_150x220",
+        "TE_220x220": "SPT3G_D1_TE_220x220",
+        "EE_90x90": "SPT3G_D1_EE_90x90",
+        "EE_90x150": "SPT3G_D1_EE_90x150",
+        "EE_90x220": "SPT3G_D1_EE_90x220",
+        "EE_150x150": "SPT3G_D1_EE_150x150",
+        "EE_150x220": "SPT3G_D1_EE_150x220",
+        "EE_220x220": "SPT3G_D1_EE_220x220",
     },
 }
 
@@ -154,35 +148,35 @@ info = {
         "index": None,
         "multifreq": "Complete multi-frequency likelihood.",
         "lite": "SPTlite, CMB-only (lite) likelihood.",
-        "TT_only": "TT-only multi-frequency likelihood.",
-        "TE_only": "TE-only multi-frequency likelihood.",
-        "EE_only": "EE-only multi-frequency likelihood.",
-        "TEEE_only": "TE/EE multi-frequency likelihood.",
-        "TTTE_only": "TT/TE multi-frequency likelihood.",
-        "90x90_only": "TT/TE/EE likelihood using only 90x90 spectra.",
-        "90x150_only": "TT/TE/EE likelihood using only 90x150 spectra.",
-        "90x220_only": "TT/TE/EE likelihood using only 90x220 spectra.",
-        "150x150_only": "TT/TE/EE likelihood using only 150x150 spectra.",
-        "150x220_only": "TT/TE/EE likelihood using only 150x220 spectra.",
-        "220x220_only": "TT/TE/EE likelihood using only 220x220 spectra.",
-        "TT_90x90_only": "TT likelihood using only the 90x90 spectrum.",
-        "TT_90x150_only": "TT likelihood using only the 90x150 spectrum.",
-        "TT_90x220_only": "TT likelihood using only the 90x220 spectrum.",
-        "TT_150x150_only": "TT likelihood using only the 150x150 spectrum.",
-        "TT_150x220_only": "TT likelihood using only the 150x220 spectrum.",
-        "TT_220x220_only": "TT likelihood using only the 220x220 spectrum.",
-        "TE_90x90_only": "TE likelihood using only the 90x90 spectrum.",
-        "TE_90x150_only": "TE likelihood using only the 90x150 spectrum.",
-        "TE_90x220_only": "TE likelihood using only the 90x220 spectrum.",
-        "TE_150x150_only": "TE likelihood using only the 150x150 spectrum.",
-        "TE_150x220_only": "TE likelihood using only the 150x220 spectrum.",
-        "TE_220x220_only": "TE likelihood using only the 220x220 spectrum.",
-        "EE_90x90_only": "EE likelihood using only the 90x90 spectrum.",
-        "EE_90x150_only": "EE likelihood using only the 90x150 spectrum.",
-        "EE_90x220_only": "EE likelihood using only the 90x220 spectrum.",
-        "EE_150x150_only": "EE likelihood using only the 150x220 spectrum.",
-        "EE_150x220_only": "EE likelihood using only the 150x150 spectrum.",
-        "EE_220x220_only": "EE likelihood using only the 220x220 spectrum.",
+        "TT": "TT-only multi-frequency likelihood.",
+        "TE": "TE-only multi-frequency likelihood.",
+        "EE": "EE-only multi-frequency likelihood.",
+        "TEEE": "TE/EE multi-frequency likelihood.",
+        "TTTE": "TT/TE multi-frequency likelihood.",
+        "90x90": "TT/TE/EE likelihood using only 90x90 spectra.",
+        "90x150": "TT/TE/EE likelihood using only 90x150 spectra.",
+        "90x220": "TT/TE/EE likelihood using only 90x220 spectra.",
+        "150x150": "TT/TE/EE likelihood using only 150x150 spectra.",
+        "150x220": "TT/TE/EE likelihood using only 150x220 spectra.",
+        "220x220": "TT/TE/EE likelihood using only 220x220 spectra.",
+        "TT_90x90": "TT likelihood using only the 90x90 spectrum.",
+        "TT_90x150": "TT likelihood using only the 90x150 spectrum.",
+        "TT_90x220": "TT likelihood using only the 90x220 spectrum.",
+        "TT_150x150": "TT likelihood using only the 150x150 spectrum.",
+        "TT_150x220": "TT likelihood using only the 150x220 spectrum.",
+        "TT_220x220": "TT likelihood using only the 220x220 spectrum.",
+        "TE_90x90": "TE likelihood using only the 90x90 spectrum.",
+        "TE_90x150": "TE likelihood using only the 90x150 spectrum.",
+        "TE_90x220": "TE likelihood using only the 90x220 spectrum.",
+        "TE_150x150": "TE likelihood using only the 150x150 spectrum.",
+        "TE_150x220": "TE likelihood using only the 150x220 spectrum.",
+        "TE_220x220": "TE likelihood using only the 220x220 spectrum.",
+        "EE_90x90": "EE likelihood using only the 90x90 spectrum.",
+        "EE_90x150": "EE likelihood using only the 90x150 spectrum.",
+        "EE_90x220": "EE likelihood using only the 90x220 spectrum.",
+        "EE_150x150": "EE likelihood using only the 150x220 spectrum.",
+        "EE_150x220": "EE likelihood using only the 150x150 spectrum.",
+        "EE_220x220": "EE likelihood using only the 220x220 spectrum.",
     },
 }
 
