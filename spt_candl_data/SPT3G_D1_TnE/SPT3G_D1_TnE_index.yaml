@@ -1,4 +1,7 @@
 # SPT-3G D1 T&E
+# E. Camphuis, W. Quan, L. Balkenhol, A. R. Khalife, F. Ge, F. Guidi, N. Huang, G. P. Lynch, Y. Omori, C. Trendafilova et al. 2025 (SPT-3G Collaboration)
+# W. Quan et al. 2025 (SPT-3G Collaboration) in prep.
+# Paper available on the SPT website https://pole.uchicago.edu/public/Home.html
 # Index file pointing to variants of the likelihood
 
 default: "SPT3G_D1_TnE.yaml"

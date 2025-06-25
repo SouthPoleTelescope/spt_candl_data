@@ -41,7 +41,7 @@ Available Data
 
    * - SPT-3G D1 T&E
      - ``spt_candl_data.SPT3G_D1_TnE``, ``spt_candl_data.SPT3G_D1_TnE_lite``
-     - | `Camphuis et al. 2025 (UPDATE ARXIV LINK) <https://arxiv.org/abs/2212.05642>`__
+     - | `Camphuis et al. 2025 <https://pole.uchicago.edu/public/Home.html>`__
       
        Quan et al. 2025 (in prep.)
      - ``2.0.1``
