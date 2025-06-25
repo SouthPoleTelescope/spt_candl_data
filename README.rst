@@ -44,7 +44,7 @@ Available Data
      - | `Camphuis et al. 2025 <https://pole.uchicago.edu/public/Home.html>`__
       
        Quan et al. 2025 (in prep.)
-     - ``2.0.1``
+     - ``2.0.3``
 
 You can also get a detailed summary of the variants of all likelihoods available, by running the following python code::
 
