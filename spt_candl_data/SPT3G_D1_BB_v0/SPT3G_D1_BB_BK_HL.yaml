@@ -1,0 +1,62 @@
+# SPT-3G D1 BB
+# J. A. Zebrowski, C. L. Reichardt et al. 2025
+# https://arxiv.org/pdf/2505.02827
+# Analysis on BK mask, Hamimeche-Lewis likelihood
+name: "SPT-3G D1 BB (Zebrowski et al. 2025)"
+likelihood_form: "hamimeche_lewis"
+
+# FEEDBACK
+feedback: True
+
+# KEY FILES
+band_power_file: "SPT3G_D1_BB_bdp.txt"
+covariance_file: "SPT3G_D1_BB_cov_hl.txt"
+fiducial_band_power_file: "SPT3G_D1_BB_fiducial_bdp.txt" 
+noise_model_band_power_file: "SPT3G_D1_BB_noise_model_bdp.txt"
+window_functions_folder: "windows_bk/"
+effective_frequencies: "effective_frequencies.yaml"
+
+# DATA INFORMATION
+spectra_info:
+ - BB 95x95: 5
+ - BB 95x150: 5
+ - BB 95x220: 5
+ - BB 150x150: 5
+ - BB 150x220: 5
+ - BB 220x220: 5
+
+# DATA MODEL
+data_model:
+  - Module: "common.GalacticDust"
+    descriptor: "Polarised Galactic Dust"
+    amp_param: "D80_150ghz"
+    alpha_param: "alpha_candl"
+    beta_param: "beta_gal"
+    effective_frequencies: "polarised_galactic_dust"
+    affected_specs: ["BB 95x95", "BB 95x150", "BB 95x220", "BB 150x150", "BB 150x220", "BB 220x220"]
+    ell_ref: 80
+    nu_ref: 150
+    T_GALDUST: 19.6
+  - Module: "common.RadioPoisson"
+    descriptor: "Radio Galaxies"
+    amp_param: "D500_95ghz_rg_poisson"
+    beta_val: -0.75
+    sigmasq_val: 0.0
+    affected_specs: ["BB 95x95", "BB 95x150", "BB 95x220", "BB 150x150", "BB 150x220", "BB 220x220"]
+    ell_ref: 500
+    nu_ref: 95
+    effective_frequencies: "radio_galaxies"
+  - Module: "common.CalibrationAuto"
+    inverse_calibration: True
+    spec_param_dict:
+      BB 95x95: ["pcal95", "pcal95"]
+      BB 95x150: ["pcal95", "pcal150"]
+      BB 95x220: ["pcal95", "pcal220"]
+      BB 150x150: ["pcal150", "pcal150"]
+      BB 150x220: ["pcal150", "pcal220"]
+      BB 220x220: ["pcal220", "pcal220"]
+
+priors:
+  - par_names: ["pcal95", "pcal150", "pcal220"]
+    multiplicative_par: True
+    prior_covariance: "SPT3G_D1_BB_cal_cov.txt"

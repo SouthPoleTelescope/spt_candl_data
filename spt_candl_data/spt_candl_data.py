@@ -12,8 +12,13 @@ data_path = os.path.dirname(os.path.realpath(__file__))
 # DATA SETS
 # --------------------------------------#
 
-# SPT-3G D1
-SPT3G_D1_TnE_folder = "SPT3G_D1_TnE"
+# SPT-3G D1 BB
+SPT3G_D1_BB_folder = "SPT3G_D1_BB_v0"
+SPT3G_D1_BB = f"{data_path}/{SPT3G_D1_BB_folder}/SPT3G_D1_BB_BK_HL.yaml"
+
+
+# SPT-3G D1 TnE
+SPT3G_D1_TnE_folder = "SPT3G_D1_TnE_v0"
 
 # Key files
 SPT3G_D1_TnE = f"{data_path}/{SPT3G_D1_TnE_folder}/SPT3G_D1_TnE_index.yaml"
@@ -139,6 +144,7 @@ shortcuts = {
         "EE_150x220": "SPT3G_D1_EE_150x220",
         "EE_220x220": "SPT3G_D1_EE_220x220",
     },
+    "SPT-3G D1 BB": "SPT3G_D1_BB",
 }
 
 

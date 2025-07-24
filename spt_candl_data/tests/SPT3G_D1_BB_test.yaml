@@ -1,0 +1,12 @@
+data_set_file: "spt_candl_data.SPT3G_D1_BB"
+test_spectrum: "SPT3G_D1_BB_test_spec.txt"
+lensing: False
+param_values: 
+    {"D500_95ghz_rg_poisson": 0.02,
+    "D80_150ghz": 0.05,
+    "alpha_candl": -2.8,
+    "beta_gal": 1.6,
+    "pcal95": 1.01,
+    "pcal150": 1.02,
+    "pcal220": 0.99}
+test_logl: -34.5837425

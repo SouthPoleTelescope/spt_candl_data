@@ -46,6 +46,11 @@ Available Data
        Quan et al. 2025 (in prep.)
      - ``2.0.3``
 
+   * - SPT-3G D1 BB
+     - ``spt_candl_data.SPT3G_D1_BB``
+     - `Zebrowski et al. 2025 <https://pole.uchicago.edu/public/data/zebrowski25>`__
+     - ``2.1.0``
+
 You can also get a detailed summary of the variants of all likelihoods available, by running the following python code::
 
     import spt_candl_data
@@ -66,6 +71,8 @@ Notebooks
 ^^^^^^^^^^^^^^
 
 ``tutorial_notebooks/SPT3G_D1_TnE_tutorial.ipynb``: this notebook uses the SPT-3G D1 T&E likelihoods and is split into two parts. The first one shows you how to initialize the multifrequency likelihood, evaluate it, visualize the data, and helps you understand the data model. The second part uses the `SPTlite` likelihood and leverages the differentiability of `candl`. This part shows how to translate biases from the band-power level to the parameter-level and how to perform gradient-based minimization and sampling.
+
+``tutorial_notebooks/SPT3G_D1_BB_tutorial.ipynb``: this notebook uses the SPT-3G D1 BB likelihood. It shows you how to interact with the data, run chains using Cobaya, and demonstrates the differentiability of the likelihood.
 
 Cobaya
 ^^^^^^^^^^^^^^
