@@ -102,8 +102,8 @@ data_model:
 
 priors:
   - par_names: "tau"
-    central_value: 0.054
-    prior_std: 0.0074
+    central_value: 0.051
+    prior_std: 0.006
   - par_names: 'TE_PolGalDust_Amp'
     central_value: 0.12
     prior_std: 0.051
