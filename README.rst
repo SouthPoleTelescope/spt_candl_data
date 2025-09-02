@@ -129,7 +129,7 @@ Please cite:
    :alt: Sorbonne
    :height: 100px
 
-.. |IAP| image:: https://github.com/SouthPoleTelescope/spt_candl_data/raw/main/logos/sponsors_institutions/IAP_logo.jpeg
+.. |IAP| image:: https://github.com/SouthPoleTelescope/spt_candl_data/raw/main/logos/sponsors_institutions/IAP_logo.png
    :alt: IAP
    :height: 150px
 
