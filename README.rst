@@ -131,7 +131,7 @@ Please cite:
 
 .. |IAP| image:: https://github.com/SouthPoleTelescope/spt_candl_data/raw/main/logos/sponsors_institutions/IAP_logo.png
    :alt: IAP
-   :height: 150px
+   :height: 125px
 
 .. |cnrs| image:: https://github.com/SouthPoleTelescope/spt_candl_data/raw/main/logos/sponsors_institutions/cnrs_logo.jpeg
    :alt: CNRS
