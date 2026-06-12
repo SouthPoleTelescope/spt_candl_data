@@ -46,6 +46,91 @@ because the Agora skies have the fiducial primary CMB. They share the
 covariance, window functions, emulator, and linear corrections of their
 parent estimator directory — only the bandpowers differ per realization.
 
+## Data model: response corrections in detail
+
+Both flavors share the multiplicative systematics emulator
+(`LensingSystematicsEmu`) and a linear response correction built from the
+precomputed M matrices in `linear_corrections/`. The response correction
+comes in two forms, one theory-driven and one data-driven.
+
+### `Mll` — theory-driven linear correction
+
+The `Mmodes` list specifies which spectra are used to compute linear
+response corrections to the CMB lensing bandpowers:
+
+- `kk` accounts for the self-dependence of the lensing spectrum on its own
+  amplitude (i.e., N1).
+- `TT`, `TE`, and `EE` propagate changes in the primary CMB power spectra
+  to the lensing response, since the lensing reconstruction efficiency
+  depends on the shape and amplitude of these spectra.
+
+The `fiducial_correction` term is a precomputed offset that removes the
+constant part of this linear expansion so that when the model is evaluated
+at the fiducial cosmology, the correction equals zero. In other words, it
+anchors the linearized response model to exactly reproduce the fiducial
+lensing theory at the fiducial parameters.
+
+(Primary + lensing) vs. lensing-only:
+
+- **Joint run:** use theory-driven corrections (M acting on theory TT/TE/EE
+  and kk at each step). This avoids double counting the data and ensures
+  that changes in primary spectra consistently update the lensing response.
+- **Lensing-only (no primary theory block):** use the data-driven shortcut
+  below, which projects *measured* TT/TE/EE bandpowers (optionally
+  reweighted by cal/beam) through M, while keeping only the kk piece
+  theory-dependent. Doing that in a joint run would double-count the
+  primary data and also tie the response to a specific noise realization.
+
+### `LensOnlyResponseCorrCMBliteBP` — data-driven correction (lensing-only)
+
+Builds a *data-bandpower-based* correction to the CMB-lensing response
+using "lite" TT/TE/EE bandpowers instead of theory TT/TE/EE.
+
+Operations:
+
+1. Load fixed TT/TE/EE bandpowers D_ell^data (`Dl_data_template_file`).
+2. Reweight those bandpowers by the current sample's calibration and beam
+   parameters:
+   - TT: multiply by Tcal^2 and divide by B_T^2
+   - TE: multiply by Tcal^2 \* Pcal and divide by (B_T \* B_P)
+   - EE: multiply by Tcal^2 \* Pcal^2 and divide by B_P^2
+
+   (This propagates cal/beam uncertainty into the lensing response without
+   fitting a primary theory.)
+3. Project the reweighted bandpowers through the precomputed linear
+   response matrices M^TT, M^TE, M^EE to obtain a lensing-response
+   correction vector in L-space.
+4. Subtract a precomputed fiducial correction so the net correction is zero
+   at the fiducial point.
+5. Return this correction; the lensing-only likelihood adds it to the
+   fiducial lensing model.
+
+What it does *not* do:
+
+- Does not evaluate primary CMB theory spectra at each step (no CAMB/CLASS
+  call).
+- Does not include a primary TT/TE/EE likelihood term; the bandpowers are
+  inputs, not data to fit.
+
+When to use:
+
+- In *lensing-only* analyses that do not run a primary theory block. It
+  efficiently conditions the lensing response on the observed CMB spectra
+  while letting cal/beam parameters vary.
+
+When NOT to use:
+
+- In *joint* CMB-primary + CMB-lensing runs. There, you should use the
+  theory-driven linearization (`Mll` with modes [kk, TT, TE, EE]) to avoid
+  double-counting primary data and to keep the response consistent with the
+  theory spectra evaluated at each sample.
+
+Set `fix_cal: True` and `fix_beam: True` when using lite TT/TE/EE
+bandpowers, since those products already have calibration and beam
+uncertainties marginalized out and you do not want to double-count them.
+For analytic marginalization you want to turn the emulator off and set
+these to True.
+
 ## Files (per estimator directory)
 
 | File | Contents |
