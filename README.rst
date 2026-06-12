@@ -42,14 +42,19 @@ Available Data
    * - SPT-3G D1 T&E
      - ``spt_candl_data.SPT3G_D1_TnE``, ``spt_candl_data.SPT3G_D1_TnE_lite``
      - | `Camphuis et al. 2025 <https://pole.uchicago.edu/public/Home.html>`__
-      
-       Quan et al. 2025 (in prep.)
+     - | `Quan et al. 2026 <https://pole.uchicago.edu/public/data/quan26/index.html>`__  
      - ``2.0.3``
 
    * - SPT-3G D1 BB
      - ``spt_candl_data.SPT3G_D1_BB``
      - `Zebrowski et al. 2025 <https://pole.uchicago.edu/public/data/zebrowski25>`__
      - ``2.1.0``
+
+   * - SPT-3G D1 kk
+     - ``spt_candl_data.SPT3G_D1_kk``
+     - `Omori et al. 2026 <https://pole.uchicago.edu/public/Home.html>`__
+     - ``2.X.X``
+  
 
 You can also get a detailed summary of the variants of all likelihoods available, by running the following python code::
 
