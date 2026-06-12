@@ -46,14 +46,56 @@ because the Agora skies have the fiducial primary CMB. They share the
 covariance, window functions, emulator, and linear corrections of their
 parent estimator directory — only the bandpowers differ per realization.
 
-## Data model: response corrections in detail
+## Data model: the transformation modules
 
-Both flavors share the multiplicative systematics emulator
-(`LensingSystematicsEmu`) and a linear response correction built from the
-precomputed M matrices in `linear_corrections/`. The response correction
-comes in two forms, one theory-driven and one data-driven.
+candl bins the unbinned theory C_L^kk through the bandpower window
+functions first, then applies the `data_model` modules sequentially to the
+binned 17-vector, in yaml order. For the lensing-only configs:
+
+```
+model = emu_ratio(nuisance params) * [W^T . C_L^kk,th]            (LensingSystematicsEmu, multiplicative)
+        + M_kk^T . C_L^kk,th - fid_kk                             (Mll, additive)
+        + sum_{TT,TE,EE} M_s^T . Dl_s^data - fid_TT+TE+EE         (LensOnlyResponseCorrCMBliteBP, additive)
+```
+
+The joint configs drop the third term and instead give `Mll` the modes
+[kk, TT, EE, TE]. Note the ordering: the emulator ratio multiplies only the
+binned theory, not the additive corrections. (candl's `Dl: kk` theory key
+is C_L^kappakappa = [L(L+1)]^2 C_L^phiphi / 4, despite the "Dl" name.)
+
+### `LensingSystematicsEmu` — multiplicative systematics/foreground correction
+
+A Gaussian-process emulator (one GP per bandpower bin, Matern-5/2 kernel,
+trained on Agora sky simulations) predicting the ratio
+Clkk_binned(params) / Clkk_binned(fiducial, zero foregrounds), i.e. the
+multiplicative bias of the reconstruction from instrumental systematics and
+extragalactic foreground residuals.
+
+- **Inputs (init):** `emu_file` (npz with the per-bin GP training data and
+  scalers); `emu_par_names`, the ordered list of 14 sampler parameter
+  names. **The order is positional and must match the emulator training
+  order** (Tcal, Pcal, beam1-4, betapol 90/150/220, Atsz, Acib150, Acib220,
+  Arad90, Arad150) — reordering the list silently mis-assigns parameters.
+- **Inputs (per evaluation):** the 14 sampled nuisance values
+  (Tcal_lens, Pcal_lens, beam1-4, beta_pol_90/150/220, Atsz, Acib150,
+  Acib220, Arad90, Arad150). Never reads theory spectra.
+- **Output:** a length-17 ratio vector multiplying the binned theory
+  bandpowers (values ~0.86-0.94 near the training center, i.e. a 6-14%
+  suppression).
 
 ### `Mll` — theory-driven linear correction
+
+- **Inputs (init):** `M_matrices_folder` — the per-bin response files
+  `linear_corrections/window_{0..16}.txt` (columns: ell, TT, TE, EE, BB,
+  kk; candl reads one column per entry in `Mmodes`);
+  `fiducial_correction_file` — candl sums only the columns named in
+  `Mmodes` into a length-17 vector.
+- **Inputs (per evaluation):** the *unbinned* theory C_L^kk
+  (all configs), plus unbinned theory Dl^TT/TE/EE in muK^2 truncated to
+  ell <= 3500/3000/3000 via `overwrite_ell_max` (joint configs only).
+- **Output:** a length-17 additive correction,
+  sum_modes M_mode^T . S_mode^theory - (same at fiducial); exactly zero at
+  the fiducial cosmology by construction.
 
 The `Mmodes` list specifies which spectra are used to compute linear
 response corrections to the CMB lensing bandpowers:
@@ -85,6 +127,21 @@ lensing theory at the fiducial parameters.
 
 Builds a *data-bandpower-based* correction to the CMB-lensing response
 using "lite" TT/TE/EE bandpowers instead of theory TT/TE/EE.
+
+- **Inputs (init):** the same M matrices and fiducial-correction file as
+  `Mll` (here with `Mmodes: [TT, TE, EE]`, i.e. the TT+TE+EE columns of
+  the fiducial file); `Dl_data_template_file` — the measured lite TT/TE/EE
+  bandpowers boxcar-expanded to per-ell Dl (columns: ell, TT, TE, EE); the
+  beam templates (`beam/`) and ILC weights (`ilcweights/`) used to build
+  the optional cal/beam reweighting.
+- **Inputs (per evaluation):** **none as shipped.** With
+  `fix_cal: True` and `fix_beam: True` the module reads no sampled
+  parameters and no theory spectra — its output is a constant vector (with
+  zero gradient). With the fix flags set to False it additionally reads
+  Tcal_lens, Pcal_lens, beam1-4, and beta_pol_90/150/220 to reweight the
+  data bandpowers. It never reads theory spectra in any configuration.
+- **Output:** a length-17 additive correction,
+  sum_{TT,TE,EE} M_s^T . (Dl_s^data * cal_s / beam_s) - fid_TT+TE+EE.
 
 Operations:
 
@@ -131,6 +188,23 @@ uncertainties marginalized out and you do not want to double-count them.
 For analytic marginalization you want to turn the emulator off and set
 these to True.
 
+### Implementation notes
+
+- In the shipped lensing-only configs, the nine cal/beam parameters
+  (Tcal_lens, Pcal_lens, beam1-4, beta_pol_*) affect the likelihood only
+  through the emulator; `LensOnlyResponseCorrCMBliteBP` declares them but
+  does not use them (fix flags).
+- `Mll` requires `kk` to be present in `Mmodes` (its initialization
+  unconditionally accesses the kk M matrix); a TT/TE/EE-only configuration
+  will fail.
+- The lensing-only likelihood still *requests* theory Dl^TT/TE/EE up to
+  ell 3500/3000/3000 from the theory code (a side effect of the response
+  module's base class) even though it never uses them; only C_L^kk up to
+  L = 4000 actually enters the result.
+- The chi-square uses a Hartlap-corrected covariance with `N_sims: 498`
+  (factor (N_sims - N_bins - 2)/(N_sims - 1), folded into the Cholesky
+  decomposition by candl).
+
 ## Files (per estimator directory)
 
 | File | Contents |
@@ -150,8 +224,6 @@ these to True.
 
 Notes:
 
-- The covariance carries a Hartlap correction with `N_sims: 498` (set in the
-  yaml, applied by candl).
 - The `beam/` and `ilcweights/` files are required to initialize the
   lensing-only variants but do not affect the likelihood value as shipped
   (`fix_cal: True`, `fix_beam: True`): the lite bandpowers already have
