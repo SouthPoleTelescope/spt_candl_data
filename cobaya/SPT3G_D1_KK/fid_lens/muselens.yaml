@@ -1,10 +1,11 @@
-output: ${DIR_CHAINS}/base_lens/data_camb_gmv/chain
+output: ${DIR_CHAINS}/base_lens/data_camb_muselens/chain
+
 
 theory : !defaults [../configs/theory/nocmb/camb]
 
 params : !defaults [../configs/params/nocmb/cosmo_base]
 
-likelihood: !defaults [../configs/likelihoods/lens/nocmb/gmv]
+likelihood: !defaults [../configs/likelihoods/lens/ext/muselens]
 
 sampler:
   mcmc:
@@ -17,6 +18,7 @@ sampler:
     proposal_scale: 1.9
     output_every: 1
     oversample_power: 0.4
+    
 
  
 
