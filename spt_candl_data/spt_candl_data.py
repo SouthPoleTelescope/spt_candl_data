@@ -103,6 +103,21 @@ SPT3G_D1_EE_220x220 = (
     f"{data_path}/{SPT3G_D1_TnE_folder}/subsets/SPT3G_D1_EE_220x220.yaml"
 )
 
+
+# SPT-3G D1 KK
+SPT3G_D1_KK_folder = "SPT3G_D1_KK_v0"
+
+# Key files
+SPT3G_D1_KK = f"{data_path}/{SPT3G_D1_KK_folder}/SPT3G_D1_KK_index.yaml"
+SPT3G_D1_KK_GMV = f"{data_path}/{SPT3G_D1_KK_folder}/GMV/SPT3G_D1_KK_GMV.yaml"
+SPT3G_D1_KK_GMV_withcmb = (
+    f"{data_path}/{SPT3G_D1_KK_folder}/GMV/SPT3G_D1_KK_GMV_withcmb.yaml"
+)
+SPT3G_D1_KK_PP = f"{data_path}/{SPT3G_D1_KK_folder}/PP/SPT3G_D1_KK_PP.yaml"
+SPT3G_D1_KK_PP_withcmb = (
+    f"{data_path}/{SPT3G_D1_KK_folder}/PP/SPT3G_D1_KK_PP_withcmb.yaml"
+)
+
 # --------------------------------------#
 # PREPARE SHORCUTS AND INFO
 # --------------------------------------#
@@ -144,6 +159,13 @@ shortcuts = {
         "EE_150x220": "SPT3G_D1_EE_150x220",
         "EE_220x220": "SPT3G_D1_EE_220x220",
     },
+    "SPT-3G D1 KK": {
+        "index": "SPT3G_D1_KK",
+        "GMV": "SPT3G_D1_KK_GMV",
+        "GMV_withcmb": "SPT3G_D1_KK_GMV_withcmb",
+        "PP": "SPT3G_D1_KK_PP",
+        "PP_withcmb": "SPT3G_D1_KK_PP_withcmb",
+    },
     "SPT-3G D1 BB": "SPT3G_D1_BB",
 }
 
@@ -184,11 +206,19 @@ info = {
         "EE_150x220": "EE likelihood using only the 150x150 spectrum.",
         "EE_220x220": "EE likelihood using only the 220x220 spectrum.",
     },
+    "SPT-3G D1 KK": {
+        "index": None,
+        "GMV": "GMV lensing-only (CMB-marginalized covariance).",
+        "GMV_withcmb": "GMV joint lensing + CMB likelihood.",
+        "PP": "PP (pol-only) lensing-only (CMB-marginalized covariance).",
+        "PP_withcmb": "PP (pol-only) joint lensing + CMB likelihood.",
+    },
 }
 
 # default data sets
 default_data_sets = {
     "SPT-3G D1 TnE": "multifreq",
+    "SPT-3G D1 KK": "GMV",
 }
 
 # --------------------------------------#

@@ -1,0 +1,29 @@
+# SPT-3G '20 Lensing (curved-sky Quadratic Estimator GMV)
+name: "SPT-3G D1 phiphi (Omori & Wu et al. 2026)"
+
+band_power_file: SPT3G_D1_KK_PP_bdp.txt
+covariance_file: SPT3G_D1_KK_PP_cov_noCMBmarg.txt
+window_functions_folder: windows/
+hartlap_correction:
+  N_sims: 498
+
+spectra_info:
+  - kk: 17
+
+data_model:
+  - Module: "spt3g_candl_library.transformations.SPT3G_20_PP_transformations.LensingSystematicsEmu"
+    emu_file: emulator/emul_deb_qpp_v4.npz
+    emu_par_names: ['Tcal_lens', 'Pcal_lens', 'beam1', 'beam2', 'beam3', 'beam4', 
+                    'beta_pol_90', 'beta_pol_150','beta_pol_220', 
+                    'Atsz', 'Acib150', 'Acib220', 'Arad90', 'Arad150'] 
+
+  - Module: "spt3g_candl_library.transformations.SPT3G_20_PP_transformations.Mll"
+    M_matrices_folder: "linear_corrections/"
+    Mmodes:
+      - kk
+      - TT
+      - EE
+      - TE
+    overwrite_ell_max: {"TT": 3500, "TE": 3000, "EE": 3000}
+    fiducial_correction_file: "linear_corrections/fiducial_correction.txt"
+
