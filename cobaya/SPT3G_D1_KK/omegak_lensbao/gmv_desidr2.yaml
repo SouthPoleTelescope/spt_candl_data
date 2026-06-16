@@ -20,7 +20,7 @@ sampler:
     output_every: 1
     oversample_power: 0.4
     max_tries: 10000
-    covmat: chain.covmat
+    covmat: omegak_lensbao/chain.covmat
     # From previous data_camb_gmvspafg_actplanckbaselens_spalitetteete_desidr2
 
 prior:
