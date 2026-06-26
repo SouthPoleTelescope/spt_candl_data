@@ -1,0 +1,26 @@
+output: ${DIR_CHAINS}/w0wa_lenscmb/data_camb_gmv_actplanckbaselens_spalitetteete_desidr2/chain
+
+theory : !defaults [../configs/theory/withcmb/camb_w0wa]
+
+params : !defaults [../configs/params/withcmb/cosmo_w0wa]
+
+likelihood: !defaults [../configs/likelihoods/lens/withcmb/gmv,
+                       ../configs/likelihoods/lens/ext/actplanckbaselens,
+                       ../configs/likelihoods/cmb/spalitetteete,
+                      ]
+
+sampler:
+  mcmc:
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.05
+    learn_proposal: true
+    learn_proposal_Rminus1_max_early: 30.0
+    learn_proposal_Rminus1_max: 10.0
+    drag: true
+    proposal_scale: 1.9
+    output_every: 1
+    oversample_power: 0.4
+    max_tries: 10000
+    
+prior:
+  cal_dip_prior: 'lambda A_act: stats.norm.logpdf(A_act, loc = 1.0, scale = 0.003)'
