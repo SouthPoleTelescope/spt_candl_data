@@ -1,4 +1,4 @@
-output: ${DIR_CHAINS}/mnu3_lenscmb/data_camb_gmv_actplanckbaselens_spalitetteete_desidr2/chain
+output: ${DIR_CHAINS}/mnu3_lenscmb/data_camb_gmv_actplanckbaselens_spalitetteete/chain
 
 theory : !defaults [../configs/theory/withcmb/camb_mnu3]
 
