@@ -5,7 +5,7 @@ theory : !defaults [../configs/theory/withcmb/camb_mnu3a2ptarec]
 params : !defaults [../configs/params/withcmb/cosmo_mnu0arec]
   
 likelihood: !defaults [../configs/likelihoods/lens/withcmb/gmv,
-                       ../configs/likelihoods/lens/ext/actplanckbaselens,
+                       ../configs/likelihoods/lens/ext/actplanckbaselens_withcmb,
                        ../configs/likelihoods/cmb/spalitetteete,
                        ../configs/likelihoods/bao/desidr2,
                       ]
