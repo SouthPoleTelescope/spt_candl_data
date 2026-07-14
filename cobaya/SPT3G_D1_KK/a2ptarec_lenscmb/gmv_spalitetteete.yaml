@@ -1,8 +1,8 @@
-output: ${DIR_CHAINS}/mnu3_lenscmb/data_camb_gmv_spalitetteete_desidr2/chain
+output: ${DIR_CHAINS}/a2ptarec_lenscmb/data_camb_gmv_spalitetteete/chain
 
-theory : !defaults [../configs/theory/withcmb/camb_mnu3]
+theory : !defaults [../configs/theory/withcmb/camb_a2ptarec]
 
-params : !defaults [../configs/params/withcmb/cosmo_mnu3]
+params : !defaults [../configs/params/withcmb/cosmo_a2ptarec]
 
 likelihood: !defaults [../configs/likelihoods/lens/withcmb/gmv,
                        ../configs/likelihoods/cmb/spalitetteete,
