@@ -1,6 +1,6 @@
 output: ${DIR_CHAINS}/alens_lenscmb/data_camb_gmv_actplanckbaselens_spalitetteete_desidr2/chain
 
-theory : !defaults [../configs/theory/withcmb/camb_alens]
+theory : !defaults [../configs/theory/withcmb/camb]
 
 params : !defaults [../configs/params/withcmb/cosmo_alens]
 
