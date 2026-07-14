@@ -1,0 +1,20 @@
+camb:
+  class: spt_candl_data.transformations.a2ptarec.a2ptarec
+  stop_at_error: false
+  extra_args:
+    kmax: 10
+    k_per_logint: 130
+    nonlinear: true
+    lens_potential_accuracy: 8
+    lens_margin: 2050
+    lAccuracyBoost: 1.2
+    min_l_logl_sampling: 6000
+    DoLateRadTruncation: false
+    bbn_predictor: PArthENoPE_880.2_standard.dat
+    halofit_version: mead2020
+    theta_H0_range:
+      - 40
+      - 100
+    num_massive_neutrinos: 3
+    nnu: 3.046
+    
