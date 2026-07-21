@@ -11,13 +11,13 @@ spectra_info:
   - kk: 17
 
 data_model:
-  - Module: "spt3g_candl_library.transformations.SPT3G_20_PP_transformations.LensingSystematicsEmu"
+  - Module: "spt_candl_data.transformations.KK_transformations.LensingSystematicsEmu"
     emu_file: emulator/emul_deb_qpp_v4.npz
     emu_par_names: ['Tcal_lens', 'Pcal_lens', 'beam1', 'beam2', 'beam3', 'beam4', 
                     'beta_pol_90', 'beta_pol_150','beta_pol_220', 
                     'Atsz', 'Acib150', 'Acib220', 'Arad90', 'Arad150'] 
 
-  - Module: "spt3g_candl_library.transformations.SPT3G_20_PP_transformations.Mll"
+  - Module: "spt_candl_data.transformations.KK_transformations.Mll"
     M_matrices_folder: "linear_corrections/"
     Mmodes:
       - kk

@@ -108,7 +108,7 @@ w:
 wa:
   prior:
     max: 2.0
-    min: -4.0
+    min: -5.0
   ref:
     dist: norm
     loc: -1.5014 

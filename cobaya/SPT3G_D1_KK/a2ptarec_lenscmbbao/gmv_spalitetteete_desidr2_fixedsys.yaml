@@ -1,10 +1,10 @@
-output: ${DIR_CHAINS}/alens_lenscmbbao/data_camb_gmv_spalitetteete_desidr2/chain
+output: ${DIR_CHAINS}/a2ptarec_lenscmbbao/data_camb_gmv_spalitetteete_desidr2_fixedfg/chain
 
-theory : !defaults [../configs/theory/withcmb/camb]
+theory : !defaults [../configs/theory/withcmb/camb_a2ptarec]
 
-params : !defaults [../configs/params/withcmb/cosmo_alens]
+params : !defaults [../configs/params/withcmb/cosmo_a2ptarec]
 
-likelihood: !defaults [../configs/likelihoods/lens/withcmb/gmv,
+likelihood: !defaults [../configs/likelihoods/lens/withcmb/gmv_fixedsys,
                        ../configs/likelihoods/cmb/spalitetteete,
                        ../configs/likelihoods/bao/desidr2,
                       ]

@@ -1,3 +1,14 @@
+Alens: 1.0
+Arec:
+  prior:
+    min: 0
+    max: 10
+  ref:
+    dist: norm
+    loc: 1.0
+    scale: 0.2
+  proposal: 0.1
+  latex: A_\mathrm{rec}
 theta_MC_100:
   drop : True
   latex: '100\theta_\mathrm{MC}'
@@ -9,7 +20,7 @@ theta_MC_100:
     dist: norm
     loc: 1.04109
     scale: 0.002
-  renames: 'theta'
+  renames: 'theta'          
 logA:
   drop: True
   latex: \log(10^{10} A_\mathrm{s})
@@ -20,17 +31,10 @@ logA:
   ref:
     dist: norm
     loc: 3.05
-    scale: 0.01
+    scale: 0.01  
 mnu:
+  value: 0.0
   latex: \sum m_\nu
-  prior:
-    min: 0
-    max: 5
-  ref:
-    dist: norm
-    loc: 0.02
-    scale: 0.1
-  proposal: 0.03
 ns:
   latex: n_\mathrm{s}
   prior:
@@ -102,23 +106,3 @@ tau:
     min: 0.01
   proposal: 0.003
   ref: 0.05430842
-w:
-  prior:
-    max: 1.0
-    min: -2.0
-  ref:
-    dist: norm
-    loc: -0.4863
-    scale: 0.2030
-  proposal: 0.08
-  latex: w_0
-wa:
-  prior:
-    max: 2.0
-    min: -5.0
-  ref:
-    dist: norm
-    loc: -1.5014
-    scale: 0.5634
-  proposal: 0.25
-  latex: w_a

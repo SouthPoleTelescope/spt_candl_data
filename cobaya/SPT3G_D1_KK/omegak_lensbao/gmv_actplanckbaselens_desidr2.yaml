@@ -4,7 +4,7 @@ theory : !defaults [../configs/theory/withcmb/camb_fast]
 
 params : !defaults [../configs/params/withcmb/cosmo_omegak]
 
-likelihood: !defaults [../configs/likelihoods/lens/withcmb/gmv,
+likelihood: !defaults [../configs/likelihoods/lens/nocmb/gmv,
                        ../configs/likelihoods/lens/ext/actplanckbaselens,
                        ../configs/likelihoods/bao/desidr2,
                       ]

@@ -1,8 +1,8 @@
-output: ${DIR_CHAINS}/alens_lenscmbbao/data_camb_gmv_actplanckbaselens_spalitetteete_desidr2/chain
+output: ${DIR_CHAINS}/w0wa_lenscmbbao/data_camb_gmv_actplanckbaselens_spalitetteete_desidr2/chain
 
-theory : !defaults [../configs/theory/withcmb/camb]
+theory : !defaults [../configs/theory/withcmb/camb_w0wa]
 
-params : !defaults [../configs/params/withcmb/cosmo_alens]
+params : !defaults [../configs/params/withcmb/cosmo_w0wa]
 
 likelihood: !defaults [../configs/likelihoods/lens/withcmb/gmv,
                        ../configs/likelihoods/lens/ext/actplanckbaselens_withcmb,
@@ -22,6 +22,6 @@ sampler:
     output_every: 1
     oversample_power: 0.4
     max_tries: 10000
-
+    
 prior:
   cal_dip_prior: 'lambda A_act: stats.norm.logpdf(A_act, loc = 1.0, scale = 0.003)'

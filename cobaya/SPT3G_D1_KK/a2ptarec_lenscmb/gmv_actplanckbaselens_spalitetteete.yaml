@@ -1,13 +1,12 @@
-output: ${DIR_CHAINS}/alens_lenscmbbao/data_camb_gmv_actplanckbaselens_spalitetteete_desidr2/chain
+output: ${DIR_CHAINS}/a2ptarec_lenscmb/data_camb_gmv_actplanckbaselens_spalitetteete/chain
 
-theory : !defaults [../configs/theory/withcmb/camb]
+theory : !defaults [../configs/theory/withcmb/camb_a2ptarec]
 
-params : !defaults [../configs/params/withcmb/cosmo_alens]
+params : !defaults [../configs/params/withcmb/cosmo_a2ptarec]
 
 likelihood: !defaults [../configs/likelihoods/lens/withcmb/gmv,
                        ../configs/likelihoods/lens/ext/actplanckbaselens_withcmb,
                        ../configs/likelihoods/cmb/spalitetteete,
-                       ../configs/likelihoods/bao/desidr2,
                       ]
 
 sampler:

@@ -1,9 +1,9 @@
-output: ${DIR_CHAINS}/alens_lenscmbbao/data_camb_gmv_actplanckbaselens_spalitetteete_desidr2/chain
+output: ${DIR_CHAINS}/mnu0arec_lenscmbbao/data_camb_gmv_actplanckbaselens_spalitetteete_desidr2/chain
 
-theory : !defaults [../configs/theory/withcmb/camb]
+theory : !defaults [../configs/theory/withcmb/camb_mnu3a2ptarec]
 
-params : !defaults [../configs/params/withcmb/cosmo_alens]
-
+params : !defaults [../configs/params/withcmb/cosmo_mnu0arec]
+  
 likelihood: !defaults [../configs/likelihoods/lens/withcmb/gmv,
                        ../configs/likelihoods/lens/ext/actplanckbaselens_withcmb,
                        ../configs/likelihoods/cmb/spalitetteete,
@@ -22,6 +22,9 @@ sampler:
     output_every: 1
     oversample_power: 0.4
     max_tries: 10000
+    covmat: /sdf/home/w/wlwu/data/spt3glens1920_gmvph/chains/data/outputs_cambhighacc/data_camb_gmvspafg_spatteete_desidr2_planckactlensbase_arecon_mnu0/chain.covmat
 
 prior:
   cal_dip_prior: 'lambda A_act: stats.norm.logpdf(A_act, loc = 1.0, scale = 0.003)'
+
+
