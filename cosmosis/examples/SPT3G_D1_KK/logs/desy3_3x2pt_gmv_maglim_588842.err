@@ -1,0 +1,991 @@
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/structure/projection/projection_tools/kernel.py:35: UserWarning: Some of your n(z) or other kernels are negative.
+  warnings.warn("Some of your n(z) or other kernels are negative.")
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:36: RuntimeWarning: divide by zero encountered in log
+  spec = np.exp(self.interp_func(np.log(angle)))
+/lcrc/project/SPT3G/users/ac.yomori/repo/cosmosis-standard-library/shear/cl_to_xi_fullsky/cl_to_xi.py:41: RuntimeWarning: divide by zero encountered in log
+  spec = self.interp_func(np.log(angle))
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 13 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+[xover-0001:508868] PMIX ERROR: UNREACHABLE in file server/pmix_server.c at line 2198
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+====================
+directory error: ÍÌÌÌÌÌì?š™™™™™¹? does not exist
+====================
+[xover-0001:508868] 61 more processes have sent help message help-mpi-api.txt / mpi-abort
+[xover-0001:508868] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
