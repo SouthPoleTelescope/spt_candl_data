@@ -1,0 +1,89 @@
+# Cosmology FIXED to the camb best-fit of
+#   /eagle/fieldlevel/projects/lens/chains/data_camb_spalitetteete2  (chain.minimum)
+# Data: SPT-3G '19-20 lite TTTEEE + Planck lowl TT + lowl EE_sroll2 + ACT DR6 CMB-only
+# (primary CMB only; NO lensing).
+#
+# camb-native best-fit, so fixed via theta_MC_100 directly (the SPA/CLASS run instead
+# reported 100*theta_s and had to be fixed via H0). Reproduces H0 = 67.221, sigma8 = 0.8177.
+#
+# The ONE sampled parameter: lensing amplitude. Plain CAMB Alens scales the returned
+# lens_potential (pp), hence the reconstructed C_L^kk in this lensing-only likelihood
+# (verified: Alens 1.0->1.5 shifts chi2 by ~451). Everything else (cosmo + systematics,
+# the latter in the gmv_fixsys likelihood) is fixed, so Alens is the only free parameter.
+Alens:
+  prior:
+    min: 0
+    max: 10
+  ref:
+    dist: norm
+    loc: 1.0
+    scale: 0.2
+  proposal: 0.1
+  latex: A_\mathrm{lens}
+theta_MC_100:
+  value: 1.040697851
+  drop: True
+  latex: 100\theta_\mathrm{MC}
+cosmomc_theta:
+  derived: False
+  value: 'lambda theta_MC_100: 1.e-2*theta_MC_100'
+logA:
+  value: 3.056297649
+  drop: True
+  latex: \log(10^{10} A_\mathrm{s})
+As:
+  value: 'lambda logA: 1e-10*np.exp(logA)'
+  latex: A_\mathrm{s}
+ns:
+  value: 0.9688597010
+  latex: n_\mathrm{s}
+ombh2:
+  value: 0.02241042777
+  latex: \Omega_\mathrm{b} h^2
+omch2:
+  value: 0.1202206539
+  latex: \Omega_\mathrm{c} h^2
+tau:
+  value: 0.05897886162
+  latex: \tau_\mathrm{reio}
+mnu:
+  value: 0.06
+  latex: \sum m_\nu
+
+# --- derived parameters (same as cosmo_base) ---
+omega_de:
+  latex: \Omega_{\Lambda}
+omegam:
+  latex: \Omega_\mathrm{m}
+omegamh2:
+  derived: 'lambda omegam, H0: omegam*(H0/100)**2'
+  latex: \Omega_\mathrm{m} h^2
+rdrag:
+  latex: r_\mathrm{drag}
+S8:
+  derived: 'lambda sigma8, omegam: sigma8*(omegam/0.3)**0.5'
+  latex: 'S_8'
+s8h5:
+  derived: 'lambda sigma8, H0: sigma8*(H0*1e-2)**(-0.5)'
+  latex: \sigma_8/h^{0.5}
+s8omegamp25:
+  derived: 'lambda sigma8, omegam: sigma8*omegam**0.25'
+  latex: \sigma_{8} \Omega_\mathrm{m}^{0.25}
+s8omegamp5:
+  derived: 'lambda sigma8, omegam: sigma8*omegam**0.5'
+  latex: \sigma_{8} \Omega_\mathrm{m}^{0.5}
+sigma8:
+  latex: \sigma_{8}
+DHBBN:
+  derived: 'lambda DH: 10**5*DH'
+  latex: 10^5 \mathrm{D}/\mathrm{H}
+H0:
+  latex: H_0
+  max: 100
+  min: 40
+YHe:
+  latex: Y_\mathrm{P}
+Y_p:
+  latex: Y_P^\mathrm{BBN}
+age:
+  latex: \mathrm{Age}/\mathrm{Gyr}
