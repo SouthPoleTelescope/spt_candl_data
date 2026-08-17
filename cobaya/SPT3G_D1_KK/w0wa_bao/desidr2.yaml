@@ -1,0 +1,27 @@
+output: ${DIR_CHAINS}/w0wa_bao/data_camb_desidr2/chain
+
+theory : !defaults [../configs/theory/nocmb/camb_w0wa]
+
+params : !defaults [../configs/params/nocmb/cosmo_w0wa_bao]
+
+likelihood: !defaults [
+                       ../configs/likelihoods/bao/desidr2,
+                      ]
+
+sampler:
+  mcmc:
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.05
+    learn_proposal: true
+    learn_proposal_Rminus1_max_early: 30.0
+    learn_proposal_Rminus1_max: 10.0
+    # drag requires a fast/slow split. With logA/ns/tau/ombh2 fixed, all four
+    # sampled parameters (theta_MC_100, omch2, w, wa) only touch the slow CAMB
+    # stage, so cobaya has no fast block and raises
+    #   "Requested fast/slow separation, but all parameters have the same speed."
+    # The official DESI BAO-only yaml uses drag: false for the same reason.
+    drag: false
+    proposal_scale: 1.9
+    output_every: 1
+    oversample_power: 0.4
+    max_tries: 10000

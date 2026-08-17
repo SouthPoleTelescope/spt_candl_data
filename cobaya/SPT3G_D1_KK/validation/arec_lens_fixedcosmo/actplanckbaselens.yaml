@@ -1,10 +1,10 @@
 output: ${DIR_CHAINS}/validation/arec_lens_fixedcosmo/data_camb_actplanckbaselens/chain
 
-theory : !defaults [../configs/theory/nocmb/camb]
+theory : !defaults [../../configs/theory/nocmb/camb]
 
-params : !defaults [../configs/params/nocmb/cosmo_base]
+params : !defaults [fixcosmosys]
 
-likelihood: !defaults [../configs/likelihoods/lens/ext/actplanckbaselens]
+likelihood: !defaults [../../configs/likelihoods/lens/ext/actplanckbaselens]
 
 sampler:
   mcmc:
@@ -13,13 +13,7 @@ sampler:
     learn_proposal: true
     learn_proposal_Rminus1_max_early: 30.0
     learn_proposal_Rminus1_max: 10.0
-    drag: true
+    drag: false
     proposal_scale: 1.9
     output_every: 1
     oversample_power: 0.4
-    
-
- 
-
-
-
