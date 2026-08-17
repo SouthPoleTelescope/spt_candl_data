@@ -18,6 +18,7 @@ sampler:
     output_every: 1
     oversample_power: 0.4
     max_tries: 10000
+    covmat: /eagle/fieldlevel/projects/lens/chains_061526/mnu3_cmb/data_camb_spalitetteete.bak/chain.covmat
 
 prior:
   cal_dip_prior: 'lambda A_act: stats.norm.logpdf(A_act, loc = 1.0, scale = 0.003)'

@@ -1,1 +1,12 @@
-planckpr4lensing.PlanckPR4LensingMarged: null
+# Fixed-cosmology Alens setup, matching the ground-truth
+# PlanckPR4Lensing_lensonly_nomarg (alens_snr_fixcosmo/data_camb_plkpr4_amplitude2):
+# lensing-only (CMBmarged-style) linear correction -- PP-live term + baked-in
+# measured-CMB constant shift -- with the NON-marginalized covariance.
+# A_planck fixed (inert: the dataset's calibration_param is empty, so it is
+# never applied; fixing just stops cobaya from sampling a do-nothing param).
+planckpr4lensing.PlanckPR4Lensing:
+  dataset_file: /eagle/fieldlevel/repo/crux/spt_candl_data/cobaya/SPT3G_D1_KK/configs/likelihoods/lens/ext/planckpr4_nocorr_data/pp_consext8_npipe_smicaed_TiPi_jTP_pre30T_kfilt_rdn0cov_PS1_noCMBmarged.dataset
+  params:
+    A_planck:
+      value: 1
+      latex: y_\mathrm{cal}

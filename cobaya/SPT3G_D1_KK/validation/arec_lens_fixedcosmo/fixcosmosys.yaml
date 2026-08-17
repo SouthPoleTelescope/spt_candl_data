@@ -17,8 +17,8 @@ Alens:
   ref:
     dist: norm
     loc: 1.0
-    scale: 0.2
-  proposal: 0.1
+    scale: 0.05
+  proposal: 0.02
   latex: A_\mathrm{lens}
 theta_MC_100:
   value: 1.040697851

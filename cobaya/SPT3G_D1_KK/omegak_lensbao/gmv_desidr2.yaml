@@ -1,4 +1,4 @@
-output: ${DIR_CHAINS}/omegak_lenscmbbao/data_camb_gmv_desidr2/chain
+output: ${DIR_CHAINS}/omegak_lensbao/data_camb_gmv_desidr2/chain
 
 theory : !defaults [../configs/theory/withcmb/camb_fast]
 

@@ -1,27 +1,16 @@
 candl.interface.CandlCobayaLikelihood:
   data_set_file: !!python/name:spt_candl_data.SPT3G_D1_KK ''
-  variant: PP
+  variant: GMV_fixsys
   lensing: true
   add_logdet: true
   clear_internal_priors: true
   params:
-    # CMB-SPA (data_camb_spalitetteete2) posterior mean +/- 1sigma
     Tcal_lens:
-      prior:
-        dist: norm
-        loc: 0.999107
-        scale: 0.002685
-      ref: 0.999107
-      proposal: 0.001
+      value: 9.989004742e-01
       latex: T_{\rm{cal}}
 
     Pcal_lens:
-      prior:
-        dist: norm
-        loc: 1.007472
-        scale: 0.004001
-      ref: 1.007472
-      proposal: 0.002
+      value: 1.007422932e+00
       latex: P_{\rm{cal}}
 
     beta_pol_90:
@@ -45,7 +34,7 @@ candl.interface.CandlCobayaLikelihood:
       latex: \beta_2
 
     beam3:
-      value: 0 
+      value: 0
       latex: \beta_3
 
     beam4:
@@ -53,21 +42,21 @@ candl.interface.CandlCobayaLikelihood:
       latex: \beta_4
 
     Atsz:
-      value: 0
+      value: 0.9782
       latex: A_{\rm tsz}
 
     Acib150:
-      value: 0
+      value: 0.9732
       latex: A_{\rm cib}^{150}
 
     Acib220:
-      value: 0 
+      value: 0.9998
       latex: A_{\rm cib}^{220}
 
     Arad90:
-      value: 0
+      value: 0.963
       latex: A_{\rm rad}^{90}
 
     Arad150:
-      value: 0 
+      value: 0.9502
       latex: A_{\rm rad}^{150}

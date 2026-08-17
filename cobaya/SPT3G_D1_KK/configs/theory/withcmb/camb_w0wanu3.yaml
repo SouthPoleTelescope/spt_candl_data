@@ -16,4 +16,4 @@ camb:
       - 100
     dark_energy_model: ppf
     num_massive_neutrinos: 3
-    nnu: 3.046
+    nnu: 3.044

@@ -13,7 +13,7 @@ sampler:
     learn_proposal: true
     learn_proposal_Rminus1_max_early: 30.0
     learn_proposal_Rminus1_max: 10.0
-    drag: true
+    drag: false
     proposal_scale: 1.9
     output_every: 1
     oversample_power: 0.4

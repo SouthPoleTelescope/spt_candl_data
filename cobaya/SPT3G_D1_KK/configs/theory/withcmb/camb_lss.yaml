@@ -1,0 +1,24 @@
+# Matched to cosmosis examples/SPT3G_D1_KK/desy3_3x2pt_gmv_maglim_nla_nautilus:
+# mead2020_feedback, 3 massive neutrinos (normal hierarchy), nnu = 3.044.
+# CMB accuracy settings (lens_potential_accuracy, lAccuracyBoost, etc.) kept at the
+# withcmb defaults -- needed for the high-ell CMB likelihoods, unlike the cosmosis
+# 3x2pt+lensing run which uses lower lmax/accuracy.
+camb:
+  stop_at_error: false
+  extra_args:
+    kmax: 10
+    k_per_logint: 130
+    nonlinear: true
+    lens_potential_accuracy: 8
+    lens_margin: 2050
+    lAccuracyBoost: 1.2
+    min_l_logl_sampling: 6000
+    DoLateRadTruncation: false
+    bbn_predictor: PArthENoPE_880.2_standard.dat
+    halofit_version: mead2020_feedback
+    theta_H0_range:
+      - 40
+      - 100
+    num_massive_neutrinos: 3
+    nnu: 3.044
+    neutrino_hierarchy: normal

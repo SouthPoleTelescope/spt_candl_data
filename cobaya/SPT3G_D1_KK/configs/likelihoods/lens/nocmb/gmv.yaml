@@ -5,21 +5,22 @@ candl.interface.CandlCobayaLikelihood:
   add_logdet: true
   clear_internal_priors: true
   params:
+    # CMB-SPA (data_camb_spalitetteete2) posterior mean +/- 1sigma
     Tcal_lens:
       prior:
         dist: norm
-        loc: 9.9921302E-01
-        scale: 2.6951125E-03
-      ref: 1.0
+        loc: 0.999107
+        scale: 0.002685
+      ref: 0.999107
       proposal: 0.001
       latex: T_{\rm{cal}}
 
     Pcal_lens:
       prior:
         dist: norm
-        loc: 1.0071887E+00
-        scale: 4.0049187E-03
-      ref: 1.0
+        loc: 1.007472
+        scale: 0.004001
+      ref: 1.007472
       proposal: 0.002
       latex: P_{\rm{cal}}
 

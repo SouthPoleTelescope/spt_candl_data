@@ -1,11 +1,10 @@
-output: ${DIR_CHAINS}/mnu3arec_mass0_lenscmbbao/data_camb_muselens_actplanckbaselens_spalitetteete_desidr2/chain
+output: ${DIR_CHAINS}/base_lenscmbbao/data_camb_muselens_spalitetteete_desidr2/chain
 
-theory : !defaults [../configs/theory/withcmb/camb_mnu3a2ptarec]
+theory : !defaults [../configs/theory/withcmb/camb]
 
-params : !defaults [../configs/params/withcmb/cosmo_mnu3arec_mass0]
-  
+params : !defaults [../configs/params/withcmb/cosmo_base]
+
 likelihood: !defaults [../configs/likelihoods/lens/ext/muselens,
-                       ../configs/likelihoods/lens/ext/actplanckbaselens_withcmb,
                        ../configs/likelihoods/cmb/spalitetteete,
                        ../configs/likelihoods/bao/desidr2,
                       ]
@@ -22,9 +21,6 @@ sampler:
     output_every: 1
     oversample_power: 0.4
     max_tries: 10000
-    covmat: /eagle/fieldlevel/projects/lens/chains_061526/mnu3arec_mass0_lenscmbbao/data_camb_muselens_actplanckbaselens_spalitetteete_desidr2.bak/chain.covmat
 
 prior:
   cal_dip_prior: 'lambda A_act: stats.norm.logpdf(A_act, loc = 1.0, scale = 0.003)'
-
-

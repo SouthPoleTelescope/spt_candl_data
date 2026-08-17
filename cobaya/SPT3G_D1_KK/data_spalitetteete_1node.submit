@@ -1,0 +1,33 @@
+#!/bin/bash
+# Submit one PBS job per spalitetteete YAML file, using data_spalitetteete_run_1node.pbs
+# (1 node, 8 MPI ranks x 16 OMP threads, instead of the 4-node/8-rank x 64-thread default)
+
+dir="/eagle/fieldlevel/repo/crux/spt_candl_data/cobaya/SPT3G_D1_KK"
+
+# Need DIR_CHAINS (from setup_paths) to resolve each YAML's output path
+source "${dir}/setup_paths_crux_data.sh"
+
+yamls=(
+    validation/arec_lens_fixedcosmo/actbaselens_oldcosmo.yaml
+)
+
+for yaml_file in "${yamls[@]}"; do
+    # Extract job name from filename (without .yaml extension)
+    jobname=$(basename "$yaml_file" .yaml)
+
+    # Resolve the chain output directory from the YAML's `output:` field
+    out_prefix=$(grep -E '^[[:space:]]*output[[:space:]]*:' "${dir}/${yaml_file}" | head -n1 \
+                 | sed -E 's/^[[:space:]]*output[[:space:]]*:[[:space:]]*//')
+    out_prefix=$(eval echo "${out_prefix}")
+    chain_dir=$(dirname "${out_prefix}")
+
+    if [[ -n "${out_prefix}" && "${chain_dir}" != "." ]]; then
+        mkdir -p "${chain_dir}"
+        echo "Submitting: ${jobname}  (${yaml_file})  ->  PBS log in ${chain_dir}/"
+        qsub -N "${jobname}" -o "${chain_dir}/" -v YAML_FILE="${yaml_file}" data_spalitetteete_run_1node.pbs
+    else
+        echo "WARNING: could not resolve output dir for ${yaml_file}; using default PBS log location"
+        echo "Submitting: ${jobname}  (${yaml_file})"
+        qsub -N "${jobname}" -v YAML_FILE="${yaml_file}" data_spalitetteete_run_1node.pbs
+    fi
+done

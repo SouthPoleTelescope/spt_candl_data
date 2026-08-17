@@ -22,8 +22,8 @@ sampler:
     output_every: 1
     oversample_power: 0.4
     max_tries: 10000
-    covmat: /sdf/home/w/wlwu/data/spt3glens1920_gmvph/chains/data/outputs_cambhighacc/data_camb_gmvspafg_spatteete_desidr2_planckactlensbase_w0wamnu_r1/chain.covmat
-
+    covmat: /eagle/fieldlevel/projects/lens/chains_061526/mnu3w0wa_lenscmbbao/data_camb_gmv_actplanckbaselens_spalitetteete_desidr2.bak/chain.covmat
+    
 prior:
   cal_dip_prior: 'lambda A_act: stats.norm.logpdf(A_act, loc = 1.0, scale = 0.003)'
 
