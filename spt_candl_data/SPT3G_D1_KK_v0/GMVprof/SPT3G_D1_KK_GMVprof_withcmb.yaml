@@ -1,0 +1,32 @@
+# SPT-3G '20 Lensing (curved-sky Quadratic Estimator GMV, profile-hardened)
+# Profile-hardened against a (C_ell^tSZ)^(1/4) source profile (Sec. IV D).
+# Same emulator, Mll corrections, beams and ILC weights as the fiducial GMV
+# run; only the bandpowers, covariance and window functions differ.
+name: "SPT-3G D1 phiphi profile-hardened (Omori & Wu et al. 2026)"
+
+band_power_file: SPT3G_D1_KK_GMVprof_bdp.txt
+covariance_file: SPT3G_D1_KK_GMVprof_cov_noCMBmarg.txt
+window_functions_folder: windows/
+hartlap_correction:
+  N_sims: 498
+
+spectra_info:
+  - kk: 17
+
+data_model:
+  - Module: "spt_candl_data.transformations.KK_transformations.LensingSystematicsEmu"
+    emu_file: emulator/emul_deb_qmv_v4.npz
+    emu_par_names: ['Tcal_lens', 'Pcal_lens', 'beam1', 'beam2', 'beam3', 'beam4', 
+                    'beta_pol_90', 'beta_pol_150','beta_pol_220', 
+                    'Atsz', 'Acib150', 'Acib220', 'Arad90', 'Arad150'] 
+
+  - Module: "spt_candl_data.transformations.KK_transformations.Mll"
+    M_matrices_folder: "linear_corrections/"
+    Mmodes:
+      - kk
+      - TT
+      - EE
+      - TE
+    overwrite_ell_max: {"TT": 3500, "TE": 3000, "EE": 3000}
+    fiducial_correction_file: "linear_corrections/fiducial_correction.txt"
+

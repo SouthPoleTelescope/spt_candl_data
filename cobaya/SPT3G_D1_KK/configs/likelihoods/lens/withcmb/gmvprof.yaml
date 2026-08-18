@@ -1,0 +1,70 @@
+# Profile-hardened GMV lensing likelihood (Sec. IV D, hardened against a
+# (C_ell^tSZ)^(1/4) source profile).
+#
+# Following the paper, the residual foreground amplitudes are NOT marginalised
+# here: profile hardening already nulls the response to sources matching the
+# assumed profile, so A_fg is fixed to 0 rather than given the informative
+# priors used for the fiducial GMV run. Everything else -- calibration priors,
+# beta_pol, beam eigenmodes -- is identical to gmv.yaml.
+candl.interface.CandlCobayaLikelihood:
+  data_set_file: !!python/name:spt_candl_data.SPT3G_D1_KK ''
+  variant: GMVprof_withcmb
+  lensing: true
+  add_logdet: false
+  clear_internal_priors: true
+  params:
+    Tcal_lens:
+      latex: Tcal_{\rm{lens}}
+      value: 'lambda Tcal: Tcal'
+
+    Pcal_lens:
+      latex: Pcal_{\rm{lens}}
+      value: 'lambda Ecal: Ecal'
+
+    beta_pol_90:
+      value: 5.356272497452095882e-01
+      latex: \beta_{pol}^{90}
+
+    beta_pol_150:
+      value: 6.853218816169579508e-01
+      latex: \beta_{pol}^{150}
+
+    beta_pol_220:
+      value: 6.580057999530474211e-01
+      latex: \beta_{pol}^{220}
+
+    beam1:
+      value: 0
+      latex: \beta_1
+
+    beam2:
+      value: 0
+      latex: \beta_2
+
+    beam3:
+      value: 0
+      latex: \beta_3
+
+    beam4:
+      value: 0
+      latex: \beta_4
+
+    Atsz:
+      value: 0
+      latex: A_{\rm tsz}
+
+    Acib150:
+      value: 0
+      latex: A_{\rm cib}^{150}
+
+    Acib220:
+      value: 0
+      latex: A_{\rm cib}^{220}
+
+    Arad90:
+      value: 0
+      latex: A_{\rm rad}^{90}
+
+    Arad150:
+      value: 0
+      latex: A_{\rm rad}^{150}

@@ -117,6 +117,21 @@ SPT3G_D1_KK_PP = f"{data_path}/{SPT3G_D1_KK_folder}/PP/SPT3G_D1_KK_PP.yaml"
 SPT3G_D1_KK_PP_withcmb = (
     f"{data_path}/{SPT3G_D1_KK_folder}/PP/SPT3G_D1_KK_PP_withcmb.yaml"
 )
+SPT3G_D1_KK_GMVprof = (
+    f"{data_path}/{SPT3G_D1_KK_folder}/GMVprof/SPT3G_D1_KK_GMVprof.yaml"
+)
+SPT3G_D1_KK_GMVprof_withcmb = (
+    f"{data_path}/{SPT3G_D1_KK_folder}/GMVprof/SPT3G_D1_KK_GMVprof_withcmb.yaml"
+)
+SPT3G_D1_KK_GMVprof_fixsys = (
+    f"{data_path}/{SPT3G_D1_KK_folder}/GMVprof/SPT3G_D1_KK_GMVprof_fixsys.yaml"
+)
+SPT3G_D1_KK_GMV_fixsys = (
+    f"{data_path}/{SPT3G_D1_KK_folder}/GMV/SPT3G_D1_KK_GMV_fixsys.yaml"
+)
+SPT3G_D1_KK_PP_fixsys = (
+    f"{data_path}/{SPT3G_D1_KK_folder}/PP/SPT3G_D1_KK_PP_fixsys.yaml"
+)
 
 # --------------------------------------#
 # PREPARE SHORCUTS AND INFO
@@ -165,6 +180,11 @@ shortcuts = {
         "GMV_withcmb": "SPT3G_D1_KK_GMV_withcmb",
         "PP": "SPT3G_D1_KK_PP",
         "PP_withcmb": "SPT3G_D1_KK_PP_withcmb",
+        "GMVprof": "SPT3G_D1_KK_GMVprof",
+        "GMVprof_withcmb": "SPT3G_D1_KK_GMVprof_withcmb",
+        "GMVprof_fixsys": "SPT3G_D1_KK_GMVprof_fixsys",
+        "GMV_fixsys": "SPT3G_D1_KK_GMV_fixsys",
+        "PP_fixsys": "SPT3G_D1_KK_PP_fixsys",
     },
     "SPT-3G D1 BB": "SPT3G_D1_BB",
 }
@@ -212,6 +232,14 @@ info = {
         "GMV_withcmb": "GMV joint lensing + CMB likelihood.",
         "PP": "PP (pol-only) lensing-only (CMB-marginalized covariance).",
         "PP_withcmb": "PP (pol-only) joint lensing + CMB likelihood.",
+        "GMVprof": "Profile-hardened GMV lensing-only (CMB-marginalized covariance).",
+        "GMVprof_withcmb": "Profile-hardened GMV joint lensing + CMB likelihood.",
+        "GMVprof_fixsys": "Profile-hardened GMV with systematics fixed: noCMBmarg "
+                          "covariance plus the data-driven Clhat response correction.",
+        "GMV_fixsys": "GMV with systematics fixed: noCMBmarg covariance plus the "
+                      "data-driven Clhat response correction, no primary-CMB likelihood.",
+        "PP_fixsys": "PP with systematics fixed: noCMBmarg covariance plus the "
+                     "data-driven Clhat response correction, no primary-CMB likelihood.",
     },
 }
 
