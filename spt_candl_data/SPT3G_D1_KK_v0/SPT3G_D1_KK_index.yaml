@@ -10,3 +10,5 @@ GMV: "GMV/SPT3G_D1_KK_GMV.yaml"                  # GMV lensing-only (CMBmarg cov
 PP: "PP/SPT3G_D1_KK_PP.yaml"                     # PP lensing-only
 GMV_withcmb: "GMV/SPT3G_D1_KK_GMV_withcmb.yaml"  # GMV joint lensing + CMB
 PP_withcmb: "PP/SPT3G_D1_KK_PP_withcmb.yaml"     # PP joint lensing + CMB
+GMVprof: "GMVprof/SPT3G_D1_KK_GMVprof.yaml"      # profile-hardened GMV lensing-only
+GMVprof_withcmb: "GMVprof/SPT3G_D1_KK_GMVprof_withcmb.yaml"  # profile-hardened GMV + CMB
