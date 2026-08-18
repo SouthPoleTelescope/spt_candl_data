@@ -1,0 +1,40 @@
+# Polarized-beam parameters set to the point-source measurement of
+#   de Haan et al., "Characterization of the Polarization Beam Response of SPT-3G
+#   Using Point Sources", arXiv:2602.06334 (Baseline row):
+#     95 GHz  0.890 +/- 0.098
+#     150 GHz 1.084 +/- 0.095
+#     220 GHz 0.896 +/- 0.219
+#
+# Same parametrisation as the likelihood: B_ell^pol = B_main + beta_pol*(B_T - B_main),
+# so beta_pol -> 1 is "no sidelobe depolarization" (KK_transformations.py,
+# compositeRelPolBeam). The Cinv filter assumed beta_pol = {0.53562725, 0.68532188,
+# 0.6580058} (compositeAppliedPolBeam, from best_fit_20250531_all_rc4_unblind.npz),
+# which is what the fiducial configs pin, giving unity correction; these values
+# therefore apply the shift from that assumption to the de Haan measurement.
+#
+# Note those fiducial values are NOT a beam measurement: they are the best-fit point
+# of the SPT-3G TT/TE/EE likelihood, where beta_pol floated with cosmology, cals,
+# foregrounds and the beam eigenmodes. That fit constrains beta_pol only to ~+/-0.15
+# (par_cov_20250124_all_v38_polbeamrc4_unblind.npz) with r(90,150) = 0.96, so it sits
+# 2.0/1.9/0.8 sigma below de Haan -- joint chi2 = 4.5 for 3 dof, i.e. consistent.
+# This test therefore replaces a weak internal constraint with the direct measurement.
+#
+# Held fixed (as in the fid_lens/data_camb_gmvspafg_dehaanbetapol reference chain) to
+# isolate the central-value shift. To instead marginalise over the measurement error,
+# swap each `value:` for a `prior: {dist: norm, loc: <value>, scale: <error above>}`.
+#
+# Merged on top of configs/likelihoods/lens/nocmb/gmv via !defaults, so only these
+# three entries are overridden.
+candl.interface.CandlCobayaLikelihood:
+  params:
+    beta_pol_90:
+      value: 0.890
+      latex: \beta_{pol}^{90}
+
+    beta_pol_150:
+      value: 1.084
+      latex: \beta_{pol}^{150}
+
+    beta_pol_220:
+      value: 0.896
+      latex: \beta_{pol}^{220}

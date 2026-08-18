@@ -1,0 +1,24 @@
+output: ${DIR_CHAINS}/validation/dehaanbetapol/data_camb_gmv/chain
+
+theory : !defaults [../../configs/theory/nocmb/camb]
+
+params : !defaults [../../configs/params/nocmb/cosmo_base]
+
+# beta_pol_{90,150,220} set to the de Haan et al. (arXiv:2602.06334) point-source
+# measurement of the SPT-3G polarized beam response (see betapol.yaml); everything
+# else is the fiducial lensing-only GMV setup.
+likelihood: !defaults [../../configs/likelihoods/lens/nocmb/gmv,
+                       betapol
+                      ]
+
+sampler:
+  mcmc:
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.05
+    learn_proposal: true
+    learn_proposal_Rminus1_max_early: 30.0
+    learn_proposal_Rminus1_max: 10.0
+    drag: true
+    proposal_scale: 1.9
+    output_every: 1
+    oversample_power: 0.4
