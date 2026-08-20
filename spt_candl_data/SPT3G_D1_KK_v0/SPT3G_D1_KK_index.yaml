@@ -12,5 +12,6 @@ GMV_withcmb: "GMV/SPT3G_D1_KK_GMV_withcmb.yaml"  # GMV joint lensing + CMB
 PP_withcmb: "PP/SPT3G_D1_KK_PP_withcmb.yaml"     # PP joint lensing + CMB
 GMVprof: "GMVprof/SPT3G_D1_KK_GMVprof.yaml"      # profile-hardened GMV lensing-only
 GMVprof_withcmb: "GMVprof/SPT3G_D1_KK_GMVprof_withcmb.yaml"  # profile-hardened GMV + CMB
+GMVprof_fixsys: "GMVprof/SPT3G_D1_KK_GMVprof_fixsys.yaml"  # profile-hardened GMV, noCMBmarg cov (fixed sys, no primary-CMB like)
 GMV_fixsys: "GMV/SPT3G_D1_KK_GMV_fixsys.yaml"    # GMV, noCMBmarg cov + data-driven \hat{Cl} corr (fixed sys, no primary-CMB like)
-PP_fixsys: "PP/SPT3G_D1_KK_PP_fixedsys.yaml"     # PP, noCMBmarg cov + data-driven \hat{Cl} corr (fixed sys, no primary-CMB like)
+PP_fixsys: "PP/SPT3G_D1_KK_PP_fixsys.yaml"       # PP, noCMBmarg cov + data-driven \hat{Cl} corr (fixed sys, no primary-CMB like)

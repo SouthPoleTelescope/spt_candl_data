@@ -6,8 +6,14 @@
 # response to sources matching the assumed profile, matching the paper's
 # 'we also evaluate the profile-hardened lensing amplitude setting Afg = 0'.
 candl.interface.CandlCobayaLikelihood:
-  data_set_file: !!python/name:spt_candl_data.SPT3G_D1_KK ''
-  variant: GMVprof_fixsys
+  # NOTE: point straight at the variant's own data set yaml instead of the index
+  # file + `variant:` key. candl's index lookup (candl/io.py, "variant not found
+  # in index file") only PRINTS a warning and silently falls back to the index
+  # `default:` (= plain GMV) when the variant is missing. A stale spt_candl_data
+  # checkout did exactly that on 2026-08-19 and produced GMV chains labelled as
+  # this variant. Referencing the module shortcut directly makes a stale checkout
+  # fail loudly at YAML-load time instead of quietly running the wrong data.
+  data_set_file: !!python/name:spt_candl_data.SPT3G_D1_KK_GMVprof_fixsys ''
   lensing: true
   add_logdet: true
   clear_internal_priors: true

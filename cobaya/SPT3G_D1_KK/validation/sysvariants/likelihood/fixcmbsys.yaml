@@ -1,9 +1,17 @@
 # Fig. 19 systematics/foreground robustness variant of the baseline GMV
-# lensing-only run (Sec. VII B).  Tcal and Pcal fixed, and the CMB-systematics-fixed covariance
-# (variant GMV_fixcmbsys) used in place of the baseline CMBmarg one.
+# lensing-only run (Sec. VII B).  Tcal and Pcal fixed, and the
+# CMB-systematics-fixed covariance used in place of the baseline CMBmarg one.
+#
+# Validation-only: expressed here as a covariance-file override on the public
+# GMV data set rather than as a released variant, so nothing extra is exposed by
+# spt_candl_data. candl's LensLike applies **kwargs on top of the data set yaml
+# ("Overwrite any info in the data set yaml file by passed kwargs"), and
+# `additional_args` is the interface's pass-through for that. Verified identical
+# to loading a dedicated data set yaml carrying this covariance.
 candl.interface.CandlCobayaLikelihood:
-  data_set_file: !!python/name:spt_candl_data.SPT3G_D1_KK ''
-  variant: GMV_fixcmbsys
+  data_set_file: !!python/name:spt_candl_data.SPT3G_D1_KK_GMV ''
+  additional_args:
+    covariance_file: SPT3G_D1_KK_GMV_cov_CMBmarg_fixsys.txt
   lensing: true
   add_logdet: true
   clear_internal_priors: true
