@@ -1,8 +1,17 @@
 # Fig. 19 systematics/foreground robustness variant of the baseline GMV
-# lensing-only run (Sec. VII B).  Last two bandpowers dropped (variant GMV_15bins).
+# lensing-only run (Sec. VII B).  Last two bandpowers dropped.
+#
+# Validation-only: expressed here as a `data_selection` on the public GMV data
+# set rather than as a released variant, so nothing extra is exposed by
+# spt_candl_data. Verified identical to loading a dedicated 15-bin data set yaml.
+#
+# NOTE: candl's LensLike.generate_crop_mask only branches on str or bool
+# elements; an integer 0/1 list is silently treated as 'cannot interpret' and
+# yields an all-ones mask (i.e. no bins dropped). The entries MUST be booleans.
 candl.interface.CandlCobayaLikelihood:
-  data_set_file: !!python/name:spt_candl_data.SPT3G_D1_KK ''
-  variant: GMV_15bins
+  data_set_file: !!python/name:spt_candl_data.SPT3G_D1_KK_GMV ''
+  data_selection: [true, true, true, true, true, true, true, true, true,
+                   true, true, true, true, true, true, false, false]
   lensing: true
   add_logdet: true
   clear_internal_priors: true
