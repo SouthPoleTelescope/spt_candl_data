@@ -1,0 +1,86 @@
+# Same as gmv.yaml (fixed CMB-SPA cosmology, Alens = A_recon^{theta_fix} the only
+# sampled parameter) but with ALL foreground amplitudes fixed to 1, i.e. the
+# fiducial-amplitude foreground correction. Likelihood is gmv_fixsys with
+# Atsz/Acib/Arad overridden inline (cal/beam values unchanged), so the shared
+# config is untouched.
+output: ${DIR_CHAINS}/validation/arec_lens_fixedcosmo/data_camb_gmv_fg1/chain
+
+theory : !defaults [../../configs/theory/nocmb/camb]
+
+params : !defaults [fixcosmosys]
+
+likelihood:
+  candl.interface.CandlCobayaLikelihood:
+    data_set_file: !!python/name:spt_candl_data.SPT3G_D1_KK ''
+    variant: GMV_fixsys
+    lensing: true
+    add_logdet: true
+    clear_internal_priors: true
+    params:
+      Tcal_lens:
+        value: 9.989004742e-01
+        latex: T_{\rm{cal}}
+
+      Pcal_lens:
+        value: 1.007422932e+00
+        latex: P_{\rm{cal}}
+
+      beta_pol_90:
+        value: 5.356272497452095882e-01
+        latex: \beta_{pol}^{90}
+
+      beta_pol_150:
+        value: 6.853218816169579508e-01
+        latex: \beta_{pol}^{150}
+
+      beta_pol_220:
+        value: 6.580057999530474211e-01
+        latex: \beta_{pol}^{220}
+
+      beam1:
+        value: 0
+        latex: \beta_1
+
+      beam2:
+        value: 0
+        latex: \beta_2
+
+      beam3:
+        value: 0
+        latex: \beta_3
+
+      beam4:
+        value: 0
+        latex: \beta_4
+
+      Atsz:
+        value: 1.0
+        latex: A_{\rm tsz}
+
+      Acib150:
+        value: 1.0
+        latex: A_{\rm cib}^{150}
+
+      Acib220:
+        value: 1.0
+        latex: A_{\rm cib}^{220}
+
+      Arad90:
+        value: 1.0
+        latex: A_{\rm rad}^{90}
+
+      Arad150:
+        value: 1.0
+        latex: A_{\rm rad}^{150}
+
+sampler:
+  mcmc:
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.05
+    learn_proposal: true
+    learn_proposal_Rminus1_max_early: 30.0
+    learn_proposal_Rminus1_max: 10.0
+    drag: false
+    proposal_scale: 1.9
+    output_every: 1
+    oversample_power: 0.4
