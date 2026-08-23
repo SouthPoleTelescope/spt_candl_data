@@ -1,0 +1,27 @@
+output: ${DIR_CHAINS}/base_lenscmbbao/data_camb_actbaselens_spalitetteete_desidr2/chain
+
+theory : !defaults [../configs/theory/withcmb/camb]
+
+params : !defaults [../configs/params/withcmb/cosmo_base]
+
+likelihood: !defaults [../configs/likelihoods/lens/ext/actbaselens_withcmb,
+                       ../configs/likelihoods/cmb/spalitetteete,
+                       ../configs/likelihoods/bao/desidr2,
+                      ]
+
+sampler:
+  mcmc:
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.05
+    learn_proposal: true
+    learn_proposal_Rminus1_max_early: 30.0
+    learn_proposal_Rminus1_max: 10.0
+    drag: true
+    proposal_scale: 1.9
+    output_every: 1
+    oversample_power: 0.4
+    max_tries: 10000
+    covmat: /eagle/fieldlevel/projects/lens/chains_061526/base_lenscmbbao/data_camb_gmv_actplanckbaselens_spalitetteete_desidr2/chain.covmat
+
+prior:
+  cal_dip_prior: 'lambda A_act: stats.norm.logpdf(A_act, loc = 1.0, scale = 0.003)'
