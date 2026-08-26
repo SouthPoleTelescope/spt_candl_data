@@ -1,0 +1,1642 @@
+Saving to /eagle/fieldlevel/projects/lens/chains_061526/
+Running YAML: base_lenscmbbao/actbaselens_spalitetteete_desidr2.yaml
+[0 : output] Output to be read-from/written-into folder '/eagle/fieldlevel/projects/lens/chains_061526//base_lenscmbbao/data_camb_actbaselens_spalitetteete_desidr2', with prefix 'chain'
+[0 : prior] *WARNING* External prior 'cal_dip_prior' loaded. Mind that it might not be normalized!
+[0 : camb] `camb` module loaded successfully from /lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/camb
+/lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/act_dr6_lenslike/act_dr6_lenslike.py:422: UserWarning: Hartlap correction to cinv: 0.9860935524652339
+  warnings.warn(f"Hartlap correction to cinv: {hartlap_correction}")
+/lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/act_dr6_lenslike/act_dr6_lenslike.py:422: UserWarning: Hartlap correction to cinv: 0.9860935524652339
+  warnings.warn(f"Hartlap correction to cinv: {hartlap_correction}")
+Loading ACT DR6 lensing likelihood v1.2...
+Warning: The FITS format without the 'sacc_ordering' column is deprecated
+Assuming data rows are in the correct order as it was before version 1.0.
+Successfully initialised candl likelihood 'SPT-3G D1 TnE, SPTlite (Camphuis et al. 2025, Quan et al. 2025)' (type: <class 'candl.likelihood.Like'>).
+Data loaded from '/lus/eagle/projects/fieldlevel/repo/crux/spt_candl_data/spt_candl_data/SPT3G_D1_TnE_v0/lite/'.
+Functional likelihood form: gaussian
+--------------------------------------------------------------------------------
+It will analyse the following spectra:
+
+TT lxl       (52 bins, bin centres spanning ell = 424.7 - 2974.5)
+TE lxl       (72 bins, bin centres spanning ell = 424.6 - 3974.5)
+EE lxl       (72 bins, bin centres spanning ell = 424.5 - 3974.5)
+--------------------------------------------------------------------------------
+A data model consisting of 4 transformations has been initialised.
+The following transformations will be applied to the theory spectra in this order:
+
+(1) Name: Aberration
+    Type: <class 'candl.transformations.common.AberrationCorrection'>
+(2) Name: TT Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(3) Name: TE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(4) Name: EE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+--------------------------------------------------------------------------------
+By default, a total of 2 Gaussian priors will be added to the likelihood in candl internally.
+If you are loading the likelihood in sampler wrapper these default priors below will overwritten or replaced according to your selection after initialisation.
+--------------------------------------------------------------------------------
+candl: clearing all internal priors.
+--------------------------------------------------------------------------------
+[0 : bao.desi_dr2.desi_bao_all] Initialized.
+Loading ACT DR6 lensing likelihood v1.2...
+Warning: The FITS format without the 'sacc_ordering' column is deprecated
+Assuming data rows are in the correct order as it was before version 1.0.
+Successfully initialised candl likelihood 'SPT-3G D1 TnE, SPTlite (Camphuis et al. 2025, Quan et al. 2025)' (type: <class 'candl.likelihood.Like'>).
+Data loaded from '/lus/eagle/projects/fieldlevel/repo/crux/spt_candl_data/spt_candl_data/SPT3G_D1_TnE_v0/lite/'.
+Functional likelihood form: gaussian
+--------------------------------------------------------------------------------
+It will analyse the following spectra:
+
+TT lxl       (52 bins, bin centres spanning ell = 424.7 - 2974.5)
+TE lxl       (72 bins, bin centres spanning ell = 424.6 - 3974.5)
+EE lxl       (72 bins, bin centres spanning ell = 424.5 - 3974.5)
+--------------------------------------------------------------------------------
+A data model consisting of 4 transformations has been initialised.
+The following transformations will be applied to the theory spectra in this order:
+
+(1) Name: Aberration
+    Type: <class 'candl.transformations.common.AberrationCorrection'>
+(2) Name: TT Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(3) Name: TE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(4) Name: EE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+--------------------------------------------------------------------------------
+By default, a total of 2 Gaussian priors will be added to the likelihood in candl internally.
+If you are loading the likelihood in sampler wrapper these default priors below will overwritten or replaced according to your selection after initialisation.
+--------------------------------------------------------------------------------
+candl: clearing all internal priors.
+--------------------------------------------------------------------------------
+[1 : bao.desi_dr2.desi_bao_all] Initialized.
+/lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/act_dr6_lenslike/act_dr6_lenslike.py:422: UserWarning: Hartlap correction to cinv: 0.9860935524652339
+  warnings.warn(f"Hartlap correction to cinv: {hartlap_correction}")
+/lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/act_dr6_lenslike/act_dr6_lenslike.py:422: UserWarning: Hartlap correction to cinv: 0.9860935524652339
+  warnings.warn(f"Hartlap correction to cinv: {hartlap_correction}")
+/lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/act_dr6_lenslike/act_dr6_lenslike.py:422: UserWarning: Hartlap correction to cinv: 0.9860935524652339
+  warnings.warn(f"Hartlap correction to cinv: {hartlap_correction}")
+/lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/act_dr6_lenslike/act_dr6_lenslike.py:422: UserWarning: Hartlap correction to cinv: 0.9860935524652339
+  warnings.warn(f"Hartlap correction to cinv: {hartlap_correction}")
+/lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/act_dr6_lenslike/act_dr6_lenslike.py:422: UserWarning: Hartlap correction to cinv: 0.9860935524652339
+  warnings.warn(f"Hartlap correction to cinv: {hartlap_correction}")
+/lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/act_dr6_lenslike/act_dr6_lenslike.py:422: UserWarning: Hartlap correction to cinv: 0.9860935524652339
+  warnings.warn(f"Hartlap correction to cinv: {hartlap_correction}")
+Loading ACT DR6 lensing likelihood v1.2...
+Warning: The FITS format without the 'sacc_ordering' column is deprecated
+Assuming data rows are in the correct order as it was before version 1.0.
+Successfully initialised candl likelihood 'SPT-3G D1 TnE, SPTlite (Camphuis et al. 2025, Quan et al. 2025)' (type: <class 'candl.likelihood.Like'>).
+Data loaded from '/lus/eagle/projects/fieldlevel/repo/crux/spt_candl_data/spt_candl_data/SPT3G_D1_TnE_v0/lite/'.
+Functional likelihood form: gaussian
+--------------------------------------------------------------------------------
+It will analyse the following spectra:
+
+TT lxl       (52 bins, bin centres spanning ell = 424.7 - 2974.5)
+TE lxl       (72 bins, bin centres spanning ell = 424.6 - 3974.5)
+EE lxl       (72 bins, bin centres spanning ell = 424.5 - 3974.5)
+--------------------------------------------------------------------------------
+A data model consisting of 4 transformations has been initialised.
+The following transformations will be applied to the theory spectra in this order:
+
+(1) Name: Aberration
+    Type: <class 'candl.transformations.common.AberrationCorrection'>
+(2) Name: TT Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(3) Name: TE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(4) Name: EE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+--------------------------------------------------------------------------------
+By default, a total of 2 Gaussian priors will be added to the likelihood in candl internally.
+If you are loading the likelihood in sampler wrapper these default priors below will overwritten or replaced according to your selection after initialisation.
+--------------------------------------------------------------------------------
+candl: clearing all internal priors.
+--------------------------------------------------------------------------------
+[6 : bao.desi_dr2.desi_bao_all] Initialized.
+Loading ACT DR6 lensing likelihood v1.2...
+Warning: The FITS format without the 'sacc_ordering' column is deprecated
+Assuming data rows are in the correct order as it was before version 1.0.
+Successfully initialised candl likelihood 'SPT-3G D1 TnE, SPTlite (Camphuis et al. 2025, Quan et al. 2025)' (type: <class 'candl.likelihood.Like'>).
+Data loaded from '/lus/eagle/projects/fieldlevel/repo/crux/spt_candl_data/spt_candl_data/SPT3G_D1_TnE_v0/lite/'.
+Functional likelihood form: gaussian
+--------------------------------------------------------------------------------
+It will analyse the following spectra:
+
+TT lxl       (52 bins, bin centres spanning ell = 424.7 - 2974.5)
+TE lxl       (72 bins, bin centres spanning ell = 424.6 - 3974.5)
+EE lxl       (72 bins, bin centres spanning ell = 424.5 - 3974.5)
+--------------------------------------------------------------------------------
+A data model consisting of 4 transformations has been initialised.
+The following transformations will be applied to the theory spectra in this order:
+
+(1) Name: Aberration
+    Type: <class 'candl.transformations.common.AberrationCorrection'>
+(2) Name: TT Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(3) Name: TE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(4) Name: EE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+--------------------------------------------------------------------------------
+By default, a total of 2 Gaussian priors will be added to the likelihood in candl internally.
+If you are loading the likelihood in sampler wrapper these default priors below will overwritten or replaced according to your selection after initialisation.
+--------------------------------------------------------------------------------
+candl: clearing all internal priors.
+--------------------------------------------------------------------------------
+[7 : bao.desi_dr2.desi_bao_all] Initialized.
+Loading ACT DR6 lensing likelihood v1.2...
+Warning: The FITS format without the 'sacc_ordering' column is deprecated
+Assuming data rows are in the correct order as it was before version 1.0.
+Successfully initialised candl likelihood 'SPT-3G D1 TnE, SPTlite (Camphuis et al. 2025, Quan et al. 2025)' (type: <class 'candl.likelihood.Like'>).
+Data loaded from '/lus/eagle/projects/fieldlevel/repo/crux/spt_candl_data/spt_candl_data/SPT3G_D1_TnE_v0/lite/'.
+Functional likelihood form: gaussian
+--------------------------------------------------------------------------------
+It will analyse the following spectra:
+
+TT lxl       (52 bins, bin centres spanning ell = 424.7 - 2974.5)
+TE lxl       (72 bins, bin centres spanning ell = 424.6 - 3974.5)
+EE lxl       (72 bins, bin centres spanning ell = 424.5 - 3974.5)
+--------------------------------------------------------------------------------
+A data model consisting of 4 transformations has been initialised.
+The following transformations will be applied to the theory spectra in this order:
+
+(1) Name: Aberration
+    Type: <class 'candl.transformations.common.AberrationCorrection'>
+(2) Name: TT Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(3) Name: TE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(4) Name: EE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+--------------------------------------------------------------------------------
+By default, a total of 2 Gaussian priors will be added to the likelihood in candl internally.
+If you are loading the likelihood in sampler wrapper these default priors below will overwritten or replaced according to your selection after initialisation.
+--------------------------------------------------------------------------------
+candl: clearing all internal priors.
+--------------------------------------------------------------------------------
+[2 : bao.desi_dr2.desi_bao_all] Initialized.
+Loading ACT DR6 lensing likelihood v1.2...
+Warning: The FITS format without the 'sacc_ordering' column is deprecated
+Assuming data rows are in the correct order as it was before version 1.0.
+Successfully initialised candl likelihood 'SPT-3G D1 TnE, SPTlite (Camphuis et al. 2025, Quan et al. 2025)' (type: <class 'candl.likelihood.Like'>).
+Data loaded from '/lus/eagle/projects/fieldlevel/repo/crux/spt_candl_data/spt_candl_data/SPT3G_D1_TnE_v0/lite/'.
+Functional likelihood form: gaussian
+--------------------------------------------------------------------------------
+It will analyse the following spectra:
+
+TT lxl       (52 bins, bin centres spanning ell = 424.7 - 2974.5)
+TE lxl       (72 bins, bin centres spanning ell = 424.6 - 3974.5)
+EE lxl       (72 bins, bin centres spanning ell = 424.5 - 3974.5)
+--------------------------------------------------------------------------------
+A data model consisting of 4 transformations has been initialised.
+The following transformations will be applied to the theory spectra in this order:
+
+(1) Name: Aberration
+    Type: <class 'candl.transformations.common.AberrationCorrection'>
+(2) Name: TT Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(3) Name: TE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(4) Name: EE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+--------------------------------------------------------------------------------
+By default, a total of 2 Gaussian priors will be added to the likelihood in candl internally.
+If you are loading the likelihood in sampler wrapper these default priors below will overwritten or replaced according to your selection after initialisation.
+--------------------------------------------------------------------------------
+candl: clearing all internal priors.
+--------------------------------------------------------------------------------
+[3 : bao.desi_dr2.desi_bao_all] Initialized.
+Loading ACT DR6 lensing likelihood v1.2...
+Warning: The FITS format without the 'sacc_ordering' column is deprecated
+Assuming data rows are in the correct order as it was before version 1.0.
+Successfully initialised candl likelihood 'SPT-3G D1 TnE, SPTlite (Camphuis et al. 2025, Quan et al. 2025)' (type: <class 'candl.likelihood.Like'>).
+Data loaded from '/lus/eagle/projects/fieldlevel/repo/crux/spt_candl_data/spt_candl_data/SPT3G_D1_TnE_v0/lite/'.
+Functional likelihood form: gaussian
+--------------------------------------------------------------------------------
+It will analyse the following spectra:
+
+TT lxl       (52 bins, bin centres spanning ell = 424.7 - 2974.5)
+TE lxl       (72 bins, bin centres spanning ell = 424.6 - 3974.5)
+EE lxl       (72 bins, bin centres spanning ell = 424.5 - 3974.5)
+--------------------------------------------------------------------------------
+A data model consisting of 4 transformations has been initialised.
+The following transformations will be applied to the theory spectra in this order:
+
+(1) Name: Aberration
+    Type: <class 'candl.transformations.common.AberrationCorrection'>
+(2) Name: TT Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(3) Name: TE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(4) Name: EE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+--------------------------------------------------------------------------------
+By default, a total of 2 Gaussian priors will be added to the likelihood in candl internally.
+If you are loading the likelihood in sampler wrapper these default priors below will overwritten or replaced according to your selection after initialisation.
+--------------------------------------------------------------------------------
+candl: clearing all internal priors.
+--------------------------------------------------------------------------------
+[4 : bao.desi_dr2.desi_bao_all] Initialized.
+Loading ACT DR6 lensing likelihood v1.2...
+Warning: The FITS format without the 'sacc_ordering' column is deprecated
+Assuming data rows are in the correct order as it was before version 1.0.
+Successfully initialised candl likelihood 'SPT-3G D1 TnE, SPTlite (Camphuis et al. 2025, Quan et al. 2025)' (type: <class 'candl.likelihood.Like'>).
+Data loaded from '/lus/eagle/projects/fieldlevel/repo/crux/spt_candl_data/spt_candl_data/SPT3G_D1_TnE_v0/lite/'.
+Functional likelihood form: gaussian
+--------------------------------------------------------------------------------
+It will analyse the following spectra:
+
+TT lxl       (52 bins, bin centres spanning ell = 424.7 - 2974.5)
+TE lxl       (72 bins, bin centres spanning ell = 424.6 - 3974.5)
+EE lxl       (72 bins, bin centres spanning ell = 424.5 - 3974.5)
+--------------------------------------------------------------------------------
+A data model consisting of 4 transformations has been initialised.
+The following transformations will be applied to the theory spectra in this order:
+
+(1) Name: Aberration
+    Type: <class 'candl.transformations.common.AberrationCorrection'>
+(2) Name: TT Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(3) Name: TE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(4) Name: EE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+--------------------------------------------------------------------------------
+By default, a total of 2 Gaussian priors will be added to the likelihood in candl internally.
+If you are loading the likelihood in sampler wrapper these default priors below will overwritten or replaced according to your selection after initialisation.
+--------------------------------------------------------------------------------
+candl: clearing all internal priors.
+--------------------------------------------------------------------------------
+[5 : bao.desi_dr2.desi_bao_all] Initialized.
+[0 : mcmc] Getting initial point... (this may take a few seconds)
+[2 : mcmc] Getting initial point... (this may take a few seconds)
+[1 : mcmc] Getting initial point... (this may take a few seconds)
+[4 : mcmc] Getting initial point... (this may take a few seconds)
+[3 : mcmc] Getting initial point... (this may take a few seconds)
+[6 : mcmc] Getting initial point... (this may take a few seconds)
+[5 : mcmc] Getting initial point... (this may take a few seconds)
+[7 : mcmc] Getting initial point... (this may take a few seconds)
+[5 : mcmc] Initial point: theta_MC_100:1.045273, logA:3.057443, ns:0.9689466, ombh2:0.02242143, omch2:0.1214749, tau:0.05430842, A_planck:1.085535, P_act:1.001599, Tcal:1, Ecal:1
+[4 : mcmc] Initial point: theta_MC_100:1.040135, logA:3.048415, ns:0.9689466, ombh2:0.02242143, omch2:0.1217898, tau:0.05430842, A_planck:1.137933, P_act:1.006654, Tcal:1, Ecal:1
+[3 : mcmc] Initial point: theta_MC_100:1.040804, logA:3.050735, ns:0.9689466, ombh2:0.02242143, omch2:0.119966, tau:0.05430842, A_planck:0.9106581, P_act:0.9877395, Tcal:1, Ecal:1
+[2 : mcmc] Initial point: theta_MC_100:1.041339, logA:3.041708, ns:0.9689466, ombh2:0.02242143, omch2:0.1204281, tau:0.05430842, A_planck:1.143629, P_act:1.008857, Tcal:1, Ecal:1
+[0 : mcmc] Initial point: theta_MC_100:1.043508, logA:3.045528, ns:0.9689466, ombh2:0.02242143, omch2:0.1224119, tau:0.05430842, A_planck:1.063702, P_act:0.9822451, Tcal:1, Ecal:1
+[1 : mcmc] Initial point: theta_MC_100:1.041839, logA:3.057415, ns:0.9689466, ombh2:0.02242143, omch2:0.1199439, tau:0.05430842, A_planck:1.006171, P_act:0.9970963, Tcal:1, Ecal:1
+[7 : mcmc] Initial point: theta_MC_100:1.039476, logA:3.054659, ns:0.9689466, ombh2:0.02242143, omch2:0.1177273, tau:0.05430842, A_planck:1.060684, P_act:0.9958526, Tcal:1, Ecal:1
+[6 : mcmc] Initial point: theta_MC_100:1.043492, logA:3.045396, ns:0.9689466, ombh2:0.02242143, omch2:0.1192481, tau:0.05430842, A_planck:1.109004, P_act:0.9950874, Tcal:1, Ecal:1
+[0 : model] Measuring speeds... (this may take a few seconds)
+[0 : planck_2018_lowl.ee_sroll2] *WARNING* low EE multipole out of range, rejecting point
+[5 : planck_2018_lowl.ee_sroll2] *WARNING* low EE multipole out of range, rejecting point
+[0 : model] Setting measured speeds (per sec): {act_dr6_lenslike.ACTDR6LensLike: 39.7, planck_2018_lowl.TT: 2560.0, planck_2018_lowl.EE_sroll2: 8630.0, act_dr6_cmbonly.PlanckActCut: 606.0, act_dr6_cmbonly.ACTDR6CMBonly: 808.0, candl_like: 737.0, bao.desi_dr2.desi_bao_all: 1060.0, camb.transfers: 1.75, camb: 4.49}
+[0 : mcmc] Dragging with number of interpolating steps:
+[0 : mcmc] * 1 : [['theta_MC_100', 'ombh2', 'omch2', 'tau'], ['logA', 'ns']]
+[0 : mcmc] * 5 : [['A_planck'], ['P_act'], ['Tcal', 'Ecal']]
+[0 : mcmc] Covariance matrix loaded for params ['theta_MC_100', 'logA', 'ns', 'ombh2', 'omch2', 'tau', 'A_planck', 'P_act', 'Tcal', 'Ecal']
+[0 : mcmc] All parameters' covariance loaded from given covmat.
+[0 : mcmc] *WARNING* The initial points are widely dispersed compared to the proposal covariance, it may take a long time to burn in (max dist to start mean: [np.float64(7.584334301715298), np.float64(60.2040656770248), np.float64(80.28011645794993), np.float64(148.70214262116707), np.float64(74.77788258838642), np.float64(18.81936390582532), np.float64(41.787157436657836), np.float64(13.129172608296587)])
+[0 : mcmc] Sampling!
+[3 : mcmc] Learn + convergence test @ 240 samples accepted.
+[6 : mcmc] Learn + convergence test @ 240 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 240 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 240 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 240 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 240 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 240 samples accepted.
+[2 : mcmc] Learn + convergence test @ 240 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.382 = avg([0.3956, 0.3896, 0.3210, 0.4091, 0.3689, 0.3559, 0.3988, 0.4142])
+[0 : mcmc]  - Convergence of means: R-1 = 0.660153 after 1991 accepted steps = sum([254, 240, 241, 251, 242, 252, 255, 256])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 480 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 480 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 480 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 480 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 480 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 480 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 480 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 480 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.209 = avg([0.2115, 0.2100, 0.2160, 0.1977, 0.2239, 0.2160, 0.1972, 0.2000])
+[0 : mcmc]  - Convergence of means: R-1 = 1.039372 after 3954 accepted steps = sum([500, 493, 496, 481, 501, 513, 480, 490])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 720 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 720 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 720 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 720 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 720 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 720 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 720 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 720 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.306 = avg([0.3219, 0.3048, 0.3155, 0.2789, 0.2923, 0.3161, 0.3116, 0.3068])
+[0 : mcmc]  - Convergence of means: R-1 = 0.185014 after 6053 accepted steps = sum([772, 742, 780, 720, 749, 783, 745, 762])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[2 : mcmc] Learn + convergence test @ 960 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 960 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 960 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 960 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 960 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 960 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 960 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 960 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.384 = avg([0.3906, 0.3776, 0.3853, 0.3561, 0.3729, 0.3746, 0.4132, 0.3983])
+[0 : mcmc]  - Convergence of means: R-1 = 0.047623 after 8095 accepted steps = sum([1028, 1006, 1018, 960, 1005, 1021, 1027, 1030])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[7 : mcmc] Learn + convergence test @ 1200 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 1200 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 1200 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 1200 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 1200 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 1200 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 1200 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 1200 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.383 = avg([0.3822, 0.3791, 0.3854, 0.3708, 0.3778, 0.3741, 0.3932, 0.3980])
+[0 : mcmc]  - Convergence of means: R-1 = 0.040268 after 9969 accepted steps = sum([1266, 1241, 1254, 1200, 1229, 1253, 1243, 1283])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[7 : mcmc] Learn + convergence test @ 1440 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 1440 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 1440 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 1440 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 1440 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 1440 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 1440 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 1440 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.376 = avg([0.3910, 0.3729, 0.3716, 0.3689, 0.3761, 0.3667, 0.3747, 0.3868])
+[0 : mcmc]  - Convergence of means: R-1 = 0.040350 after 11976 accepted steps = sum([1541, 1482, 1508, 1440, 1490, 1509, 1477, 1529])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[0 : mcmc] Learn + convergence test @ 1680 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 1680 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 1680 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 1680 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 1680 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 1680 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 1680 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 1680 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.376 = avg([0.4009, 0.3615, 0.3752, 0.3579, 0.3784, 0.3677, 0.3783, 0.3864])
+[0 : mcmc]  - Convergence of means: R-1 = 0.036154 after 14170 accepted steps = sum([1836, 1748, 1786, 1680, 1770, 1776, 1773, 1801])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[0 : mcmc] Learn + convergence test @ 1920 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 1920 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 1920 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 1920 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 1920 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 1920 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 1920 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 1920 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.377 = avg([0.3904, 0.3614, 0.3783, 0.3708, 0.3836, 0.3773, 0.3750, 0.3798])
+[0 : mcmc]  - Convergence of means: R-1 = 0.026871 after 15981 accepted steps = sum([2047, 1963, 2003, 1920, 2007, 2018, 1996, 2027])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[0 : mcmc] Learn + convergence test @ 2160 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 2160 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 2160 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 2160 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 2160 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 2160 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 2160 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 2160 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.378 = avg([0.3894, 0.3646, 0.3769, 0.3696, 0.3834, 0.3875, 0.3781, 0.3750])
+[0 : mcmc]  - Convergence of means: R-1 = 0.022998 after 17947 accepted steps = sum([2283, 2210, 2237, 2160, 2255, 2290, 2240, 2272])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[0 : mcmc] Learn + convergence test @ 2400 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 2400 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 2400 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 2400 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 2400 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 2400 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 2400 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 2400 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.377 = avg([0.3940, 0.3642, 0.3769, 0.3716, 0.3833, 0.3825, 0.3718, 0.3702])
+[0 : mcmc]  - Convergence of means: R-1 = 0.015662 after 19784 accepted steps = sum([2539, 2439, 2476, 2400, 2475, 2512, 2449, 2494])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[0 : mcmc] Learn + convergence test @ 2640 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 2640 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 2640 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 2640 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 2640 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 2640 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 2640 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 2640 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.379 = avg([0.3943, 0.3677, 0.3734, 0.3803, 0.3814, 0.3821, 0.3813, 0.3672])
+[0 : mcmc]  - Convergence of means: R-1 = 0.014375 after 21640 accepted steps = sum([2778, 2671, 2698, 2640, 2707, 2742, 2698, 2706])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[0 : mcmc] Learn + convergence test @ 2880 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 2880 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 2880 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 2880 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 2880 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 2880 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 2880 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 2880 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.379 = avg([0.3923, 0.3680, 0.3777, 0.3838, 0.3772, 0.3795, 0.3813, 0.3703])
+[0 : mcmc]  - Convergence of means: R-1 = 0.008906 after 23418 accepted steps = sum([3003, 2884, 2928, 2880, 2912, 2962, 2910, 2939])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[0 : mcmc] Learn + convergence test @ 3120 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 3120 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 3120 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 3120 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 3120 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 3120 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 3120 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 3120 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.376 = avg([0.3878, 0.3701, 0.3730, 0.3866, 0.3748, 0.3751, 0.3798, 0.3630])
+[0 : mcmc]  - Convergence of means: R-1 = 0.009653 after 25310 accepted steps = sum([3239, 3141, 3153, 3120, 3151, 3192, 3152, 3162])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.102213 after 25310 accepted steps = sum([3239, 3141, 3153, 3120, 3151, 3192, 3152, 3162])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[0 : mcmc] Learn + convergence test @ 3360 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 3360 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 3360 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 3360 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 3360 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 3360 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 3360 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 3360 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.377 = avg([0.3837, 0.3708, 0.3675, 0.3918, 0.3792, 0.3738, 0.3810, 0.3679])
+[0 : mcmc]  - Convergence of means: R-1 = 0.009124 after 27202 accepted steps = sum([3475, 3368, 3363, 3360, 3406, 3420, 3408, 3402])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.093111 after 27202 accepted steps = sum([3475, 3368, 3363, 3360, 3406, 3420, 3408, 3402])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[0 : mcmc] Learn + convergence test @ 3600 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 3600 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 3600 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 3600 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 3600 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 3600 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 3600 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 3600 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.374 = avg([0.3773, 0.3654, 0.3682, 0.3865, 0.3745, 0.3744, 0.3797, 0.3660])
+[0 : mcmc]  - Convergence of means: R-1 = 0.013123 after 29260 accepted steps = sum([3715, 3600, 3635, 3622, 3660, 3691, 3673, 3664])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[0 : mcmc] Learn + convergence test @ 3840 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 3840 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 3840 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 3840 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 3840 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 3840 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 3840 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 3840 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.373 = avg([0.3761, 0.3705, 0.3711, 0.3841, 0.3708, 0.3728, 0.3764, 0.3595])
+[0 : mcmc]  - Convergence of means: R-1 = 0.011482 after 31009 accepted steps = sum([3931, 3847, 3862, 3840, 3867, 3917, 3884, 3861])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[0 : mcmc] Learn + convergence test @ 4080 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 4080 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 4080 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 4080 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 4080 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 4080 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 4080 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 4080 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.373 = avg([0.3759, 0.3766, 0.3706, 0.3817, 0.3698, 0.3696, 0.3765, 0.3605])
+[0 : mcmc]  - Convergence of means: R-1 = 0.011304 after 33047 accepted steps = sum([4176, 4134, 4119, 4080, 4120, 4161, 4149, 4108])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 4320 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 4320 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 4320 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 4320 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 4320 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 4320 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 4320 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 4320 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.373 = avg([0.3727, 0.3765, 0.3753, 0.3828, 0.3688, 0.3722, 0.3748, 0.3603])
+[0 : mcmc]  - Convergence of means: R-1 = 0.011464 after 34934 accepted steps = sum([4389, 4370, 4364, 4320, 4344, 4426, 4372, 4349])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 4560 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 4560 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 4560 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 4560 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 4560 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 4560 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 4560 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 4560 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.372 = avg([0.3729, 0.3739, 0.3791, 0.3806, 0.3651, 0.3730, 0.3722, 0.3610])
+[0 : mcmc]  - Convergence of means: R-1 = 0.013145 after 36859 accepted steps = sum([4632, 4600, 4630, 4560, 4576, 4677, 4598, 4586])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 4800 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 4800 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 4800 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 4800 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 4800 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 4800 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 4800 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 4800 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.372 = avg([0.3689, 0.3754, 0.3771, 0.3790, 0.3691, 0.3739, 0.3724, 0.3606])
+[0 : mcmc]  - Convergence of means: R-1 = 0.012212 after 38779 accepted steps = sum([4856, 4854, 4875, 4800, 4832, 4920, 4822, 4820])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 5040 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 5040 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 5040 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 5040 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 5040 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 5040 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 5040 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 5040 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.371 = avg([0.3687, 0.3753, 0.3790, 0.3770, 0.3671, 0.3742, 0.3707, 0.3593])
+[0 : mcmc]  - Convergence of means: R-1 = 0.011809 after 40755 accepted steps = sum([5116, 5097, 5138, 5040, 5074, 5176, 5068, 5046])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 5280 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 5280 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 5280 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 5280 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 5280 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 5280 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 5280 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 5280 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.370 = avg([0.3665, 0.3740, 0.3760, 0.3763, 0.3654, 0.3731, 0.3680, 0.3595])
+[0 : mcmc]  - Convergence of means: R-1 = 0.011718 after 42576 accepted steps = sum([5335, 5337, 5343, 5287, 5300, 5404, 5290, 5280])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 5520 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 5520 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 5520 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 5520 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 5520 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 5520 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 5520 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 5520 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.371 = avg([0.3652, 0.3743, 0.3780, 0.3795, 0.3665, 0.3752, 0.3697, 0.3596])
+[0 : mcmc]  - Convergence of means: R-1 = 0.010825 after 44639 accepted steps = sum([5582, 5577, 5619, 5563, 5551, 5665, 5562, 5520])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 5760 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 5760 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 5760 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 5760 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 5760 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 5760 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 5760 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 5760 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.372 = avg([0.3664, 0.3737, 0.3780, 0.3780, 0.3704, 0.3757, 0.3716, 0.3598])
+[0 : mcmc]  - Convergence of means: R-1 = 0.011195 after 46509 accepted steps = sum([5814, 5807, 5850, 5795, 5788, 5898, 5797, 5760])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 6000 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 6000 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 6000 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 6000 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 6000 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 6000 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 6000 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 6000 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.372 = avg([0.3650, 0.3721, 0.3792, 0.3787, 0.3712, 0.3751, 0.3724, 0.3639])
+[0 : mcmc]  - Convergence of means: R-1 = 0.009153 after 48257 accepted steps = sum([6020, 6021, 6065, 6022, 6008, 6104, 6017, 6000])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 6240 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 6240 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 6240 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 6240 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 6240 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 6240 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 6240 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 6240 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.373 = avg([0.3649, 0.3731, 0.3775, 0.3788, 0.3709, 0.3751, 0.3746, 0.3653])
+[0 : mcmc]  - Convergence of means: R-1 = 0.008833 after 50206 accepted steps = sum([6258, 6277, 6287, 6269, 6240, 6351, 6279, 6245])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.065057 after 50206 accepted steps = sum([6258, 6277, 6287, 6269, 6240, 6351, 6279, 6245])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 6480 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 6480 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 6480 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 6480 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 6480 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 6480 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 6480 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 6480 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.372 = avg([0.3638, 0.3687, 0.3775, 0.3782, 0.3691, 0.3762, 0.3713, 0.3685])
+[0 : mcmc]  - Convergence of means: R-1 = 0.006909 after 52118 accepted steps = sum([6488, 6493, 6521, 6514, 6480, 6591, 6519, 6512])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.065685 after 52118 accepted steps = sum([6488, 6493, 6521, 6514, 6480, 6591, 6519, 6512])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 6720 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 6720 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 6720 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 6720 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 6720 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 6720 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 6720 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 6720 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.371 = avg([0.3645, 0.3687, 0.3785, 0.3758, 0.3666, 0.3763, 0.3706, 0.3668])
+[0 : mcmc]  - Convergence of means: R-1 = 0.007544 after 54101 accepted steps = sum([6753, 6732, 6781, 6753, 6720, 6848, 6759, 6755])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.064480 after 54101 accepted steps = sum([6753, 6732, 6781, 6753, 6720, 6848, 6759, 6755])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 6960 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 6960 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 6960 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 6960 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 6960 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 6960 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 6960 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 6960 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.372 = avg([0.3660, 0.3718, 0.3788, 0.3753, 0.3682, 0.3749, 0.3711, 0.3662])
+[0 : mcmc]  - Convergence of means: R-1 = 0.006253 after 56043 accepted steps = sum([6994, 6977, 7023, 6998, 6960, 7087, 7009, 6995])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.061015 after 56043 accepted steps = sum([6994, 6977, 7023, 6998, 6960, 7087, 7009, 6995])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 7200 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 7200 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 7200 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 7200 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 7200 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 7200 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 7200 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 7200 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.371 = avg([0.3651, 0.3692, 0.3782, 0.3754, 0.3682, 0.3739, 0.3702, 0.3671])
+[0 : mcmc]  - Convergence of means: R-1 = 0.006609 after 58035 accepted steps = sum([7232, 7200, 7288, 7249, 7215, 7332, 7263, 7256])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.062545 after 58035 accepted steps = sum([7232, 7200, 7288, 7249, 7215, 7332, 7263, 7256])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 7440 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 7440 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 7440 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 7440 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 7440 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 7440 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 7440 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 7440 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.370 = avg([0.3670, 0.3655, 0.3750, 0.3725, 0.3687, 0.3724, 0.3720, 0.3682])
+[0 : mcmc]  - Convergence of means: R-1 = 0.005616 after 60036 accepted steps = sum([7491, 7440, 7520, 7480, 7479, 7580, 7526, 7520])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.065302 after 60036 accepted steps = sum([7491, 7440, 7520, 7480, 7479, 7580, 7526, 7520])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 7680 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 7680 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 7680 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 7680 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 7680 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 7680 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 7680 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 7680 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.371 = avg([0.3697, 0.3656, 0.3751, 0.3747, 0.3715, 0.3718, 0.3725, 0.3698])
+[0 : mcmc]  - Convergence of means: R-1 = 0.005797 after 61977 accepted steps = sum([7742, 7680, 7755, 7732, 7730, 7817, 7769, 7752])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.061084 after 61977 accepted steps = sum([7742, 7680, 7755, 7732, 7730, 7817, 7769, 7752])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 7920 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 7920 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 7920 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 7920 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 7920 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 7920 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 7920 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 7920 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.371 = avg([0.3677, 0.3658, 0.3754, 0.3762, 0.3697, 0.3740, 0.3699, 0.3699])
+[0 : mcmc]  - Convergence of means: R-1 = 0.006499 after 63718 accepted steps = sum([7955, 7920, 7971, 7965, 7928, 8036, 7971, 7972])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.066540 after 63718 accepted steps = sum([7955, 7920, 7971, 7965, 7928, 8036, 7971, 7972])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 8160 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 8160 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 8160 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 8160 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 8160 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 8160 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 8160 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 8160 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.371 = avg([0.3703, 0.3650, 0.3741, 0.3766, 0.3684, 0.3742, 0.3713, 0.3702])
+[0 : mcmc]  - Convergence of means: R-1 = 0.006705 after 65677 accepted steps = sum([8215, 8166, 8204, 8203, 8160, 8291, 8223, 8215])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.067078 after 65677 accepted steps = sum([8215, 8166, 8204, 8203, 8160, 8291, 8223, 8215])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 8400 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 8400 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 8400 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 8400 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 8400 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 8400 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 8400 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 8400 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.370 = avg([0.3694, 0.3667, 0.3722, 0.3749, 0.3700, 0.3719, 0.3682, 0.3687])
+[0 : mcmc]  - Convergence of means: R-1 = 0.006086 after 67467 accepted steps = sum([8422, 8416, 8429, 8417, 8400, 8516, 8427, 8440])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.064499 after 67467 accepted steps = sum([8422, 8416, 8429, 8417, 8400, 8516, 8427, 8440])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 8640 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 8640 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 8640 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 8640 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 8640 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 8640 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 8640 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 8640 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.370 = avg([0.3689, 0.3672, 0.3723, 0.3742, 0.3690, 0.3702, 0.3672, 0.3704])
+[0 : mcmc]  - Convergence of means: R-1 = 0.007450 after 69490 accepted steps = sum([8656, 8674, 8689, 8681, 8640, 8767, 8660, 8723])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.069914 after 69490 accepted steps = sum([8656, 8674, 8689, 8681, 8640, 8767, 8660, 8723])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 8880 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 8880 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 8880 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 8880 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 8880 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 8880 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 8880 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 8880 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.370 = avg([0.3670, 0.3667, 0.3719, 0.3756, 0.3714, 0.3685, 0.3682, 0.3702])
+[0 : mcmc]  - Convergence of means: R-1 = 0.006358 after 71493 accepted steps = sum([8880, 8922, 8937, 8945, 8901, 9010, 8926, 8972])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.064818 after 71493 accepted steps = sum([8880, 8922, 8937, 8945, 8901, 9010, 8926, 8972])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 9120 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 9120 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 9120 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 9120 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 9120 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 9120 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 9120 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 9120 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.370 = avg([0.3680, 0.3695, 0.3697, 0.3739, 0.3700, 0.3684, 0.3699, 0.3711])
+[0 : mcmc]  - Convergence of means: R-1 = 0.006702 after 73362 accepted steps = sum([9122, 9176, 9169, 9163, 9120, 9243, 9161, 9208])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.063871 after 73362 accepted steps = sum([9122, 9176, 9169, 9163, 9120, 9243, 9161, 9208])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 9360 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 9360 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 9360 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 9360 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 9360 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 9360 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 9360 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 9360 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.370 = avg([0.3669, 0.3682, 0.3703, 0.3714, 0.3694, 0.3699, 0.3711, 0.3708])
+[0 : mcmc]  - Convergence of means: R-1 = 0.005887 after 75388 accepted steps = sum([9360, 9430, 9431, 9387, 9366, 9518, 9423, 9473])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.059734 after 75388 accepted steps = sum([9360, 9430, 9431, 9387, 9366, 9518, 9423, 9473])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 9600 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 9600 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 9600 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 9600 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 9600 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 9600 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 9600 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 9600 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.370 = avg([0.3688, 0.3663, 0.3705, 0.3715, 0.3675, 0.3697, 0.3712, 0.3738])
+[0 : mcmc]  - Convergence of means: R-1 = 0.005815 after 77338 accepted steps = sum([9611, 9656, 9673, 9628, 9600, 9765, 9660, 9745])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.063617 after 77338 accepted steps = sum([9611, 9656, 9673, 9628, 9600, 9765, 9660, 9745])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[5 : mcmc] Learn + convergence test @ 9840 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[7 : mcmc] Learn + convergence test @ 9840 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 9840 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 9840 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 9840 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 9840 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 9840 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 9840 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.370 = avg([0.3682, 0.3662, 0.3699, 0.3726, 0.3694, 0.3695, 0.3716, 0.3756])
+[0 : mcmc]  - Convergence of means: R-1 = 0.005603 after 79210 accepted steps = sum([9840, 9878, 9899, 9860, 9853, 9998, 9896, 9986])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.062927 after 79210 accepted steps = sum([9840, 9878, 9899, 9860, 9853, 9998, 9896, 9986])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[7 : mcmc] Learn + convergence test @ 10080 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 10080 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 10080 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 10080 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 10080 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 10080 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 10080 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 10080 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.370 = avg([0.3675, 0.3659, 0.3668, 0.3706, 0.3689, 0.3680, 0.3725, 0.3781])
+[0 : mcmc]  - Convergence of means: R-1 = 0.004665 after 81177 accepted steps = sum([10080, 10123, 10125, 10086, 10096, 10240, 10160, 10267])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.069245 after 81177 accepted steps = sum([10080, 10123, 10125, 10086, 10096, 10240, 10160, 10267])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[7 : mcmc] Learn + convergence test @ 10320 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 10320 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 10320 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 10320 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 10320 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 10320 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 10320 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 10320 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.370 = avg([0.3677, 0.3650, 0.3691, 0.3699, 0.3685, 0.3678, 0.3729, 0.3770])
+[0 : mcmc]  - Convergence of means: R-1 = 0.004684 after 83096 accepted steps = sum([10323, 10354, 10395, 10329, 10320, 10473, 10402, 10500])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.068825 after 83096 accepted steps = sum([10323, 10354, 10395, 10329, 10320, 10473, 10402, 10500])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[7 : mcmc] Learn + convergence test @ 10560 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 10560 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 10560 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 10560 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 10560 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 10560 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 10560 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 10560 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.370 = avg([0.3693, 0.3640, 0.3707, 0.3694, 0.3685, 0.3680, 0.3724, 0.3775])
+[0 : mcmc]  - Convergence of means: R-1 = 0.004383 after 84994 accepted steps = sum([10574, 10582, 10628, 10566, 10560, 10709, 10628, 10747])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.064480 after 84994 accepted steps = sum([10574, 10582, 10628, 10566, 10560, 10709, 10628, 10747])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[7 : mcmc] Learn + convergence test @ 10800 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 10800 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 10800 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 10800 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 10800 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 10800 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 10800 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 10800 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.370 = avg([0.3699, 0.3646, 0.3706, 0.3689, 0.3681, 0.3678, 0.3712, 0.3772])
+[0 : mcmc]  - Convergence of means: R-1 = 0.004350 after 86994 accepted steps = sum([10825, 10839, 10877, 10818, 10800, 10972, 10866, 10997])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.057332 after 86994 accepted steps = sum([10825, 10839, 10877, 10818, 10800, 10972, 10866, 10997])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[7 : mcmc] Learn + convergence test @ 11040 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 11040 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 11040 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 11040 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 11040 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 11040 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 11040 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 11040 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.369 = avg([0.3686, 0.3636, 0.3674, 0.3680, 0.3700, 0.3673, 0.3705, 0.3767])
+[0 : mcmc]  - Convergence of means: R-1 = 0.005010 after 88782 accepted steps = sum([11040, 11050, 11071, 11041, 11063, 11189, 11101, 11227])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.060594 after 88782 accepted steps = sum([11040, 11050, 11071, 11041, 11063, 11189, 11101, 11227])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[7 : mcmc] Learn + convergence test @ 11280 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 11280 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 11280 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 11280 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 11280 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 11280 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 11280 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 11280 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.369 = avg([0.3693, 0.3645, 0.3691, 0.3673, 0.3701, 0.3686, 0.3687, 0.3781])
+[0 : mcmc]  - Convergence of means: R-1 = 0.004631 after 90787 accepted steps = sum([11283, 11299, 11348, 11280, 11304, 11457, 11324, 11492])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.055885 after 90787 accepted steps = sum([11283, 11299, 11348, 11280, 11304, 11457, 11324, 11492])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[7 : mcmc] Learn + convergence test @ 11520 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 11520 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 11520 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 11520 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 11520 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 11520 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 11520 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 11520 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.370 = avg([0.3697, 0.3636, 0.3704, 0.3678, 0.3703, 0.3684, 0.3711, 0.3756])
+[0 : mcmc]  - Convergence of means: R-1 = 0.003852 after 92725 accepted steps = sum([11523, 11524, 11610, 11520, 11547, 11700, 11589, 11712])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.054585 after 92725 accepted steps = sum([11523, 11524, 11610, 11520, 11547, 11700, 11589, 11712])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[7 : mcmc] Learn + convergence test @ 11760 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 11760 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 11760 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 11760 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 11760 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 11760 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 11760 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 11760 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.370 = avg([0.3714, 0.3642, 0.3704, 0.3663, 0.3702, 0.3685, 0.3703, 0.3751])
+[0 : mcmc]  - Convergence of means: R-1 = 0.003627 after 94784 accepted steps = sum([11803, 11787, 11870, 11760, 11800, 11956, 11833, 11975])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.052809 after 94784 accepted steps = sum([11803, 11787, 11870, 11760, 11800, 11956, 11833, 11975])
+[0 : mcmc]  - Updated covariance matrix of proposal pdf.
+[7 : mcmc] Learn + convergence test @ 12000 samples accepted.
+[7 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[5 : mcmc] Learn + convergence test @ 12000 samples accepted.
+[5 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[2 : mcmc] Learn + convergence test @ 12000 samples accepted.
+[2 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[6 : mcmc] Learn + convergence test @ 12000 samples accepted.
+[6 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] Learn + convergence test @ 12000 samples accepted.
+[0 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[4 : mcmc] Learn + convergence test @ 12000 samples accepted.
+[4 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[1 : mcmc] Learn + convergence test @ 12000 samples accepted.
+[1 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[3 : mcmc] Learn + convergence test @ 12000 samples accepted.
+[3 : mcmc] Ready to check convergence and learn a new proposal covmat (waiting for the rest...)
+[0 : mcmc] All chains are ready to check convergence and learn a new proposal covmat
+[0 : mcmc]  - Acceptance rate: 0.369 = avg([0.3714, 0.3642, 0.3707, 0.3660, 0.3691, 0.3687, 0.3703, 0.3749])
+[0 : mcmc]  - Convergence of means: R-1 = 0.003067 after 96705 accepted steps = sum([12040, 12026, 12113, 12000, 12033, 12192, 12083, 12218])
+[0 : mcmc]  - Convergence of bounds: R-1 = 0.046940 after 96705 accepted steps = sum([12040, 12026, 12113, 12000, 12033, 12192, 12083, 12218])
+[0 : mcmc] The run has converged!
+[0 : mcmc] Sampling complete after 96705 accepted steps.
+[0 : output] Output to be read-from/written-into folder '/eagle/fieldlevel/projects/lens/chains_061526//base_lenscmbbao/data_camb_actbaselens_spalitetteete_desidr2', with prefix 'chain'
+[0 : prior] *WARNING* External prior 'cal_dip_prior' loaded. Mind that it might not be normalized!
+[0 : camb] `camb` module loaded successfully from /lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/camb
+/lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/act_dr6_lenslike/act_dr6_lenslike.py:422: UserWarning: Hartlap correction to cinv: 0.9860935524652339
+  warnings.warn(f"Hartlap correction to cinv: {hartlap_correction}")
+/lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/act_dr6_lenslike/act_dr6_lenslike.py:422: UserWarning: Hartlap correction to cinv: 0.9860935524652339
+  warnings.warn(f"Hartlap correction to cinv: {hartlap_correction}")
+Loading ACT DR6 lensing likelihood v1.2...
+Warning: The FITS format without the 'sacc_ordering' column is deprecated
+Assuming data rows are in the correct order as it was before version 1.0.
+Successfully initialised candl likelihood 'SPT-3G D1 TnE, SPTlite (Camphuis et al. 2025, Quan et al. 2025)' (type: <class 'candl.likelihood.Like'>).
+Data loaded from '/lus/eagle/projects/fieldlevel/repo/crux/spt_candl_data/spt_candl_data/SPT3G_D1_TnE_v0/lite/'.
+Functional likelihood form: gaussian
+--------------------------------------------------------------------------------
+It will analyse the following spectra:
+
+TT lxl       (52 bins, bin centres spanning ell = 424.7 - 2974.5)
+TE lxl       (72 bins, bin centres spanning ell = 424.6 - 3974.5)
+EE lxl       (72 bins, bin centres spanning ell = 424.5 - 3974.5)
+--------------------------------------------------------------------------------
+A data model consisting of 4 transformations has been initialised.
+The following transformations will be applied to the theory spectra in this order:
+
+(1) Name: Aberration
+    Type: <class 'candl.transformations.common.AberrationCorrection'>
+(2) Name: TT Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(3) Name: TE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(4) Name: EE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+--------------------------------------------------------------------------------
+By default, a total of 2 Gaussian priors will be added to the likelihood in candl internally.
+If you are loading the likelihood in sampler wrapper these default priors below will overwritten or replaced according to your selection after initialisation.
+--------------------------------------------------------------------------------
+candl: clearing all internal priors.
+--------------------------------------------------------------------------------
+[1 : bao.desi_dr2.desi_bao_all] Initialized.
+Loading ACT DR6 lensing likelihood v1.2...
+Warning: The FITS format without the 'sacc_ordering' column is deprecated
+Assuming data rows are in the correct order as it was before version 1.0.
+Successfully initialised candl likelihood 'SPT-3G D1 TnE, SPTlite (Camphuis et al. 2025, Quan et al. 2025)' (type: <class 'candl.likelihood.Like'>).
+Data loaded from '/lus/eagle/projects/fieldlevel/repo/crux/spt_candl_data/spt_candl_data/SPT3G_D1_TnE_v0/lite/'.
+Functional likelihood form: gaussian
+--------------------------------------------------------------------------------
+It will analyse the following spectra:
+
+TT lxl       (52 bins, bin centres spanning ell = 424.7 - 2974.5)
+TE lxl       (72 bins, bin centres spanning ell = 424.6 - 3974.5)
+EE lxl       (72 bins, bin centres spanning ell = 424.5 - 3974.5)
+--------------------------------------------------------------------------------
+A data model consisting of 4 transformations has been initialised.
+The following transformations will be applied to the theory spectra in this order:
+
+(1) Name: Aberration
+    Type: <class 'candl.transformations.common.AberrationCorrection'>
+(2) Name: TT Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(3) Name: TE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(4) Name: EE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+--------------------------------------------------------------------------------
+By default, a total of 2 Gaussian priors will be added to the likelihood in candl internally.
+If you are loading the likelihood in sampler wrapper these default priors below will overwritten or replaced according to your selection after initialisation.
+--------------------------------------------------------------------------------
+candl: clearing all internal priors.
+--------------------------------------------------------------------------------
+[0 : bao.desi_dr2.desi_bao_all] Initialized.
+/lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/act_dr6_lenslike/act_dr6_lenslike.py:422: UserWarning: Hartlap correction to cinv: 0.9860935524652339
+  warnings.warn(f"Hartlap correction to cinv: {hartlap_correction}")
+/lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/act_dr6_lenslike/act_dr6_lenslike.py:422: UserWarning: Hartlap correction to cinv: 0.9860935524652339
+  warnings.warn(f"Hartlap correction to cinv: {hartlap_correction}")
+/lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/act_dr6_lenslike/act_dr6_lenslike.py:422: UserWarning: Hartlap correction to cinv: 0.9860935524652339
+  warnings.warn(f"Hartlap correction to cinv: {hartlap_correction}")
+/lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/act_dr6_lenslike/act_dr6_lenslike.py:422: UserWarning: Hartlap correction to cinv: 0.9860935524652339
+  warnings.warn(f"Hartlap correction to cinv: {hartlap_correction}")
+/lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/act_dr6_lenslike/act_dr6_lenslike.py:422: UserWarning: Hartlap correction to cinv: 0.9860935524652339
+  warnings.warn(f"Hartlap correction to cinv: {hartlap_correction}")
+/lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/act_dr6_lenslike/act_dr6_lenslike.py:422: UserWarning: Hartlap correction to cinv: 0.9860935524652339
+  warnings.warn(f"Hartlap correction to cinv: {hartlap_correction}")
+Loading ACT DR6 lensing likelihood v1.2...
+Warning: The FITS format without the 'sacc_ordering' column is deprecated
+Assuming data rows are in the correct order as it was before version 1.0.
+Successfully initialised candl likelihood 'SPT-3G D1 TnE, SPTlite (Camphuis et al. 2025, Quan et al. 2025)' (type: <class 'candl.likelihood.Like'>).
+Data loaded from '/lus/eagle/projects/fieldlevel/repo/crux/spt_candl_data/spt_candl_data/SPT3G_D1_TnE_v0/lite/'.
+Functional likelihood form: gaussian
+--------------------------------------------------------------------------------
+It will analyse the following spectra:
+
+TT lxl       (52 bins, bin centres spanning ell = 424.7 - 2974.5)
+TE lxl       (72 bins, bin centres spanning ell = 424.6 - 3974.5)
+EE lxl       (72 bins, bin centres spanning ell = 424.5 - 3974.5)
+--------------------------------------------------------------------------------
+A data model consisting of 4 transformations has been initialised.
+The following transformations will be applied to the theory spectra in this order:
+
+(1) Name: Aberration
+    Type: <class 'candl.transformations.common.AberrationCorrection'>
+(2) Name: TT Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(3) Name: TE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(4) Name: EE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+--------------------------------------------------------------------------------
+By default, a total of 2 Gaussian priors will be added to the likelihood in candl internally.
+If you are loading the likelihood in sampler wrapper these default priors below will overwritten or replaced according to your selection after initialisation.
+--------------------------------------------------------------------------------
+candl: clearing all internal priors.
+--------------------------------------------------------------------------------
+[3 : bao.desi_dr2.desi_bao_all] Initialized.
+Loading ACT DR6 lensing likelihood v1.2...
+Warning: The FITS format without the 'sacc_ordering' column is deprecated
+Assuming data rows are in the correct order as it was before version 1.0.
+Successfully initialised candl likelihood 'SPT-3G D1 TnE, SPTlite (Camphuis et al. 2025, Quan et al. 2025)' (type: <class 'candl.likelihood.Like'>).
+Data loaded from '/lus/eagle/projects/fieldlevel/repo/crux/spt_candl_data/spt_candl_data/SPT3G_D1_TnE_v0/lite/'.
+Functional likelihood form: gaussian
+--------------------------------------------------------------------------------
+It will analyse the following spectra:
+
+TT lxl       (52 bins, bin centres spanning ell = 424.7 - 2974.5)
+TE lxl       (72 bins, bin centres spanning ell = 424.6 - 3974.5)
+EE lxl       (72 bins, bin centres spanning ell = 424.5 - 3974.5)
+--------------------------------------------------------------------------------
+A data model consisting of 4 transformations has been initialised.
+The following transformations will be applied to the theory spectra in this order:
+
+(1) Name: Aberration
+    Type: <class 'candl.transformations.common.AberrationCorrection'>
+(2) Name: TT Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(3) Name: TE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(4) Name: EE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+--------------------------------------------------------------------------------
+By default, a total of 2 Gaussian priors will be added to the likelihood in candl internally.
+If you are loading the likelihood in sampler wrapper these default priors below will overwritten or replaced according to your selection after initialisation.
+--------------------------------------------------------------------------------
+candl: clearing all internal priors.
+--------------------------------------------------------------------------------
+[2 : bao.desi_dr2.desi_bao_all] Initialized.
+Loading ACT DR6 lensing likelihood v1.2...
+Warning: The FITS format without the 'sacc_ordering' column is deprecated
+Assuming data rows are in the correct order as it was before version 1.0.
+Successfully initialised candl likelihood 'SPT-3G D1 TnE, SPTlite (Camphuis et al. 2025, Quan et al. 2025)' (type: <class 'candl.likelihood.Like'>).
+Data loaded from '/lus/eagle/projects/fieldlevel/repo/crux/spt_candl_data/spt_candl_data/SPT3G_D1_TnE_v0/lite/'.
+Functional likelihood form: gaussian
+--------------------------------------------------------------------------------
+It will analyse the following spectra:
+
+TT lxl       (52 bins, bin centres spanning ell = 424.7 - 2974.5)
+TE lxl       (72 bins, bin centres spanning ell = 424.6 - 3974.5)
+EE lxl       (72 bins, bin centres spanning ell = 424.5 - 3974.5)
+--------------------------------------------------------------------------------
+A data model consisting of 4 transformations has been initialised.
+The following transformations will be applied to the theory spectra in this order:
+
+(1) Name: Aberration
+    Type: <class 'candl.transformations.common.AberrationCorrection'>
+(2) Name: TT Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(3) Name: TE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(4) Name: EE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+--------------------------------------------------------------------------------
+By default, a total of 2 Gaussian priors will be added to the likelihood in candl internally.
+If you are loading the likelihood in sampler wrapper these default priors below will overwritten or replaced according to your selection after initialisation.
+--------------------------------------------------------------------------------
+candl: clearing all internal priors.
+--------------------------------------------------------------------------------
+[4 : bao.desi_dr2.desi_bao_all] Initialized.
+Loading ACT DR6 lensing likelihood v1.2...
+Warning: The FITS format without the 'sacc_ordering' column is deprecated
+Assuming data rows are in the correct order as it was before version 1.0.
+Successfully initialised candl likelihood 'SPT-3G D1 TnE, SPTlite (Camphuis et al. 2025, Quan et al. 2025)' (type: <class 'candl.likelihood.Like'>).
+Data loaded from '/lus/eagle/projects/fieldlevel/repo/crux/spt_candl_data/spt_candl_data/SPT3G_D1_TnE_v0/lite/'.
+Functional likelihood form: gaussian
+--------------------------------------------------------------------------------
+It will analyse the following spectra:
+
+TT lxl       (52 bins, bin centres spanning ell = 424.7 - 2974.5)
+TE lxl       (72 bins, bin centres spanning ell = 424.6 - 3974.5)
+EE lxl       (72 bins, bin centres spanning ell = 424.5 - 3974.5)
+--------------------------------------------------------------------------------
+A data model consisting of 4 transformations has been initialised.
+The following transformations will be applied to the theory spectra in this order:
+
+(1) Name: Aberration
+    Type: <class 'candl.transformations.common.AberrationCorrection'>
+(2) Name: TT Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(3) Name: TE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(4) Name: EE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+--------------------------------------------------------------------------------
+By default, a total of 2 Gaussian priors will be added to the likelihood in candl internally.
+If you are loading the likelihood in sampler wrapper these default priors below will overwritten or replaced according to your selection after initialisation.
+--------------------------------------------------------------------------------
+candl: clearing all internal priors.
+--------------------------------------------------------------------------------
+[5 : bao.desi_dr2.desi_bao_all] Initialized.
+Loading ACT DR6 lensing likelihood v1.2...
+Warning: The FITS format without the 'sacc_ordering' column is deprecated
+Assuming data rows are in the correct order as it was before version 1.0.
+Successfully initialised candl likelihood 'SPT-3G D1 TnE, SPTlite (Camphuis et al. 2025, Quan et al. 2025)' (type: <class 'candl.likelihood.Like'>).
+Data loaded from '/lus/eagle/projects/fieldlevel/repo/crux/spt_candl_data/spt_candl_data/SPT3G_D1_TnE_v0/lite/'.
+Functional likelihood form: gaussian
+--------------------------------------------------------------------------------
+It will analyse the following spectra:
+
+TT lxl       (52 bins, bin centres spanning ell = 424.7 - 2974.5)
+TE lxl       (72 bins, bin centres spanning ell = 424.6 - 3974.5)
+EE lxl       (72 bins, bin centres spanning ell = 424.5 - 3974.5)
+--------------------------------------------------------------------------------
+A data model consisting of 4 transformations has been initialised.
+The following transformations will be applied to the theory spectra in this order:
+
+(1) Name: Aberration
+    Type: <class 'candl.transformations.common.AberrationCorrection'>
+(2) Name: TT Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(3) Name: TE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(4) Name: EE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+--------------------------------------------------------------------------------
+By default, a total of 2 Gaussian priors will be added to the likelihood in candl internally.
+If you are loading the likelihood in sampler wrapper these default priors below will overwritten or replaced according to your selection after initialisation.
+--------------------------------------------------------------------------------
+candl: clearing all internal priors.
+--------------------------------------------------------------------------------
+[7 : bao.desi_dr2.desi_bao_all] Initialized.
+Loading ACT DR6 lensing likelihood v1.2...
+Warning: The FITS format without the 'sacc_ordering' column is deprecated
+Assuming data rows are in the correct order as it was before version 1.0.
+Successfully initialised candl likelihood 'SPT-3G D1 TnE, SPTlite (Camphuis et al. 2025, Quan et al. 2025)' (type: <class 'candl.likelihood.Like'>).
+Data loaded from '/lus/eagle/projects/fieldlevel/repo/crux/spt_candl_data/spt_candl_data/SPT3G_D1_TnE_v0/lite/'.
+Functional likelihood form: gaussian
+--------------------------------------------------------------------------------
+It will analyse the following spectra:
+
+TT lxl       (52 bins, bin centres spanning ell = 424.7 - 2974.5)
+TE lxl       (72 bins, bin centres spanning ell = 424.6 - 3974.5)
+EE lxl       (72 bins, bin centres spanning ell = 424.5 - 3974.5)
+--------------------------------------------------------------------------------
+A data model consisting of 4 transformations has been initialised.
+The following transformations will be applied to the theory spectra in this order:
+
+(1) Name: Aberration
+    Type: <class 'candl.transformations.common.AberrationCorrection'>
+(2) Name: TT Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(3) Name: TE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+(4) Name: EE Calibration (External)
+    Type: <class 'candl.transformations.common.CalibrationAuto'>
+--------------------------------------------------------------------------------
+By default, a total of 2 Gaussian priors will be added to the likelihood in candl internally.
+If you are loading the likelihood in sampler wrapper these default priors below will overwritten or replaced according to your selection after initialisation.
+--------------------------------------------------------------------------------
+candl: clearing all internal priors.
+--------------------------------------------------------------------------------
+[6 : bao.desi_dr2.desi_bao_all] Initialized.
+[0 : minimize] Initializing
+[2 : samplecollection] Loaded 12113 sample points from '/eagle/fieldlevel/projects/lens/chains_061526//base_lenscmbbao/data_camb_actbaselens_spalitetteete_desidr2/chain.3.txt'
+[3 : samplecollection] Loaded 12000 sample points from '/eagle/fieldlevel/projects/lens/chains_061526//base_lenscmbbao/data_camb_actbaselens_spalitetteete_desidr2/chain.4.txt'
+[7 : samplecollection] Loaded 12218 sample points from '/eagle/fieldlevel/projects/lens/chains_061526//base_lenscmbbao/data_camb_actbaselens_spalitetteete_desidr2/chain.8.txt'
+[4 : samplecollection] Loaded 12033 sample points from '/eagle/fieldlevel/projects/lens/chains_061526//base_lenscmbbao/data_camb_actbaselens_spalitetteete_desidr2/chain.5.txt'
+[3 : minimize] Run 1/1 will start from MAP of previous sample:
+[2 : minimize] Run 1/1 will start from MAP of previous sample:
+[7 : minimize] Run 1/1 will start from MAP of previous sample:
+[2 : minimize] {'theta_MC_100': np.float64(1.0408245), 'logA': np.float64(3.0655888), 'ns': np.float64(0.97398921), 'ombh2': np.float64(0.02250251), 'omch2': np.float64(0.11755735), 'tau': np.float64(0.065042795), 'A_planck': np.float64(1.0031885), 'P_act': np.float64(1.0039416), 'Tcal': np.float64(1.0005746), 'Ecal': np.float64(1.0068768)}
+[3 : minimize] {'theta_MC_100': np.float64(1.0409448), 'logA': np.float64(3.0608725), 'ns': np.float64(0.97432062), 'ombh2': np.float64(0.022471626), 'omch2': np.float64(0.11761599), 'tau': np.float64(0.064199908), 'A_planck': np.float64(1.0011201), 'P_act': np.float64(1.0022355), 'Tcal': np.float64(0.99839869), 'Ecal': np.float64(1.0085463)}
+[1 : samplecollection] Loaded 12026 sample points from '/eagle/fieldlevel/projects/lens/chains_061526//base_lenscmbbao/data_camb_actbaselens_spalitetteete_desidr2/chain.2.txt'
+[6 : samplecollection] Loaded 12083 sample points from '/eagle/fieldlevel/projects/lens/chains_061526//base_lenscmbbao/data_camb_actbaselens_spalitetteete_desidr2/chain.7.txt'
+[7 : minimize] {'theta_MC_100': np.float64(1.0409088), 'logA': np.float64(3.0634144), 'ns': np.float64(0.97385656), 'ombh2': np.float64(0.022519383), 'omch2': np.float64(0.1180013), 'tau': np.float64(0.064385355), 'A_planck': np.float64(1.0020321), 'P_act': np.float64(1.002641), 'Tcal': np.float64(0.99919053), 'Ecal': np.float64(1.0063788)}
+[4 : minimize] Run 1/1 will start from MAP of previous sample:
+[5 : samplecollection] Loaded 12192 sample points from '/eagle/fieldlevel/projects/lens/chains_061526//base_lenscmbbao/data_camb_actbaselens_spalitetteete_desidr2/chain.6.txt'
+[4 : minimize] {'theta_MC_100': np.float64(1.0407961), 'logA': np.float64(3.0660542), 'ns': np.float64(0.97467793), 'ombh2': np.float64(0.022467544), 'omch2': np.float64(0.11781844), 'tau': np.float64(0.065479714), 'A_planck': np.float64(1.002392), 'P_act': np.float64(1.0034878), 'Tcal': np.float64(1.0004345), 'Ecal': np.float64(1.0086488)}
+[0 : samplecollection] Loaded 12040 sample points from '/eagle/fieldlevel/projects/lens/chains_061526//base_lenscmbbao/data_camb_actbaselens_spalitetteete_desidr2/chain.1.txt'
+[6 : minimize] Run 1/1 will start from MAP of previous sample:
+[1 : minimize] Run 1/1 will start from MAP of previous sample:
+[6 : minimize] {'theta_MC_100': np.float64(1.0410387), 'logA': np.float64(3.0608957), 'ns': np.float64(0.97295307), 'ombh2': np.float64(0.022504609), 'omch2': np.float64(0.11790401), 'tau': np.float64(0.063221124), 'A_planck': np.float64(1.0019608), 'P_act': np.float64(1.0035508), 'Tcal': np.float64(0.99960809), 'Ecal': np.float64(1.0076164)}
+[5 : minimize] Run 1/1 will start from MAP of previous sample:
+[1 : minimize] {'theta_MC_100': np.float64(1.040858), 'logA': np.float64(3.0637844), 'ns': np.float64(0.97508335), 'ombh2': np.float64(0.022521544), 'omch2': np.float64(0.11778264), 'tau': np.float64(0.064688789), 'A_planck': np.float64(1.0020195), 'P_act': np.float64(1.0029284), 'Tcal': np.float64(1.0004163), 'Ecal': np.float64(1.0065566)}
+[5 : minimize] {'theta_MC_100': np.float64(1.0409116), 'logA': np.float64(3.0584979), 'ns': np.float64(0.9747286), 'ombh2': np.float64(0.022528442), 'omch2': np.float64(0.11742284), 'tau': np.float64(0.062630924), 'A_planck': np.float64(1.0020009), 'P_act': np.float64(1.002087), 'Tcal': np.float64(1.0001529), 'Ecal': np.float64(1.0076683)}
+[0 : minimize] Run 1/1 will start from MAP of previous sample:
+[0 : minimize] {'theta_MC_100': np.float64(1.040839), 'logA': np.float64(3.063342), 'ns': np.float64(0.97494175), 'ombh2': np.float64(0.022479045), 'omch2': np.float64(0.11762501), 'tau': np.float64(0.063856131), 'A_planck': np.float64(1.0033028), 'P_act': np.float64(1.0032781), 'Tcal': np.float64(1.0004349), 'Ecal': np.float64(1.0060648)}
+[0 : prior] *WARNING* There are unbounded parameters (['Tcal']). Prior bounds are given at 0.9999995 confidence level. Beware of likelihood modes at the edge of the prior
+[0 : minimize] Covariance matrix from previous sample.
+[0 : minimize] Starting run 1/1
+[1 : minimize] Starting run 1/1
+[2 : minimize] Starting run 1/1
+[5 : minimize] Starting run 1/1
+[3 : minimize] Starting run 1/1
+[6 : minimize] Starting run 1/1
+[4 : minimize] Starting run 1/1
+[7 : minimize] Starting run 1/1
+[7 : minimize] Run 1/1 converged.
+[5 : minimize] Run 1/1 converged.
+[4 : minimize] Run 1/1 converged.
+[0 : minimize] Run 1/1 converged.
+[1 : minimize] Run 1/1 converged.
+[2 : minimize] Run 1/1 converged.
+[3 : minimize] Run 1/1 converged.
+[6 : minimize] Run 1/1 converged.
+[0 : minimize] Finished successfully!
+[0 : minimize] -log(posterior) minimized to 478.82
+[0 : minimize] Parameter values at minimum:
+   weight  minuslogpost  theta_MC_100      logA        ns     ombh2   omch2       tau  A_planck     P_act      Tcal      Ecal  omega_de    omegam  omegamh2       rdrag        S8      s8h5  s8omegamp25  s8omegamp5    sigma8            As     DHBBN         H0       YHe       Y_p        age     A_act  chi2__BAO   chi2__CMB  minuslogprior  minuslogprior__0  minuslogprior__cal_dip_prior        chi2  chi2__act_dr6_lenslike.ACTDR6LensLike  chi2__planck_2018_lowl.TT  chi2__planck_2018_lowl.EE_sroll2  chi2__act_dr6_cmbonly.PlanckActCut  chi2__act_dr6_cmbonly.ACTDR6CMBonly  chi2__candl_like  chi2__bao.desi_dr2.desi_bao_all
+0     1.0    478.819729      1.040928  3.063681  0.974416  0.022495  0.1177  0.064767  1.002138  1.002744  0.999844  1.007489  0.697649  0.302273  0.140841  147.573828  0.816724  0.984813     0.603303    0.447338  0.813647  2.140622e-09  2.562658  68.259625  0.245443  0.246773  13.775939  1.002138  12.849946  634.425355     -12.884083          -8.24794                     -4.636143  983.407624                              13.846212                  21.903875                        391.775792                          220.745688                           159.584085        162.702026                        12.849946
+[0 : minimize] Full set of minima:
+{'0': (478.84728347103373, True), '1': (478.81972920630284, True), '2': (478.89190867084324, True), '3': (478.88846780843824, True), '4': (478.83568428180087, True), '5': (478.89932335417865, True), '6': (478.83516928727033, True), '7': (478.8358729119318, True)}
+Done: base_lenscmbbao/actbaselens_spalitetteete_desidr2.yaml

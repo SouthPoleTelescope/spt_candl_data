@@ -1,0 +1,23 @@
+Saving to /eagle/fieldlevel/projects/lens/chains_061526/
+Running YAML: alens_lenscmb/muselens_spalitetteete.yaml
+[0 : output] Output to be read-from/written-into folder '/eagle/fieldlevel/projects/lens/chains_061526//alens_lenscmb/data_camb_muselens_spalitetteete', with prefix 'chain'
+[0 : output] Found existing info files with the requested output prefix: '/eagle/fieldlevel/projects/lens/chains_061526//alens_lenscmb/data_camb_muselens_spalitetteete/chain'
+[0 : output] Will delete previous products ('force' was requested).
+[0 : output] *ERROR* File /eagle/fieldlevel/projects/lens/chains_061526//alens_lenscmb/data_camb_muselens_spalitetteete/chain.input.yaml.locked is locked.
+You may be running multiple jobs with the same output when you intended to run with MPI. Check that mpi4py is correctly installed and configured (using the same mpi as mpirun/mpiexec); e.g. try the test at
+https://cobaya.readthedocs.io/en/latest/installation.html#mpi-parallelization-optional-but-encouraged
+Your current mpi4py config is:
+ {}
+If this is a lock issue you can disable this check by setting env COBAYA_USE_FILE_LOCKING=False.
+[0 : run] Aborting MPI due to error
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+[0 : output] Output to be read-from/written-into folder '/eagle/fieldlevel/projects/lens/chains_061526//alens_lenscmb/data_camb_muselens_spalitetteete', with prefix 'chain'
+[0 : output] *ERROR* File /eagle/fieldlevel/projects/lens/chains_061526//alens_lenscmb/data_camb_muselens_spalitetteete/chain.minimize.input.yaml.locked is locked.
+You may be running multiple jobs with the same output when you intended to run with MPI. Check that mpi4py is correctly installed and configured (using the same mpi as mpirun/mpiexec); e.g. try the test at
+https://cobaya.readthedocs.io/en/latest/installation.html#mpi-parallelization-optional-but-encouraged
+Your current mpi4py config is:
+ {}
+If this is a lock issue you can disable this check by setting env COBAYA_USE_FILE_LOCKING=False.
+[0 : run] Aborting MPI due to error
+Abort(1) on node 0 (rank 0 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
+Done: alens_lenscmb/muselens_spalitetteete.yaml

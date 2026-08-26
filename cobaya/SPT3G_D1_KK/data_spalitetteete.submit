@@ -1,0 +1,164 @@
+#!/bin/bash
+# Submit one PBS job per spalitetteete YAML file
+
+dir="/eagle/fieldlevel/repo/crux/tmp/spt_candl_data/cobaya/SPT3G_D1_KK"
+
+# Need DIR_CHAINS (from setup_paths) to resolve each YAML's output path
+source "${dir}/setup_paths_crux_data.sh"
+
+yamls=(
+    # Commented = chain CONVERGED ("The run has converged!" in PBS .OU). Uncommented = needs resubmit.
+    #fid_lens/gmv.yaml                                                    # done
+    #fid_lens/gmv_actplanckbaselens.yaml                                  # done
+    #fid_lenscmb/gmv_spalitetteete.yaml                                   # done
+    #fid_lenscmb/gmv_actplanckbaselens_spalitetteete.yaml                  # resubmit: walltime, R-1=0.005 R-1cl=0.053 (cl just >0.05)
+    #fid_lenscmbbao/gmv_spalitetteete_desidr2.yaml                        # done
+    #fid_lensbao/gmv_desidr2.yaml                                         # done
+    #fid_lenscmbbao/gmv_actplanckbaselens_spalitetteete_desidr2.yaml      # done (converged; minimizer OK)
+    #fid_lensbao/gmv_actplanckbaselens_desidr2.yaml                       # done
+    #a2ptarec_lenscmbbao/gmv_actplanckbaselens_spalitetteete_desidr2.yaml # resubmit: walltime, R-1=5.3 (far)
+    #a2ptarec_lenscmbbao/gmv_spalitetteete_desidr2.yaml                    # resubmit: walltime (resumes from checkpoint)
+    #a2ptarec_lenscmb/gmv_actplanckbaselens_spalitetteete.yaml     # resubmit: walltime kill again @04:03 (job 233402), resumes from checkpoint
+    #a2ptarec_lenscmb/gmv_spalitetteete_desidr2.yaml                       # resubmit: was CRASH on cosmo__a2ptarec typo (now fixed); fresh start, no checkpoint
+    #alens_lenscmbbao/gmv_actplanckbaselens_spalitetteete_desidr2.yaml     # resubmit: walltime kill again @04:04 (job 233403), resumes from checkpoint
+    #alens_lenscmbbao/gmv_spalitetteete_desidr2.yaml                      # done
+    #alens_lenscmb/gmv_spalitetteete.yaml                                  # 
+    #alens_lenscmb/gmv_actplanckbaselens_spalitetteete.yaml               # done (converged; minimizer OK)
+    #alens_lenscmb/gmv_spalitetteete_desidr2.yaml                         # done
+    #mnu3_lenscmbbao/gmv_actplanckbaselens_spalitetteete_desidr2.yaml    # done (chain converged; minimizer FAILED: singular matrix -> use data_minimize_mnu3)
+    #mnu3_lenscmbbao/gmv_spalitetteete_desidr2.yaml                       # done
+    #mnu3_lenscmb/gmv_actplanckbaselens_spalitetteete.yaml         # resubmit: walltime, R-1=0.008 R-1cl=0.061 (cl just >0.05)
+    #mnu3_lenscmb/gmv_spalitetteete_desidr2.yaml                           # resubmit: walltime (resumes from checkpoint, R-1 was 0.055, almost there)
+    #w0wa_lenscmb/gmv_actplanckbaselens_spalitetteete.yaml                 # resubmit: walltime, R-1=0.023
+    #w0wa_lenscmbbao/gmv_actplanckbaselens_spalitetteete_desidr2.yaml      # resubmit: walltime, R-1=13 (far)
+    #mnu3arec_lenscmbbao/gmv_actplanckbaselens_spalitetteete_desidr2.yaml       # new: fresh start
+    #mnu3arec_mass0_lenscmbbao/gmv_actplanckbaselens_spalitetteete_desidr2.yaml # new: fresh start (Σmν=0)
+    #a2ptarec_lenscmbbao/gmv_actplanckbaselens_spalitetteete_desidr2_fixedsys.yaml
+    #a2ptarec_lenscmbbao/gmv_spalitetteete_desidr2_fixedsys.yaml
+    #validation/arec_lens_fixedcosmo/gmv.yaml
+    # new (2026-07-23): mnu3 data-combination series + mnu3tagn feedback run (3.046->3.044 fix)
+    #mnu3_cmb/spalitetteete.yaml
+    #mnu3_cmbbao/spalitetteete_desidr2.yaml
+    #mnu3_lenscmb/actplanckbaselens_spalitetteete.yaml
+    #mnu3_lenscmbbao/actplanckbaselens_spalitetteete_desidr2.yaml
+    #mnu3_lenscmbbao/muselens_actplanckbaselens_spalitetteete_desidr2.yaml
+    #----mnu3arec_mass0_lenscmbbao/muselens_actplanckbaselens_spalitetteete_desidr2.yaml
+    #----mnu3tagn_lenscmbbao/gmv_actplanckbaselens_spalitetteete_desidr2.yaml
+    # new (2026-07-23): w0wa + mnu3w0wa lenscmbbao with SNe (desdovekie/pantheonplus/union3), reuse per-chain covmat
+    #w0wa_lenscmbbaosne/gmv_actplanckbaselens_spalitetteete_desidr2_desdovekie.yaml
+    #w0wa_lenscmbbaosne/gmv_actplanckbaselens_spalitetteete_desidr2_pantheonplus.yaml
+    #w0wa_lenscmbbaosne/gmv_actplanckbaselens_spalitetteete_desidr2_union3.yaml
+    #----mnu3w0wa_lenscmbbaosne/gmv_actplanckbaselens_spalitetteete_desidr2_desdovekie.yaml
+    #mnu3w0wa_lenscmbbaosne/gmv_actplanckbaselens_spalitetteete_desidr2_pantheonplus.yaml
+    #----mnu3w0wa_lenscmbbaosne/gmv_actplanckbaselens_spalitetteete_desidr2_union3.yaml
+    #----mnu3w0wa_lenscmbbao/gmv_actplanckbaselens_spalitetteete_desidr2.yaml       # rerun with nnu=3.044, covmat from 3.046 .bak
+    #w0wa_bao/desidr2.yaml
+    #mnu3_lenscmb/gmv_spalitetteete.yaml
+    #base_lensbao/gmv_sdss.yaml
+    #base_lenscmb/muselens_spalitetteete.yaml
+    #base_lensbao/muselens_desidr2.yaml
+    #base_lenscmbbao/muselens_spalitetteete_desidr2.yaml
+    # new: validation/arec_lens_fixedcosmo fixed-relative-path yamls (../configs -> ../../configs)
+    #validation/arec_lens_fixedcosmo/actplanckbaselens.yaml
+    #validation/arec_lens_fixedcosmo/gmv_actplanckbaselens.yaml
+    #validation/arec_lens_fixedcosmo/muselens.yaml
+    # run (2026-08-18): fixed-cosmo (fixcosmosys) + fixed-sys, sqepp & gmvprof
+    #validation/arec_lens_fixedcosmo/sqepp.yaml    # parked 2026-08-20: not in current batch (index typo fixed, ready when needed)
+    #validation/arec_lens_fixedcosmo/gmvprof.yaml  # done 2026-08-20 (job 268684): converged R-1=0.003, minimizer OK
+    #validation/arec_lens_fixedcosmo/gmv.yaml
+    #validation/arec_lens_fixedcosmo/planckpr4lens.yaml
+    #validation/arec_lens_fixedcosmo/actbaselens.yaml
+    # rerun (2026-08-13): Tcal_lens/Pcal_lens prior updated to CMB-SPA posterior
+    # mean +/- 1sigma in configs/likelihoods/lens/nocmb/{gmv,sqepp}.yaml
+    # (old chains backed up to oldcalprior_bak/ in each run dir)
+    #base_lens/gmv.yaml
+    #base_lens/sqepp.yaml
+    #base_lens/gmv_actplanckbaselens.yaml
+    #base_lensbao/gmv_desidr2.yaml
+    #base_lensbao/gmv_sdss.yaml
+    #base_lensbao/gmv_actplanckbaselens_desidr2.yaml
+    # new (2026-08-13): Gaussian tau prior instead of Sroll2 low-ell EE (validation)
+    #validation/gaussprior/base_lenscmbbao/gmv_actplanckbaselens_spalitetteete_desidr2.yaml
+    # new (2026-08-13): CMB-SPA in the LSS (desy3 3x2pt+GMV nla) parameter space, seeded with mnu3_cmb covmat
+    #mnu3_cmb/spalitetteete_lss.yaml
+    # (2026-08-18) GMVprof lensing-only + all validation/sysvariants (base_lens-style, nocmb) -- parked
+    #base_lens/gmvprof.yaml
+    #validation/sysvariants/gmv_fgfree.yaml
+    #validation/sysvariants/gmv_fgx10.yaml
+    #validation/sysvariants/gmv_fixcmbsys.yaml     # running 2026-08-20 (job 268685): GMV_fixcmbsys
+    #validation/sysvariants/gmv_fixpcal.yaml
+    #validation/sysvariants/gmv_fixtcal.yaml
+    #validation/sysvariants/gmv_fixtpcal.yaml
+    #validation/sysvariants/gmv_nolast2bins.yaml   # running 2026-08-20 (job 268688): GMV_15bins (drop last 2 bins)
+    # new (2026-08-20): base MUSE + ACT/Planck baseline lensing + CMB-SPA + DESI DR2,
+    # covmat seeded from converged data_camb_muselens_spalitetteete_desidr2
+    #base_lenscmbbao/muselens_actplanckbaselens_spalitetteete_desidr2.yaml
+    #base_lenscmb/muselens_actplanckbaselens_spalitetteete.yaml            # same, no DESI; covmat from data_camb_muselens_spalitetteete
+    # new (2026-08-20): a2ptarec MUSE + ACT/Planck baseline lensing + CMB-SPA (+ DESI DR2),
+    # covmat seeded from corresponding converged gmv a2ptarec chains
+    #a2ptarec_lenscmbbao/muselens_actplanckbaselens_spalitetteete_desidr2.yaml
+    #a2ptarec_lenscmb/muselens_actplanckbaselens_spalitetteete.yaml
+    #validation/a2ptarec_gmvlite/gmvlite_spalitetteete_desidr2.yaml
+    # new (2026-08-21): alens MUSE (+ ACT/Planck baseline lensing) + CMB-SPA (+ DESI DR2),
+    # covmat seeded from corresponding converged gmv alens chains
+    #alens_lenscmb/muselens_spalitetteete.yaml   # 292325 hung->walltime @15k/chain (R-1=0.004, cl=0.059); 292869+292913 double-submitted & lock-collided, -f deleted chain.updated.yaml -> resubmit ONLY with -r after regenerating .updated.yaml (see notes)
+    #alens_lenscmb/muselens_actplanckbaselens_spalitetteete.yaml
+    #alens_lenscmbbao/muselens_spalitetteete_desidr2.yaml
+    #alens_lenscmbbao/muselens_actplanckbaselens_spalitetteete_desidr2.yaml
+    # new (2026-08-21): fixed-cosmo Arec with all fg amplitudes fixed to 0 / 1 (paper A_recon^thetafix fg test)
+    #validation/arec_lens_fixedcosmo/gmv_fg0.yaml
+    #validation/arec_lens_fixedcosmo/gmv_fg1.yaml
+    # new (2026-08-21): standalone ACT-baseline / Planck-PR4 lensing + CMB-SPA / DESI DR2
+    # (standard public-likelihood setups: lens_only/CMBmarged without CMB, corrections on with CMB);
+    # covmat seeded from converged gmv_actplanckbaselens chains in the same dir
+    #base_lenscmb/actbaselens_spalitetteete.yaml   # done 2026-08-23 (jobs 292914-292919): converged, minimizer OK
+    #base_lenscmb/planckpr4lens_spalitetteete.yaml   # done 2026-08-23 (jobs 292914-292919): converged, minimizer OK
+    #base_lensbao/actbaselens_desidr2.yaml   # done 2026-08-23 (jobs 292914-292919): converged, minimizer OK
+    #base_lensbao/planckpr4lens_desidr2.yaml   # done 2026-08-23 (jobs 292914-292919): converged, minimizer OK
+    #base_lenscmbbao/actbaselens_spalitetteete_desidr2.yaml   # done 2026-08-23 (jobs 292914-292919): converged, minimizer OK
+    #base_lenscmbbao/planckpr4lens_spalitetteete_desidr2.yaml   # done 2026-08-23 (jobs 292914-292919): converged, minimizer OK
+    # new (2026-08-22): Gaussian tau prior validation, no-BAO version of the 2026-08-13 lenscmbbao run;
+    # covmat seeded from converged base_lenscmb gmv_actplanckbaselens chain
+    #validation/gaussprior/base_lenscmb/gmv_actplanckbaselens_spalitetteete.yaml
+    # new (2026-08-23): a2ptarec (Alens x Arec) with standalone ACT-baseline / Planck-PR4 lensing
+    # replacing SPT GMV (+ CMB-SPA, +/- DESI DR2); Arec applied at theory level (camb_a2ptarec),
+    # covmat seeded from converged gmv a2ptarec chains in the same dir
+    #a2ptarec_lenscmb/actbaselens_spalitetteete.yaml   # done 2026-08-24: converged, minimizer OK
+    #a2ptarec_lenscmb/planckpr4lens_spalitetteete.yaml   # done 2026-08-24: converged, minimizer OK
+    #a2ptarec_lenscmbbao/actbaselens_spalitetteete_desidr2.yaml   # done 2026-08-24: converged, minimizer OK
+    #a2ptarec_lenscmbbao/planckpr4lens_spalitetteete_desidr2.yaml   # done 2026-08-24: converged, minimizer OK
+    # new (2026-08-24): alens (free Alens) with standalone ACT-baseline / Planck-PR4 lensing
+    # replacing SPT GMV (+ CMB-SPA, +/- DESI DR2);
+    # covmat seeded from converged gmv alens chains in the same dir
+    #alens_lenscmb/actbaselens_spalitetteete.yaml
+    #alens_lenscmb/planckpr4lens_spalitetteete.yaml
+    #alens_lenscmbbao/actbaselens_spalitetteete_desidr2.yaml
+    #alens_lenscmbbao/planckpr4lens_spalitetteete_desidr2.yaml
+    # new (2026-08-24): non-linear P(k) model test, GMV lensing-only, self-contained in validation/nonlin/
+    # (takahashi / mead2016 / mead2020_feedback+logT_AGN / mead2020 baseline); covmat from converged base_lens gmv
+    validation/nonlin/gmv_takahashi.yaml
+    validation/nonlin/gmv_mead2016.yaml
+    validation/nonlin/gmv_tagn.yaml
+    #validation/nonlin/gmv_mead2020.yaml
+)
+
+for yaml_file in "${yamls[@]}"; do
+    # Extract job name from filename (without .yaml extension)
+    jobname=$(basename "$yaml_file" .yaml)
+
+    # Resolve the chain output directory from the YAML's `output:` field
+    out_prefix=$(grep -E '^[[:space:]]*output[[:space:]]*:' "${dir}/${yaml_file}" | head -n1 \
+                 | sed -E 's/^[[:space:]]*output[[:space:]]*:[[:space:]]*//')
+    out_prefix=$(eval echo "${out_prefix}")
+    chain_dir=$(dirname "${out_prefix}")
+
+    if [[ -n "${out_prefix}" && "${chain_dir}" != "." ]]; then
+        mkdir -p "${chain_dir}"
+        echo "Submitting: ${jobname}  (${yaml_file})  ->  PBS log in ${chain_dir}/"
+        qsub -N "${jobname}" -o "${chain_dir}/" -v YAML_FILE="${yaml_file}" data_spalitetteete_run.pbs
+    else
+        echo "WARNING: could not resolve output dir for ${yaml_file}; using default PBS log location"
+        echo "Submitting: ${jobname}  (${yaml_file})"
+        qsub -N "${jobname}" -v YAML_FILE="${yaml_file}" data_spalitetteete_run.pbs
+    fi
+done

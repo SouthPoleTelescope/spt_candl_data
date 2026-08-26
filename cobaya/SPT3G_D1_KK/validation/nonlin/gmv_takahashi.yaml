@@ -1,0 +1,22 @@
+# Non-linear P(k) model test: halofit_version from theory_takahashi.yaml, SPT-3G D1 GMV lensing only.
+# Self-contained: all defaults live in this folder (mirrors healqest cobaya_files2 gmvspafg_* runs).
+output: ${DIR_CHAINS}/validation/nonlin/data_camb_gmv_takahashi/chain
+
+theory : !defaults [theory_takahashi]
+
+params : !defaults [params_base]
+
+likelihood: !defaults [likelihood_gmv]
+
+sampler:
+  mcmc:
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.05
+    learn_proposal: true
+    learn_proposal_Rminus1_max_early: 30.0
+    learn_proposal_Rminus1_max: 10.0
+    drag: true
+    proposal_scale: 1.9
+    output_every: 1
+    oversample_power: 0.4
+    covmat: /eagle/fieldlevel/projects/lens/chains_061526/base_lens/data_camb_gmv/chain.covmat
