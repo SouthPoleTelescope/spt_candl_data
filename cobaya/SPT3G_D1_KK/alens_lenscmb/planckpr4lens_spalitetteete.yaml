@@ -1,0 +1,29 @@
+# alens (free Alens) with planckpr4lens replacing SPT GMV as the lensing dataset
+# (standard public planckpr4lens_withcmb setup, same as base_*/planckpr4lens*.yaml).
+# covmat seeded from the converged gmv alens chain in the same dir.
+output: ${DIR_CHAINS}/alens_lenscmb/data_camb_planckpr4lens_spalitetteete/chain
+
+theory : !defaults [../configs/theory/withcmb/camb]
+
+params : !defaults [../configs/params/withcmb/cosmo_alens]
+
+likelihood: !defaults [../configs/likelihoods/lens/ext/planckpr4lens_withcmb,
+                       ../configs/likelihoods/cmb/spalitetteete,
+                      ]
+
+sampler:
+  mcmc:
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.05
+    learn_proposal: true
+    learn_proposal_Rminus1_max_early: 30.0
+    learn_proposal_Rminus1_max: 10.0
+    drag: true
+    proposal_scale: 1.9
+    output_every: 1
+    oversample_power: 0.4
+    max_tries: 10000
+    covmat: /eagle/fieldlevel/projects/lens/chains_061526/alens_lenscmb/data_camb_gmv_spalitetteete/chain.covmat
+
+prior:
+  cal_dip_prior: 'lambda A_act: stats.norm.logpdf(A_act, loc = 1.0, scale = 0.003)'
