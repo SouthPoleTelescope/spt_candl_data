@@ -1,6 +1,0 @@
-output: /tmp/claude-40564/-home-yomori/56e534f8-e821-4f33-9a59-149cb8ec55b5/scratchpad/probe/chain
-theory : !defaults [../../configs/theory/nocmb/camb]
-params : !defaults [cosmo_spa_bestfit]
-likelihood: !defaults [../../configs/likelihoods/lens/nocmb/gmv_fixsys]
-sampler:
-  evaluate:

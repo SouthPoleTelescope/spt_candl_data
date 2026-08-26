@@ -1,3 +1,0 @@
-theory : !defaults [../../configs/theory/nocmb/camb]
-params : !defaults [cosmo_spa_bestfit]
-likelihood: !defaults [../../configs/likelihoods/lens/nocmb/gmv]
