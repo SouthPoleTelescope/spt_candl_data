@@ -236,3 +236,8 @@ Notes:
 The emulator parameters (Tcal_lens, Pcal_lens, beam1–4, beta_pol_*, Atsz,
 Acib*, Arad*) require external priors; see the sampler configuration files
 shipped with the release.
+
+## Known issues
+
+(1) This line https://github.com/SouthPoleTelescope/spt_candl_data/blob/00f368edcf8dc83c9a27a511392cccd9c7903f6f/spt_candl_data/transformations/cosEmu.py#L360 
+can error due to different GPJax versions. One fix that worked is to change it to `mu = jnp.squeeze(yhat.mean())`
