@@ -118,10 +118,8 @@ lensing theory at the fiducial parameters.
   and kk at each step). This avoids double counting the data and ensures
   that changes in primary spectra consistently update the lensing response.
 - **Lensing-only (no primary theory block):** use the data-driven shortcut
-  below, which projects *measured* TT/TE/EE bandpowers (optionally
-  reweighted by cal/beam) through M, while keeping only the kk piece
-  theory-dependent. Doing that in a joint run would double-count the
-  primary data and also tie the response to a specific noise realization.
+  below, which projects *measured* TT/TE/EE bandpowers through M, while
+  keeping only the kk piece theory-dependent. 
 
 ### `LensOnlyResponseCorrCMBliteBP` — data-driven correction (lensing-only)
 
@@ -133,13 +131,16 @@ using "lite" TT/TE/EE bandpowers instead of theory TT/TE/EE.
   the fiducial file); `Dl_data_template_file` — the measured lite TT/TE/EE
   bandpowers boxcar-expanded to per-ell Dl (columns: ell, TT, TE, EE); the
   beam templates (`beam/`) and ILC weights (`ilcweights/`) used to build
-  the optional cal/beam reweighting.
+  the optional cal/beam reweighting. (NOT USED FOR EMULATOR fiducial)
 - **Inputs (per evaluation):** **none as shipped.** With
   `fix_cal: True` and `fix_beam: True` the module reads no sampled
-  parameters and no theory spectra — its output is a constant vector (with
-  zero gradient). With the fix flags set to False it additionally reads
+  parameters and no theory spectra. This is the default behavior.
+  Optionally, one can employ the analytic modeling of calibration and
+  beam parameters (Appendix E of paper) in place of the emulator fiducial.
+  In that case, the fix_cal/beam flags are set to False, this module reads
   Tcal_lens, Pcal_lens, beam1-4, and beta_pol_90/150/220 to reweight the
   data bandpowers. It never reads theory spectra in any configuration.
+  
 - **Output:** a length-17 additive correction,
   sum_{TT,TE,EE} M_s^T . (Dl_s^data * cal_s / beam_s) - fid_TT+TE+EE.
 
@@ -147,7 +148,7 @@ Operations:
 
 1. Load fixed TT/TE/EE bandpowers D_ell^data (`Dl_data_template_file`).
 2. Reweight those bandpowers by the current sample's calibration and beam
-   parameters:
+   parameters: [Not activated in emulator fiducial]
    - TT: multiply by Tcal^2 and divide by B_T^2
    - TE: multiply by Tcal^2 \* Pcal and divide by (B_T \* B_P)
    - EE: multiply by Tcal^2 \* Pcal^2 and divide by B_P^2
@@ -182,9 +183,8 @@ When NOT to use:
   double-counting primary data and to keep the response consistent with the
   theory spectra evaluated at each sample.
 
-Set `fix_cal: True` and `fix_beam: True` when using lite TT/TE/EE
-bandpowers, since those products already have calibration and beam
-uncertainties marginalized out and you do not want to double-count them.
+Set `fix_cal: True` and `fix_beam: True` when using the emulator for calibration
+and beam modeling.
 For analytic marginalization you want to turn the emulator off and set
 these to True.
 
@@ -226,10 +226,9 @@ Notes:
 
 - The `beam/` and `ilcweights/` files are required to initialize the
   lensing-only variants but do not affect the likelihood value as shipped
-  (`fix_cal: True`, `fix_beam: True`): the lite bandpowers already have
-  calibration and beam uncertainty marginalized. Setting these to `False`
+  (`fix_cal: True`, `fix_beam: True`). Setting these to `False`
   propagates cal/beam uncertainty through the response instead — only do
-  this when supplying non-lite CMB bandpowers.
+  this when turning off emulator-modeling of calibration and beam.
 
 ## Nuisance parameters
 
