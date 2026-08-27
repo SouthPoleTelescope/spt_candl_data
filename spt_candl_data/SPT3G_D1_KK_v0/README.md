@@ -131,7 +131,8 @@ using "lite" TT/TE/EE bandpowers instead of theory TT/TE/EE.
   the fiducial file); `Dl_data_template_file` — the measured lite TT/TE/EE
   bandpowers boxcar-expanded to per-ell Dl (columns: ell, TT, TE, EE); the
   beam templates (`beam/`) and ILC weights (`ilcweights/`) used to build
-  the optional cal/beam reweighting. (NOT USED FOR EMULATOR fiducial)
+  the optional cal/beam reweighting (beam/ILC weights used only in analytic
+  modeling of systematic parameters not in emulator case).
 - **Inputs (per evaluation):** **none as shipped.** With
   `fix_cal: True` and `fix_beam: True` the module reads no sampled
   parameters and no theory spectra. This is the default behavior.
