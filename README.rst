@@ -51,8 +51,8 @@ Available Data
 
    * - SPT-3G D1 kk
      - ``spt_candl_data.SPT3G_D1_kk``
-     - `Omori et al. 2026 <https://pole.uchicago.edu/public/Home.html>`__
-     - ``2.X.X``
+     - `Omori et al. 2026 <https://pole.uchicago.edu/public/data/omori26/index.html>`__
+     - ``3.0.0``
   
 
 You can also get a detailed summary of the variants of all likelihoods available, by running the following python code::
