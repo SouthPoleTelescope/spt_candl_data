@@ -1,0 +1,31 @@
+# a2ptarec (Alens x Arec) with actbaselens replacing SPT GMV as the lensing dataset
+# (standard public actbaselens_withcmb setup, same as base_*/actbaselens*.yaml).
+# Arec scaling is applied at the theory level (spt_candl_data.transformations.a2ptarec),
+# so it propagates to the external lensing likelihood unchanged.
+# covmat seeded from the converged gmv a2ptarec chain in the same dir.
+output: ${DIR_CHAINS}/a2ptarec_lenscmb/data_camb_actbaselens_spalitetteete/chain
+
+theory : !defaults [../configs/theory/withcmb/camb_a2ptarec]
+
+params : !defaults [../configs/params/withcmb/cosmo_a2ptarec]
+
+likelihood: !defaults [../configs/likelihoods/lens/ext/actbaselens_withcmb,
+                       ../configs/likelihoods/cmb/spalitetteete,
+                      ]
+
+sampler:
+  mcmc:
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.05
+    learn_proposal: true
+    learn_proposal_Rminus1_max_early: 30.0
+    learn_proposal_Rminus1_max: 10.0
+    drag: true
+    proposal_scale: 1.9
+    output_every: 1
+    oversample_power: 0.4
+    max_tries: 10000
+    covmat: /eagle/fieldlevel/projects/lens/chains_061526/a2ptarec_lenscmb/data_camb_gmv_spalitetteete/chain.covmat
+
+prior:
+  cal_dip_prior: 'lambda A_act: stats.norm.logpdf(A_act, loc = 1.0, scale = 0.003)'

@@ -1,0 +1,37 @@
+# Reconstruction of the ground-truth PlanckPR4Lensing_lensonly_nomarg dataset
+# (.../alens_snr_fixcosmo/data_camb_plkpr4_amplitude2 used
+#  data_pr4/pp_..._PS1_noCMBmarged.dataset, a custom file not in the stock package):
+# lensing-only correction treatment of the CMBmarged variant -- PP-only live
+# window (term 2) plus the data-referenced constant shift baked into the
+# CMBmarged fiducial-correction file (term 3, measured CMB spectra) -- but with
+# the NON-marginalized covariance (no Eq.-34 CMB bloat), for the fixed-cosmology
+# Alens/SNR-style runs. calibration_param empty as in the Marged variant.
+#
+# File references point at the installed planckpr4lensing package's own data
+# files (reused in place, not duplicated); absolute paths keep resolution
+# independent of this file's location.
+like_approx = gaussian
+fields_use = P
+fields_required = P
+binned = T
+nbins= 9
+use_min= 1
+use_max= 9
+cl_lmin = 2
+cl_lmax = 2500
+
+cl_hat_file = /lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/planckpr4lensing/data_pr4/pp_consext8_npipe_smicaed_TiPi_jTP_pre30T_kfilt_rdn0cov_PS1_bandpowers.dat
+
+bin_window_files = /lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/planckpr4lensing/data_pr4/pp_consext8_npipe_smicaed_TiPi_jTP_pre30T_kfilt_rdn0cov_PS1_window/window%u.dat
+bin_window_in_order = PP
+bin_window_out_order = PP
+
+covmat_cl = PP
+covmat_fiducial = /lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/planckpr4lensing/data_pr4/pp_consext8_npipe_smicaed_TiPi_jTP_pre30T_kfilt_rdn0cov_PS1_cov.dat
+
+linear_correction_fiducial_file = /lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/planckpr4lensing/data_pr4/pp_consext8_npipe_smicaed_TiPi_jTP_pre30T_kfilt_rdn0cov_PS1_CMBmarged_lensing_fiducial_correction.dat
+linear_correction_bin_window_files = /lus/eagle/projects/fieldlevel/miniforge3c/envs/lenss/lib/python3.12/site-packages/planckpr4lensing/data_pr4/pp_consext8_npipe_smicaed_TiPi_jTP_pre30T_kfilt_rdn0cov_PS1_CMBmarged_lens_delta_window/window%u.dat
+linear_correction_bin_window_in_order = PP
+linear_correction_bin_window_out_order = PP
+
+calibration_param =

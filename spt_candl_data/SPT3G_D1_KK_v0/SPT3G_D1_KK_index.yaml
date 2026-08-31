@@ -1,0 +1,17 @@
+# SPT-3G D1 kappa-kappa (lensing) index file
+# Y. Omori, W. Wu et al. 2026 (SPT-3G Collaboration)
+# Points to the variants of the likelihood; select with the 'variant' keyword.
+
+# Baseline results are from GMV (lensing-only, CMB-marginalized covariance)
+default: "GMV/SPT3G_D1_KK_GMV.yaml"
+
+# All variants including baseline
+GMV: "GMV/SPT3G_D1_KK_GMV.yaml"                  # GMV lensing-only (CMBmarg cov)
+PP: "PP/SPT3G_D1_KK_PP.yaml"                     # PP lensing-only
+GMV_withcmb: "GMV/SPT3G_D1_KK_GMV_withcmb.yaml"  # GMV joint lensing + CMB
+PP_withcmb: "PP/SPT3G_D1_KK_PP_withcmb.yaml"     # PP joint lensing + CMB
+GMVprof: "GMVprof/SPT3G_D1_KK_GMVprof.yaml"      # profile-hardened GMV lensing-only
+GMVprof_withcmb: "GMVprof/SPT3G_D1_KK_GMVprof_withcmb.yaml"  # profile-hardened GMV + CMB
+GMVprof_fixsys: "GMVprof/SPT3G_D1_KK_GMVprof_fixsys.yaml"  # profile-hardened GMV, noCMBmarg cov (fixed sys, no primary-CMB like)
+GMV_fixsys: "GMV/SPT3G_D1_KK_GMV_fixsys.yaml"    # GMV, noCMBmarg cov + data-driven \hat{Cl} corr (fixed sys, no primary-CMB like)
+PP_fixsys: "PP/SPT3G_D1_KK_PP_fixsys.yaml"       # PP, noCMBmarg cov + data-driven \hat{Cl} corr (fixed sys, no primary-CMB like)

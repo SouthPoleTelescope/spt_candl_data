@@ -1,0 +1,27 @@
+# CAMB settings for w0waCDM BAO-ONLY runs.
+#
+# Copied from ../withcmb/camb_w0wa.yaml with the accuracy arguments stripped.
+# Those were kmax/k_per_logint/nonlinear/halofit_version (matter power, only ever
+# needed for sigma8, which the BAO-only params file no longer derives) and
+# lens_potential_accuracy/lens_margin/lAccuracyBoost/min_l_logl_sampling/
+# DoLateRadTruncation (CMB lensing C_ell accuracy).
+#
+# The lensing arguments were inert in the BAO-only run -- with no C_ell
+# likelihood cobaya never requests Cls, so they never took effect. They are
+# removed anyway because they are a trap in a shared file: measured on one CAMB
+# call at that chain's mean parameters, lens_potential_accuracy=8 with lmax=2500
+# costs 15.7 s against 4.4 s without. Keep using ../withcmb/camb_w0wa for any
+# run that does include a primary CMB or lensing likelihood.
+#
+# theta_H0_range is retained because the params file samples theta_MC_100, so
+# cobaya still has to solve for H0 at each step.
+
+camb:
+  stop_at_error: false
+  extra_args:
+    bbn_predictor: PArthENoPE_880.2_standard.dat
+    dark_energy_model: ppf
+    num_massive_neutrinos: 1
+    theta_H0_range:
+      - 40
+      - 100

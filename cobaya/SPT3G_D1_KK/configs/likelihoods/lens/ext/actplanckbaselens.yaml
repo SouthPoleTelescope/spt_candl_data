@@ -1,0 +1,8 @@
+# Fixed-cosmology Alens setup per Kimmy: ACT's own lensing-only mode
+# (lens_only=True: no norm/N1 correction terms), with only the covariance
+# swapped to the non-CMB-marginalized one.
+spt_candl_data.act_lensing_wrappers.ACTDR6LensLikeNoCMBmarg:
+  lens_only: True
+  stop_at_error: true
+  lmax: 4000
+  variant: actplanck_baseline

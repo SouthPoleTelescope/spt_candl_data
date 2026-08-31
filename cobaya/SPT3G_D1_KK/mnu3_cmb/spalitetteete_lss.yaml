@@ -1,0 +1,33 @@
+output: ${DIR_CHAINS}/mnu3_cmb/data_camb_spalitetteete_lss/chain
+
+# CMB-SPA chain in the LSS (DES-Y3 3x2pt + GMV, NLA) parameter space:
+# priors/theory matched to cosmosis examples/SPT3G_D1_KK/desy3_3x2pt_gmv_maglim_nla_nautilus
+# (see configs/params/withcmb/cosmo_lss.yaml for the matching notes/deviations).
+# Differs from mnu3_cmb/spalitetteete.yaml: mnu prior [0.055, 0.6] (not [0, 5]),
+# H0 sampled directly (not theta_MC), normal hierarchy, mead2020_feedback + free logT_AGN.
+
+theory : !defaults [../configs/theory/withcmb/camb_lss]
+
+params : !defaults [../configs/params/withcmb/cosmo_lss]
+
+likelihood: !defaults [../configs/likelihoods/cmb/spalitetteete]
+
+sampler:
+  mcmc:
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.05
+    learn_proposal: true
+    learn_proposal_Rminus1_max_early: 30.0
+    learn_proposal_Rminus1_max: 10.0
+    drag: true
+    proposal_scale: 1.9
+    output_every: 1
+    oversample_power: 0.4
+    max_tries: 10000
+    # partial covmat from the converged mnu3_cmb chain: shared params (logA, ns, ombh2,
+    # omch2, tau, mnu, CMB nuisances) are seeded; H0 / logT_AGN (not in it) start from
+    # their proposal widths and are learned
+    covmat: /eagle/fieldlevel/projects/lens/chains_061526/mnu3_cmb/data_camb_spalitetteete.bak/chain.covmat
+
+prior:
+  cal_dip_prior: 'lambda A_act: stats.norm.logpdf(A_act, loc = 1.0, scale = 0.003)'

@@ -1,0 +1,117 @@
+# Priors matched to cosmosis examples/SPT3G_D1_KK/desy3_3x2pt_gmv_maglim_nla_nautilus
+# (des-y3-gmv-maglim-values.ini), i.e. the DES-Y3 3x2pt + GMV NLA parameter space:
+#   H0 sampled directly (uniform 40-100, cosmosis h0 = 0.40..1.00), no theta_MC sampling
+#   ns [0.84, 1.1], ombh2 [0.019, 0.026], omch2 [0.051, 0.255]
+#   mnu sampled [0.055, 0.6] (3 massive nu, normal hierarchy, nnu 3.044 -> camb_lss)
+#   HMCode_logT_AGN [7.3, 8.0] (mead2020_feedback)
+# Differences from the ini (unavoidable for a CMB likelihood run):
+#   - amplitude sampled as logA (cobaya/CAMB cannot take S_8 as input); S8 is derived
+#   - tau sampled (uniform 0.01-0.1, as cosmo_base) instead of fixed 0.0697186,
+#     since spalitetteete includes low-ell EE (sroll2) which constrains tau
+HMCode_logT_AGN:
+  prior:
+    min: 7.3
+    max: 8.0
+  ref:
+    dist: norm
+    loc: 7.8
+    scale: 0.1
+  proposal: 0.05
+  latex: \log_{10}(T_{\rm AGN}/{\rm K})
+logA:
+  drop: True
+  latex: \log(10^{10} A_\mathrm{s})
+  prior:
+    max: 4
+    min: 1.61
+  proposal: 0.005
+  ref:
+    dist: norm
+    loc: 3.05
+    scale: 0.01
+mnu:
+  latex: \sum m_\nu
+  prior:
+    min: 0.055
+    max: 0.6
+  ref:
+    dist: norm
+    loc: 0.0774
+    scale: 0.02
+  proposal: 0.03
+ns:
+  latex: n_\mathrm{s}
+  prior:
+    max: 1.1
+    min: 0.84
+  proposal: 0.002
+  ref: 0.9689466228311969
+ombh2:
+  latex: \Omega_\mathrm{b} h^2
+  prior:
+    max: 0.026
+    min: 0.019
+  proposal: 0.0004
+  ref: 0.022421426606231015
+omch2:
+  latex: \Omega_\mathrm{c} h^2
+  prior:
+    max: 0.255
+    min: 0.051
+  proposal: 0.002
+  ref:
+    dist: norm
+    loc: 0.12
+    scale: 0.003
+H0:
+  latex: H_0
+  prior:
+    max: 100
+    min: 40
+  proposal: 0.5
+  ref:
+    dist: norm
+    loc: 67.7
+    scale: 1.0
+omega_de:
+  latex: \Omega_{\Lambda}
+omegam:
+  latex: \Omega_\mathrm{m}
+omegamh2:
+  latex: \Omega_\mathrm{m} h^2
+  derived: 'lambda omegam, H0: omegam*(H0/100)**2'
+rdrag:
+  latex: r_\mathrm{drag}
+S8:
+  derived: 'lambda sigma8, omegam: sigma8*(omegam/0.3)**0.5'
+  latex: 'S_8'
+s8h5:
+  derived: 'lambda sigma8, H0: sigma8*(H0*1e-2)**(-0.5)'
+  latex: \sigma_8/h^{0.5}
+s8omegamp25:
+  derived: 'lambda sigma8, omegam: sigma8*omegam**0.25'
+  latex: \sigma_{8} \Omega_\mathrm{m}^{0.25}
+s8omegamp5:
+  derived: 'lambda sigma8, omegam: sigma8*omegam**0.5'
+  latex: \sigma_{8} \Omega_\mathrm{m}^{0.5}
+sigma8:
+  latex: \sigma_{8}
+As:
+  latex: A_\mathrm{s}
+  value: 'lambda logA: 1e-10*np.exp(logA)'
+DHBBN:
+  derived: 'lambda DH: 10**5*DH'
+  latex: 10^5 \mathrm{D}/\mathrm{H}
+YHe:
+  latex: Y_\mathrm{P}
+Y_p:
+  latex: Y_P^\mathrm{BBN}
+age:
+  latex: \mathrm{Age}/\mathrm{Gyr}
+tau:
+  latex: \tau_\mathrm{reio}
+  prior:
+    max: 0.1
+    min: 0.01
+  proposal: 0.003
+  ref: 0.05430842

@@ -1,0 +1,129 @@
+# w0waCDM for BAO-ONLY runs (no primary CMB, no lensing likelihood).
+#
+# Copied from ../withcmb/cosmo_w0wa.yaml. That file is shared by 10 run yamls
+# (w0wa_lenscmb*, mnu3w0wa_*, w0wa_lenscmbbaosne*) where logA/ns/tau/ombh2 are
+# genuinely constrained, so it must not be edited in place -- hence this copy.
+#
+# DESI BAO measures only D_M/r_d, D_H/r_d and D_V/r_d. Nothing in that set
+# depends on A_s, n_s or tau, so those were pure prior volume: in the
+# chains_061526/w0wa_bao/data_camb_desidr2 run they had |corr with chi2| < 0.02
+# and sat at exactly 2.0% of the posterior weight in each 2% prior tail.
+# Fixed values below follow the official DESI Y1 KP w0wa BAO-only yaml.
+#
+# Sampled here: theta_MC_100, omch2, w, wa.
+# (The official DESI config instead samples omm and h*r_d with H0 fixed. That is
+#  the better-conditioned choice for BAO-only, but is left alone here on purpose.)
+
+theta_MC_100:
+  drop : True
+  latex: '100\theta_\mathrm{MC}'
+  prior:
+    max: 10
+    min: 0.5
+  proposal: 0.001
+  ref:
+    dist: norm
+    loc: 1.04109
+    scale: 0.002
+  renames: 'theta'
+
+# --- fixed: no BAO observable depends on these -------------------------------
+logA:
+  drop: True
+  value: 3.036
+  latex: \log(10^{10} A_\mathrm{s})
+ns:
+  value: 0.9649
+  latex: n_\mathrm{s}
+tau:
+  value: 0.0544
+  latex: \tau_\mathrm{reio}
+mnu:
+  value: 0.06
+  latex: \sum m_\nu
+nnu:
+  value: 3.044
+  latex: N_\mathrm{eff}
+
+# --- fixed: this is the one that was breaking convergence --------------------
+# With ombh2 free there is a long valley in which ombh2, omch2 and h trade off
+# at fixed r_d. It was the dominant unconverged direction of the previous run
+# (eigendirection ombh2 + 0.68*theta_MC - 0.38*omch2; per-parameter R-1 of
+# 0.091 / 0.142 / 0.062 versus <=0.012 for everything else), and it had pushed
+# ombh2 to 0.046 +/- 0.018 -- twice BBN, giving r_drag = 112 Mpc instead of ~147.
+# The official DESI BAO-only config fixes it outright rather than using a BBN
+# prior; swap to `prior: {dist: norm, loc: 0.02218, scale: 0.00055}` if you want
+# the BBN uncertainty propagated instead.
+ombh2:
+  value: 0.02237
+  latex: \Omega_\mathrm{b} h^2
+
+# --- sampled -----------------------------------------------------------------
+omch2:
+  latex: \Omega_\mathrm{c} h^2
+  prior:
+    max: 0.99
+    min: 0.005
+  proposal: 0.002
+  ref:
+    dist: norm
+    loc: 0.12
+    scale: 0.003
+w:
+  prior:
+    max: 1.0
+    min: -2.0
+  ref:
+    dist: norm
+    loc: -0.4863
+    scale: 0.2030
+  proposal: 0.08
+  latex: w_0
+wa:
+  prior:
+    max: 2.0
+    min: -5.0
+  ref:
+    dist: norm
+    loc: -1.5014
+    scale: 0.5634
+  proposal: 0.25
+  latex: w_a
+
+cosmomc_theta:
+  derived: False
+  value: 'lambda theta_MC_100: 1.e-2*theta_MC_100'
+As:
+  latex: A_\mathrm{s}
+  value: 'lambda logA: 1e-10*np.exp(logA)'
+
+# --- derived ------------------------------------------------------------------
+# sigma8, S8 and the s8* combinations are deliberately dropped: they need the
+# matter power spectrum (so they force CAMB to compute P(k) for nothing), and
+# with A_s and n_s fixed their posteriors carry no BAO information at all --
+# they would just restate the assumed amplitude.
+omega_de:
+  latex: \Omega_{\Lambda}
+omegam:
+  latex: \Omega_\mathrm{m}
+omegamh2:
+  latex: \Omega_\mathrm{m} h^2
+  derived: 'lambda omegam, H0: omegam*(H0/100)**2'
+rdrag:
+  latex: r_\mathrm{drag}
+H0rdrag:
+  derived: 'lambda H0, rdrag: H0 * rdrag'
+  latex: H_0 r_\mathrm{d}
+DHBBN:
+  derived: 'lambda DH: 10**5*DH'
+  latex: 10^5 \mathrm{D}/\mathrm{H}
+H0:
+  latex: H_0
+  max: 100
+  min: 40
+YHe:
+  latex: Y_\mathrm{P}
+Y_p:
+  latex: Y_P^\mathrm{BBN}
+age:
+  latex: \mathrm{Age}/\mathrm{Gyr}

@@ -1,0 +1,53 @@
+# SPT-3G '20 Lensing (curved-sky Quadratic Estimator GMV)
+name: "SPT-3G D1 phiphi (Omori & Wu et al. 2026)"
+
+# noCMBmarg covariance (CMB conditioned/fixed, not marginalized), combined with
+# the data-driven \hat{Cl}^{TT/TE/EE} response correction (LensOnlyResponseCorrCMBliteBP).
+# Use for lensing runs with systematics fixed and NO primary-CMB likelihood in the chain.
+band_power_file: SPT3G_D1_KK_PP_bdp.txt
+covariance_file: SPT3G_D1_KK_PP_cov_noCMBmarg.txt
+
+# Location of {spec}_window_functions.txt
+window_functions_folder: windows/
+
+# Number of simulation realizations used to compute cov
+hartlap_correction:
+  N_sims: 498
+
+# Number of bins used
+spectra_info:
+  - kk: 17
+
+data_model:
+  - Module: "spt_candl_data.transformations.KK_transformations.LensingSystematicsEmu"
+    emu_file: emulator/emul_deb_qpp_v4.npz
+    emu_par_names: ['Tcal_lens', 'Pcal_lens', 'beam1', 'beam2', 'beam3', 'beam4',
+                    'beta_pol_90', 'beta_pol_150','beta_pol_220',
+                    'Atsz', 'Acib150', 'Acib220', 'Arad90', 'Arad150']
+
+  - Module: "spt_candl_data.transformations.KK_transformations.Mll"
+    M_matrices_folder: "linear_corrections/"
+    Mmodes:
+      - kk
+    fiducial_correction_file: "linear_corrections/fiducial_correction.txt"
+
+  - Module: "spt_candl_data.transformations.KK_transformations.LensOnlyResponseCorrCMBliteBP"
+    M_matrices_folder: "linear_corrections/"
+    Mmodes:
+      - TT
+      - TE
+      - EE
+    fiducial_correction_file: "linear_corrections/fiducial_correction.txt"
+    Dl_data_template_file: "linear_corrections/boxcarr_lite_Dlbp_v41_fidfill.txt"
+    overwrite_ell_max: {"TT": 3500, "TE": 3000, "EE": 3000}
+    fix_cal: True
+    fix_beam: True
+    tcal_param: "Tcal_lens"
+    pcal_param: "Pcal_lens"
+    polbeam_params: ["beta_pol_90", "beta_pol_150", "beta_pol_220"]
+    teigenbeam_params: ['beam1', 'beam2', 'beam3', 'beam4']
+    mainbeam_template_file: "beam/B_ell_main_beam.npz"
+    Tbeam_template_file: "beam/B_ell_rc4.npz"
+    Tbeameigmodes_template_file: "beam/beam_eigenmodes.txt"
+    ilcTweight_template_file: "ilcweights/ilcweights1d_TT.npy"
+    ilcEweight_template_file: "ilcweights/ilcweights1d_EE.npy"

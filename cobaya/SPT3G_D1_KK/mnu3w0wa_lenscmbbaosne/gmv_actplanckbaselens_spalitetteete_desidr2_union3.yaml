@@ -1,0 +1,29 @@
+output: ${DIR_CHAINS}/mnu3w0wa_lenscmbbaosne/data_camb_gmv_actplanckbaselens_spalitetteete_desidr2_union3/chain
+
+theory : !defaults [../configs/theory/withcmb/camb_w0wanu3]
+
+params : !defaults [../configs/params/withcmb/cosmo_w0wanu3]
+
+likelihood: !defaults [../configs/likelihoods/lens/withcmb/gmv,
+                       ../configs/likelihoods/lens/ext/actplanckbaselens_withcmb,
+                       ../configs/likelihoods/cmb/spalitetteete,
+                       ../configs/likelihoods/bao/desidr2,
+                       ../configs/likelihoods/sne/union3,
+                      ]
+
+sampler:
+  mcmc:
+    Rminus1_stop: 0.01
+    Rminus1_cl_stop: 0.05
+    learn_proposal: true
+    learn_proposal_Rminus1_max_early: 30.0
+    learn_proposal_Rminus1_max: 10.0
+    drag: true
+    proposal_scale: 1.9
+    output_every: 1
+    oversample_power: 0.4
+    max_tries: 10000
+    covmat: /eagle/fieldlevel/projects/lens/chains_061526/mnu3w0wa_lenscmbbaosne/data_camb_gmv_actplanckbaselens_spalitetteete_desidr2_union3.bak/chain.covmat
+
+prior:
+  cal_dip_prior: 'lambda A_act: stats.norm.logpdf(A_act, loc = 1.0, scale = 0.003)'
