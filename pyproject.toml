@@ -9,9 +9,10 @@ readme = "README.rst"
 
 dynamic = ["version", "description"]
 
+# cosEmu (KK emulator) needs these; verified against gpjax 0.13.4 and 0.18.0
 dependencies = [
     "jax",
-    "gpjax",
+    "gpjax>=0.13",
     "scikit-learn",
 ]
 

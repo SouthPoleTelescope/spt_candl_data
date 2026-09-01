@@ -3,6 +3,7 @@ from jax import config
 config.update("jax_enable_x64", True)
 
 from sklearn.preprocessing import StandardScaler
+import jax
 import jax.numpy as jnp
 import jax.random as jr
 import gpjax as gpx
@@ -314,9 +315,10 @@ class LensingSysEmulator_gpjax:
                     k = gpx.kernels.RBF(lengthscale=PositiveReal(L0), variance=PositiveReal(var0))
 
                 prior = gpx.gps.Prior(k, gpx.mean_functions.Zero())
+                # raw value: gpjax wraps it itself (PositiveReal breaks gpjax>=0.18 here)
                 like = gpx.likelihoods.Gaussian(
                     num_datapoints=D.n,
-                    obs_stddev=PositiveReal(max(self.jitter, self.sigma_floor)),
+                    obs_stddev=jnp.asarray(max(self.jitter, self.sigma_floor)),
                 )
                 post = prior * like
 
@@ -453,9 +455,10 @@ class LensingSysEmulator_gpjax:
                 kernel = gpx.kernels.RBF(lengthscale=PositiveReal(ls_i), variance=PositiveReal(var_i))
 
             prior = gpx.gps.Prior(kernel, gpx.mean_functions.Zero())
+            # raw value: gpjax wraps it itself (PositiveReal breaks gpjax>=0.18 here)
             like = gpx.likelihoods.Gaussian(
                 num_datapoints=D.n,
-                obs_stddev=PositiveReal(jnp.asarray(sigma)),
+                obs_stddev=jnp.asarray(sigma),
             )
             post = prior * like
 
