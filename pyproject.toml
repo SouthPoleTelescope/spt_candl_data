@@ -9,6 +9,12 @@ readme = "README.rst"
 
 dynamic = ["version", "description"]
 
+dependencies = [
+    "jax",
+    "gpjax",
+    "scikit-learn",
+]
+
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
